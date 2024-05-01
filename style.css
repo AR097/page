@@ -1,0 +1,461 @@
+*{
+    margin:0;
+    padding:0;
+    color: aliceblue;
+    text-align: center;
+}
+body{
+    background: rgb(0, 0, 0);
+    min-height: 100%;
+}
+p{
+    font-size: 15px;
+}
+.cabecalho{
+    height: 65px;
+    box-shadow: 3px 1px 5px rgb(43, 37, 37);
+    display: flex;
+    align-items: center; 
+}
+.cabecalho h1{
+margin-left: 15px;
+}
+.Menucabecalho{
+    height:65px;
+    box-shadow: 3px 1px 5px rgb(43, 37, 37);
+    display: flex;
+    align-items: center; 
+    width: 65%; 
+}
+.Menucabecalho a{
+    text-decoration: none;
+    background: #000000;
+    font-size: 17px;
+    padding: 8px;
+    margin-left: 15px;
+}
+.Menucabecalho a:hover, a:link{
+    background: rgb(73, 5, 73);
+    border-radius: 10px;
+}
+#divbusca{
+    background-color:#ffffff;
+    border-radius:15px;
+    width:300px;
+    box-shadow: 1px 1px 2px 3px rgb(148, 142, 142);
+    margin-left:100px;
+}
+#txtbusca{
+    float:left;
+    padding-left:5px;
+    font-size:15px;
+    border:none;
+    height:25px;
+    width:240px;
+    color: #000000;
+    margin-left: 15px;
+}
+#btnbusca{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 2px;
+    box-shadow: 1px 1px 2px 2px rgb(20, 20, 20);
+}
+/*******Inicio*******/
+.conteudoinicial{
+    margin: 10px 50px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    content: none;
+    display: flex;
+}
+.conteudoinicial h2{
+    width: 700px;
+    margin-top: 100px;
+    font-size: 25px;
+    text-align: left;
+}
+.conteudoinicial p{
+    width: 700px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align:left;
+    
+}
+.linksinicial{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.linksinicial a{
+    text-decoration: none; /*configuração do link*/
+    color: white; /*cor da letra*/
+    border-radius: 20px; /*curvamento da borda*/
+    background: #070707; /**/
+    padding: 8px; /*preenchimento*/
+    font-size: 14px; /*tamanho das letras*/
+    margin: 15px;
+    box-shadow: 1px 1px 2px 3px rgb(51, 50, 50);
+}
+.linksinicial a:hover, a:link{
+    background: rgb(73, 5, 73);
+}
+.foto{
+margin-top: 15%;
+margin-left:20%;
+}
+
+.foto img{
+    border-radius: 10px;
+
+}
+/********Contatos********/
+.conteudocontato{
+    height: 520px;
+    margin:10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    content: none;
+    display: flex;
+}
+.plataformas{
+    margin:150px 10px;
+    width: 50px;
+    height: 425px;
+    }
+    .plataformas img{
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px 5px rgb(44, 44, 44);
+    }
+    .linkplataformas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    content: none;
+    width:min-content;
+    }
+.contato{
+    margin: 50px 400px;
+    width: 350px;
+    height: 425px;
+    }
+    .contato h1{
+        margin-top: 50px;
+    }
+    .contatos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;;
+        box-sizing: border-box;
+        border-radius: 15px;
+        overflow: hidden;
+        width: min-content;
+        margin-left: 55px;
+    }
+    .contatos p{
+        margin-top: 5px;
+    }
+    .qrcodecontatos{
+        width: 300px;
+        height: 425px;
+        margin-left: 25px;
+    }
+    .qrcodecontatos img{
+        margin-top: 50px;
+        height: 100px;
+        width: 100px;
+    }
+    .qrcodecontatos p{
+        margin-top: 20px;
+
+}
+/********Sobre********/
+.conteudosobre{
+    margin: 8px 10px 10px 10px;
+}
+.caixatextosobre1{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+    width: 97%;
+    float: right;
+    content: none;
+}
+.caixatextosobre2{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+    width: 97%;
+    float: right;
+    content: none;
+}
+.conteudosobre p{
+    margin: 7% 5%;
+}    
+.conteudosobre img{
+    margin: 10px 30px 10px 50px;
+}    
+/********Projetos********/
+.conteudoTop5{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 97%;
+    float: right;
+    content: none;
+    border: solid 1px red;
+}
+.gradeTop5{
+    height: 250px;
+    width: 250px;
+    background: rgb(44, 42, 44);
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    border: solid 1px red;
+}
+.imagemprojeto{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    float: right;
+}
+.caixainicial h1{
+    width: 243px;
+    font-size: 15px;
+    background-color: #070707;
+    margin-top: 200px;
+    border-radius: 10px;
+    position: absolute;
+    clip: rect();
+}
+.linguagensusadas{
+    width: 248px;
+    height: 30px;
+    margin-top: 218px;  
+    position: absolute;
+    clip: rect(); 
+}
+.linguagensusadas img{
+    width: 20px;
+    height: 20px;
+    margin:5px 2px;
+    border-radius: 50px;
+}
+.conteudo{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 97%;
+    float: right;
+    content: none;
+}
+.grade{
+    height: 250px;
+    width: 250px;
+    background: rgb(44, 42, 44);
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.imagemprojeto{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    float: right;
+}
+.caixainicial h1{
+    width: 243px;
+    font-size: 15px;
+    background-color: #070707;
+    margin-top: 200px;
+    border-radius: 10px;
+    position: absolute;
+    clip: rect();
+}
+.linguagensusadas{
+    width: 248px;
+    height: 30px;
+    margin-top: 218px;  
+    position: absolute;
+    clip: rect(); 
+}
+.linguagensusadas img{
+    width: 20px;
+    height: 20px;
+    margin:5px 2px;
+    border-radius: 50px;
+}
+
+
+/*
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #00318b;
+}*/
+
+/********Sobre********/
+.conteudosobre{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 97%;
+    height: 450px;
+    content: none;
+}
+h1{
+    font-size: 20px;
+}
+.conteudolateral1{
+    height: 450px;
+}
+/*lateralesqueda*/
+.experiencias {
+    margin-top: 20px;
+    margin-left: -20px;
+    list-style:none;
+    font-size: 14px;
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.experiencias ul li::before {
+    content: '';
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 2px;
+    height: 25px;
+    display:inline-block;
+    position: relative;
+}
+.experiencias p{
+    text-align: left;
+    font-size: 14px;
+    display: inline-block;
+    width: 240px;
+    height: 50x;
+    padding-top: 5px;
+    margin-top: -2px;
+}
+.idiomas{
+    margin-top: 5px;
+    margin-left: -20px;
+    list-style:none;
+    font-size: 14px;
+    height: 100px;
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.idiomas table{
+    width:200px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/*central*/
+.conteudocentral{
+    height: 440px;
+    width: 500px;
+}
+.competencias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: -30px;
+    height: 410px;
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.ladodireito{
+    list-style-image: url(imagensbasesite/imgsobre/icone1.jpg);
+    width:200px;
+    margin-left: 290px;
+}
+.ladodireito li{
+    width: 180px;
+    padding: 10px;
+    text-align: left;
+}
+.ladoesquerdo{
+    list-style-image: url(imagensbasesite/imgsobre/icone1.jpg);
+    width:200px;
+    margin-left: -450px;
+    float: right;
+}
+.ladoesquerdo li{
+    width: 180px;
+    padding: 10px;
+    text-align: left;
+}
+/*lateraldireita*/
+.conteudolateral2{
+    height: 450px;  
+}
+.formacao{
+    margin-top: 20px;
+    list-style:none;
+    font-size: 14px;
+    height: 150px;
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.formacao li{
+    margin-top: 10px;
+}
+.formacao p{
+    margin-top: 5px;
+}
+.softskills{    
+    margin-top: 20px;
+    list-style:none;
+    font-size: 14px;
+    height:320px;
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+footer{ 
+    width: 97%;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.Hobies img{
+    height: 45px;
+    width: 45px;
+}
+.Hobies {
+    width: 325px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-left: 500px;
+}
