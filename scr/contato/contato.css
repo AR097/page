@@ -68,7 +68,7 @@ a{
         font-weight: 200;
         width: 440px;
   
-         .HeaderContato, .HeaderSobre, .HeaderProjetos{
+         .HeaderContato, .Headerindex, .HeaderProjetos{
           width: max-content;
          }
          .HeaderProjetos, .HeaderContato{
