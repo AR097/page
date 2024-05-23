@@ -1,200 +1,475 @@
 *{
     margin: 0;
     padding: 0;
+    scrollbar-width:none;
 }
-    a{
-      text-decoration: none;
-      background: rgb(19, 36, 83);
-      color: rgb(128, 26, 148);
-      border-radius: 10px;
-      font-weight: 400;
-      cursor: pointer;
-      padding: 15px 20px;
-    }
-    a:hover{
-      background: rgb(128, 26, 148);
-      color: rgb(19, 36, 83);
-    }
+/*padronizaçoes*/
+.headerbox{
+  width: 90%;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 6px -1px rgba(0, 0, 0, 0.212);
+}
+  #headerbox{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(125, 55, 143);
+    width: 90%;
+    display: flex;
+    text-align: left;
+  }
+h1{          
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
 .container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  background: linear-gradient(#000000,rgba(22, 3, 59, 0.808));
+  background: linear-gradient(
+      rgb(0, 0, 0)15%,rgb(36, 9, 34),rgb(58, 26, 57));
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
   header{
+    background: #0000007a;
+
     position: fixed;
-    background: #000000;
-    width: 100%;
-    height: 100px;
     display:grid;
-    grid-template-columns:  1fr 2fr;
+    grid-template-columns:  1fr 2fr 1fr;
     justify-content: center;
     align-items: center;
+
     padding-left: 50px;
+    width: 100%;
+    height: 100px;
+
     z-index: 1000;
     top: 0;
     .box_logo{
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 150px;
-
       img{
         width: 50px;
         height: auto; 
         border-radius: 50%;
       }
-
       .NameHeader{
-        width: 100px;
-        height: 46px;
+        width: 250px;
+        height: auto;
         margin-left: 8px;
         text-align: justify;
-        padding: 2px 5px;
-        font-weight: 800;
-        color:#eedada
+        align-content: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: #caadad;
       }
+      
     }
     .menuheader{
+
       height: 59px;
+      width: 90%;
+
       display:flex;
-      grid-template-columns:  1fr 1fr 1fr;
       align-items: center;
       text-align: center;
       justify-content: center;
-      font-weight: 200;
-      width: 440px;
-
-       .HeaderContato, .Headerindex, .HeaderProjetos{
-        width: max-content;
-       }
-       .HeaderProjetos, .HeaderContato{
-        margin-left: 5px;
-      }
-    }
-  }
-  .boxum{
-    width: 95%;
-    height: 500px;
-    margin-top: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    #headerboxump1{
-      font-size: 35px;
-      font-weight: 800;
-      padding: 15px;
-      color: #a3a2a2;
-    }
-    #headerboxump2{
-      font-weight: 200;
-      padding: 20px;
-      font-size: 20px;
-      color: #a3a2a2;
-    }
-    .opcoesboxum{
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      width: 100%;
-      font-weight: 400; 
       a{
-        margin-left: 25px;
-        padding: 5px 10px;
+        padding: 5px;
+        margin-left: 10px;
+
+        text-decoration: none;
+        color: #caadad;
+        font-weight: 200;
+        cursor: pointer;
+      }
+      a:hover{
+        background: rgb(128, 26, 148);
+        border-radius: 5%;
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
       }
     }
-  }
-  .boxperfil{
-    width:95%;
-    height: 600px;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-    #headerbox{
-      font-weight: 200;
-      font-size: 35px;
-      border-bottom: black 2px ridge;
-      color: #e9e4e4;
-    }
-    h1{
-      font-weight: 300;
-      font-size: 25px;
-      margin-bottom: 10px;
-      color: #caadad;
+    .redesheader{
+      display:grid;
+      grid-template-columns:  1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      
+      width: 200px;
+      margin-left: 50px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      a{
+        width: 40px;
+        height: 40px;
+      }
+      a:hover{
+        background: rgb(128, 26, 148);
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+      }
 
     }
-    ul{
-      padding: 2px;
-      list-style-type: none;
-      li{
-        padding: 5px;
-        margin-left: 20px;
-        font-size: 16px;
-        font-weight: 400;
-      }
-    }
-    .boxlisttwocolum{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 500px;
-        text-align: center;
-    }
-    li{
-        list-style-type: none;
-        padding: 5px;
-        margin-left: 20px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .conteinerperfil{
+  }
+  .box{
+    width: 95%; 
+    height: 800px;
+  }
+    #pghome{
+      margin-top: 90px;
       display: flex;
-      width: 100%;
-      h1{
-        text-align: center;
-      }
-        .perfilleft{
-            float: left;
-            justify-content: center;
-            align-items: center;
-            .idiomas{
-            margin-top: 25px;
+      align-items: center;
+      justify-content: center;
+      flex-direction:column;
+      text-align: center;
+    }
+        /*Digitation animation*/
+        .text-animation{
+          font-size:54px;
+          font-weight: 400;
+        }
+          .text-animation span{
+            position: relative;
+          }
+            .text-animation span::before{
+              content: "";
+              color: rgb(57, 15, 85);
+              animation: animation 20s infinite;
             }
+                @keyframes animation {
+                  0%, 20%{
+                    content: "HELLO WORLD!";
+                  }
+                  21%, 40%{
+                    content: "I'm Front-end developer!";
+                  }
+                  41%, 60%{
+                    content: "I love Code!";
+                  }
+                  61%, 80%{
+                    content: "I love Coffee!";
+                  }
+                  81%, 100%{
+                    content: "Let's go!";
+                  }
+                }
+            .text-animation span::after{
+              content: "";
+              position: absolute;
+              height: 100%;
+              border-left: 2px solid rgb(224, 218, 218);
+              right: -10px;
+              animation: cursor .8s infinite, digite 20s steps(15) infinite;
+              width: calc(100% + 17px);
+              background-color: black;
+            }
+                @keyframes cursor {
+                  0%{
+                      border-left: 2px solid rgb(0, 0, 0);
+                  }
+                }
+                @keyframes digite {
+                  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+                      width: 0;
+                  }
+                  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+                      width: calc(100% + 17px);
+                  }
+                }
+
+    #pgoverview{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction:row;
+      text-align: left;
+
+      .txoverview{
+        color: #d1cfcf;
+        width: 90%;
+
+        #name{
+          font-size: 25px;
+          font-weight: 400;
         }
-    .perfilcenter{
-        .HardSkills{
-          width: 550px;
+        p{
+          text-align: justify;
         }
-        .softskills{
-          margin-top: 25px;
+        p, h2{
+          font-size: 22px;
+          font-weight: 300;
+          
         }
-      }
-      .perfilrigth{
-        width: 40%;
+
       }
     }
-    .hobiesinteresses{
+
+    #pgperfil{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction:column;
+      text-align: center;
+      /*text**/
+        h1{
+          text-align: center;
+          text-align: left;
+        }
+        h2{/*titulos*/
+          font-weight: 200;
+          font-size: 20px;
+          margin: /*sup*/0 /*dir*/0  /*inf*/10px/*esq*/25px ;
+          color: #fff;
+        }
+        li{/*info*/
+          list-style-type: none;
+          padding: 5px;
+          margin-left: 20px;
+          font-size: 15px;
+          font-weight: 200;
+          color: #f1e8e8
+      }
+      .conteinerperfil{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid: 10px;
+        width: 90%;
+        height: 50%;
+        text-align: left;
+
+        .boxleft{/*.Education, .Languages*/
+          float: left;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h2{text-align: center;}
+
+          .Languages{
+            margin-top: 25px;
+          }
+            .Education, .Languages{
+            margin-top: 25px;
+            width: 100%;
+            align-items: center;
+
+            .boximg{
+              display: flex;
+              flex-direction:row;
+              justify-content: center;
+              align-items: center;
+                  img{
+                    align-items: center;
+                    width: 40px;
+                    padding: 20px;
+                  }
+            }
+
+            }
+          }
+
+        .boxcenter{/*Skills*/
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h2{text-align: center;}
+
+          .HardSkills{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            height: 100%;
+            margin-left: 70px;
+            .Skills{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              img{
+                width: 50px;
+                padding: 20px;
+              }
+            }
+            .otherskills{
+              display: grid;
+              grid-template-columns: 1fr;
+              margin-left: 200px;
+              height: 100%;
+              width: min-content;
+              img{
+                width: 30px;
+                padding: 20px;
+              }
+            }
+          }
+        }
+      }
+      .hobiesinteresses{
         text-align: center;
         margin-top: 30px;
         .material-symbols-outlined {
             width: 50px;
         }
     }
-  }
+    }
+
+
+    #pgportfolio{
+      margin-top: 20px;
+      margin-bottom: 25px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .txtportfoliobox{
+        width: 90%;
+        margin-top: 8px;
+        font-size: 19px;
+        font-weight: 300;
+        color: #d1cfcf;
+        text-align: left;
+
+        #headerbox{
+
+          p{
+          margin-top: 8px;
+          font-size: 19px;
+          font-weight: 300;
+          color: #d1cfcf;
+          }
+        }
+      }
+
+      .boxportfolio{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction:row;
+        width: 90%;
+
+        .card{
+          width: 250px;
+          height: 300px;
+          background-color: #0f0f0f;
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+
+          .imagecard{
+            width: 100%;
+            height: 50%;
+            border-bottom:solid .1px #ffffff;
+            box-shadow: 0px 0px 10px rgb(111, 40, 119);
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .textcard{
+            color: #f1e8e8;
+            padding: 10px;
+            height: 100px;
+            font-weight: 300;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .linkrepo{
+      display:flex;
+      flex-direction: row-reverse;
+      width: 250px;
+      z-index: 10;
+      position: absolute;
+      margin: 10px -15px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      a{
+        width: 40px;
+        height: 40px;
+      }
+      a:hover{
+        background: rgb(128, 26, 148);
+        border-radius: 50%;
+        box-shadow: 0px 3px 20px rgb(117, 33, 134);
+      }
+
+    }
+    .languages{
+      display:flex;
+      flex-direction: row-reverse;
+      z-index: 10;
+      bottom: 0;
+      padding: 5px;
+      img{
+        width: 30px;
+        height: 30px;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+
+    #pgcontact{
+      display: flex;
+      width: 100%;
+      justify-content:center;
+        .boxcontato{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+          .contato{
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            float:left ;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            img{
+              width: 25px;
+            }
+            .information{
+              text-align: left;
+              justify-items: center;
+              line-height: 30px;
+            }
+              a{
+                text-decoration: none;
+                color: black;
+              }
+          }
+    }
+     }
   footer{
     background-color: #0f0f0f;
     color: #fff;
     padding: 5px;
     text-align: center;
-    position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    width: 99.2%;
     font-size: 12px;
+    font-weight: 200;
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-weight: 200;
+      font-size: 12px;
+    }
   }
