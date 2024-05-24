@@ -42,8 +42,8 @@ h1{
 }
 .image-container, #imgskills img{
   display: block;
-  width: 50px;
-  height: 50px;
+  width:60px;
+  height:60px;
   cursor: pointer;
 }
 
@@ -57,22 +57,11 @@ h1{
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 130%;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
-}
-
-.description::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
 }
 
 .image-container:hover .description {
@@ -312,15 +301,32 @@ h1{
           align-items: center;
 
           h2{text-align: center;}
+          .educationgrid{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          .imgtxt{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            width: 150px;
+            img{
+              padding: 10px;
+            }
+            p{
+              color: #fff;
+            }
+          }
 
           .Languages{
-            margin-top: 10px;
+            margin-top: 50px;
           }
             .Education, .Languages{
-            margin-top: 25px;
+            margin-top: 50px;
             width: 100%;
             align-items: center;
-            h2{margin-bottom: 40px;}
+            h2{margin-bottom: 10px;}
             .boximg{
               display: flex;
               flex-direction:row;
@@ -351,6 +357,7 @@ h1{
             justify-content: center;
             height: 100%;
             margin-left: 70px;
+            
             .Skills{
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -443,11 +450,10 @@ h1{
     
       .hobiesinteresses{
         text-align: center;
-        margin-top: 30px;
         .imagehobbies{
         display: flex;
         flex-direction: row;}
-        h2{margin-bottom: 40px;}
+        h2{margin-bottom: 10px;}
         img{
           width: 50px;
         }
