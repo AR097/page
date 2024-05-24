@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
+    <link rel="shortcut icon" href="scr/componentes/home/img/perfil.png" type="image/x-icon"/>
     <title>Andressa Rodrigues - Página inicial</title>
     
     <link rel="stylesheet" href="style.css">
@@ -19,127 +20,93 @@
         <header>
             <div Class='box_logo'>
                 <div Class='ImageLogo'>
-                <img src='https://media.discordapp.net/attachments/1229890616633069623/1239669935253229669/photo_5048695002766617765_x.jpg?ex=6643c418&is=66427298&hm=d1d9d35a2a02446a63d5fd1bfecafddb9c0fbfb5bf1140c90fb8f1977bb56174&=&format=webp&width=480&height=480'/>
+                <img src='scr/componentes/home/img/perfil.png'/>
                 </div>
 
                 <div Class="NameHeader">
-                    <div Class='NameHeaderS'> <span>Andressa</span> </div>
-                    <div Class="NameHeaderI"> <span>Rodrigues</span> </div>
+                  <span id="typing-effect">Andressa Rodrigues</span>
                 </div>
             </div>
             <div Class="menuheader">
-                <!--<div Class='Headerindex'>
-                <a href="index.html">Página inicial</a>
-                </div>-->
-
-                <!--<div Class='HeaderProjetos'> 
-                <a href="scr/projetos.html">Projetos</a>
-                </div> -->
-
-                <div Class='HeaderContato'>
-                <a href="scr/contato/contato.html">Contato</a>
-                </div>
+                <a href="#pghome">Home</a>
+                <a href="#pgoverview">About</a>
+                <a href="#pgperfil">Profile</a>
+                <a href="#pgportfolio">Portfólio</a>
+                <a href="#pgcontact">Contact</a>
+            </div>
+            <div Class="redesheader">
+              <a href="src/Conteudo/conteudo.tsx"><img src="scr/componentes/Header/img/linkedin-svgrepo-com.svg" alt=""></a>
+              <a href="https://github.com/AR097"><img src="scr/componentes/Header/img/github-142-svgrepo-com (1).svg" alt=""></a>
             </div>
         </header>
-        <div Class="boxum">
-          <div Class="headerboxum">
-            <h1 id='headerboxump1'> 
-              Bem vindo!
-            </h1>
-            <h2 id='headerboxump2'>
-              <p>Amante da tecnologia desde pequena, sempre tive curiosidade de como as coisas funcionam e o que poderiam se tornar.</p> 
-              <p>Gaúcha, estudante de Ciência da Computação e entusiasta a Desenvolvedora de software busco compreender e colocar em prática os conhecimentos que aquiro ao longo do meus estudo.</p>
-              <p>Durante esta caminhada desenvolvi uma paixão por projetos, a faze inicial, proucura por soluçoes, perrengues no meio do caminho e a sensação de gratidao quando se finaliza não tem preço.</p>
-            </h2>
+      <div class="pages">
+        <div Class="box" id="pghome">
+          <div class="text-animation">
+            <span></span>
           </div>
-          <div Class="opcoesboxum">
-            
-              <div>
-                <a href="src/Conteudo/conteudo.tsx">Linkedin</a>
-              </div>
-           
-              <div>
-                <a href="https://github.com/AR097">GitHub</a>
-              </div>
-            
-              <div>
-                <a href="src/noticias/noticias.tsx">CV</a>
-              </div>
-            </div>
         </div>
-        <div Class="boxperfil">
-
-          <h1 id='headerbox'> Perfil </h1>
-
-          <div Class="conteinerperfil">
+        <div class="box" id="pgoverview">
+          <div class="txoverview">
+            <div class="headerbox">
+              <h1 id='headerbox'>Overview</h1>
+            </div>
             
-            <div Class="perfilleft">
-
-              <div Class="formacao">
-                <h1>Formação</h1>
-                <ul>
-                  <li> Ciência da Computação, Estácio - em andamento </li>
-                  <li> Logística, Unopar - Concluído </li>
-                </ul>
-              </div>
-
-              <div Class="idiomas">
-                <h1>Idiomas</h1>
-              
-                <ul>
-                  <li>Portugues, Nativo/Fluente</li>
-                  <li>Inglês, Intermediário</li>
-                  <li>Chinês, Básico</li>
-                </ul>
-              </div>
-            </div>
-
-            <div Class="perfilcenter">
-            <div Class="HardSkills">
-              <h1>Competências</h1>
-                <div class="boxlisttwocolum">
-                    <li> API </li>
-                    <li> Google </li>
-                    <li> Frameworks </li>
-                    <li> Microsoft Office </li>
-                    <li> Ciência de dados </li>
-                    <li> Linguagens de programação </li>
-                </div>
-            </div>
-
-            <div Class="softskills">
-                <h1> SoftSkills </h1>
-                <div class="boxlisttwocolum">
-                    <li>Criatividade</li>
-                    <li>Flexibilidade</li>
-                    <li>Organização</li>
-                    <li>Motivação</li>
-                    <li>Trabalho em equipe</li>
-                    <li>Facilidade em aprendizado</li> 
-                </div>
-            </div>
-
-            </div>
-            <div Class="perfilrigth">
-              <div Class="experiencias">
-                
-                <h1>Experiências</h1>
-
-                <ul Class="boxExp">
-                  <li> Assistente administrativo, 2022/2023, PoloFilms </li>
-                  <li> Estagiário em Logística, 2021/2022, PoloFilms </li>
-                  <li> Operador de caixa, 2020/2021, Asun Supermercados </li>
-                  <li> Desossador, 2019/2021, Agrosul AVES </li>
-                  <li> Garçonete, 2019/2019, Mallman Lanches</li>
-                  <li> Auxiliar de inspeção, 2016/2018, JBS AVES</li>
-                </ul>
-              </div>
-            </div>
-
+            <h2>Hello, I'm </h2>
+            <h1 id="name">Andressa Rodrigues</h1><br>
+            <p>
+              I study programing since 2020 on my own as a hobby, currently, I am advancing my career by pursuing studies as a computer science at the faculty.
+              I'm a quick learner and I like to create project efficient, scalable, and user-friendly solutions that solve real-world problems.                  
+              I am always seeking innovation and continually expanding my skill set, I immerse myself in github profiles, I like this, this way I can develop my knowledge and cultivate my creativity.
+            </p>
           </div>
-
+        </div>
+        <div Class="box" id="pgperfil">
+          <div class="headerbox">
+            <h1 id='headerbox'> Profile </h1>
+          </div>
+          <div Class="conteinerperfil">
+            <div class="boxleft">
+              <div Class="Education">
+                <h2>Education</h2>
+                  <li> Computer Science, Estácio - in progress </li>
+                  <li> Logistics, Unopar - Concluded </li>
+              </div>
+              <div Class="Languages">
+                <h2>Languages</h2>
+                  <div class="boximg">
+                    <img src="scr/componentes/Profile/Language/Brasil.svg" alt="">
+                    <img src="scr/componentes/Profile/Language/United-States.svg" alt="">
+                    <img src="scr/componentes/Profile/Language/China.svg" alt="">
+                    <img src="scr/componentes/Profile/Language/Japan.svg" alt="">
+                  </div>
+                </div>
+            </div>  
+            <div Class="boxcenter">
+              <h2>Skills</h2>
+              <div Class="HardSkills">
+                      <div class="Skills">
+                        <!--Language-->
+                        <img src="scr/componentes/Profile/Skills/CSS.svg" alt="CSS">
+                        <img src="scr/componentes/Profile/Skills/HTML5.svg" alt="HTML">
+                        <img src="scr/componentes/Profile/Skills/JS.svg" alt="JavaScript">
+                        <img src="scr/componentes/Profile/Skills/Python.svg" alt="Phyton">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#">
+                        <!--Frameworks-->
+                        <img src="scr/componentes/Profile/Skills/React.svg" alt="React">
+                        <img src="scr/componentes/Profile/Skills/Flutter.svg" alt="Flutter">
+                        <img src="scr/componentes/Profile/Skills/Vite.svg" alt="Vite">
+                      </div>
+                      <!--otherskills não diretamente ligadas a programação-->
+                      <div class="otherskills">
+                        <img src="scr/componentes/Profile/Skills/Google.svg" alt="">
+                        <img src="scr/componentes/Profile/Skills/Microsoft.svg" alt="">
+                        <img src="scr/componentes/Profile/Skills/Dados.svg" alt="">
+                      </div>
+              </div>
+            </div>
+          </div>
           <div Class="hobiesinteresses">
-              <h1>Hobbies e Interesses</h1>
+              <h2>Hobbies e Interesses</h2>
               <span Class="material-symbols-outlined">pin_drop</span>
               <span Class="material-symbols-outlined">directions_run</span>
               <span Class="material-symbols-outlined">headphones</span>
@@ -147,13 +114,71 @@
               <span Class="material-symbols-outlined">two_wheeler</span>
               <span Class="material-symbols-outlined">cooking</span>
           </div>
-
         </div>
+        <div class="box" id="pgportfolio">
+          <div class="txtportfoliobox">
+            <div class="txtportfolio">
+              <div class="headerbox">
+                <h1  id='headerbox'>Portfolio</h1>
+              </div>
 
-        <footer>
-          Desenvolvido por: Andressa da Silva Rodrigues
-        </footer>
+              <p> The following projects demonstrate my skills and experience through practical examples of my work. Each project has a brief description and a link to access the repositories in which they are stored. <br> To access them just click on the link.</p>
+            </div>
+          </div>
+         
+          <div class="boxportfolio">
+
+              <div class="card">
+                <div class="linkrepo">
+                  <a href="https://github.com/AR097/Portfolio"><img src="scr/componentes/Header/img/github-142-svgrepo-com (1).svg" alt=""></a>
+                </div>
+                <div class="imagecard">
+                  <img src="scr/componentes/portfolio-cards/web-portfolio/web-portfolio.png" alt="">
+                </div>
+                <div class="textcard">
+                  This project is my Portfolio WEB, you are accessing it now, navigating for this site.
+                </div>
+                <div class="languages">
+                  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"><img src="scr/componentes/portfolio-cards/web-portfolio/linguages/HTML5.svg" alt=""></a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="scr/componentes/portfolio-cards/web-portfolio/linguages/CSS.svg" alt=""></a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="scr/componentes/portfolio-cards/web-portfolio/linguages/JS.svg" alt=""></a>
+                </div>
+
+
+              </div>
+          </div>
+        </div>
+        <div class="box" id="pgcontact">
+
+          <div Class="boxcontato">
+            <div class="headerbox">
+              <h1  id='headerbox'>Contact me</h1>
+            </div>
+              <div class="contato">
+                <div class="iconsc">
+                  <li><img src="scr/componentes/Contact/Gmail.svg" alt=""></li> 
+                  <li><img src="scr/componentes/Contact/Call.svg" alt=""></li>
+                  <li><img src="scr/componentes/Contact/Telegram.svg" alt=""></li>
+
+                </div>
+    
+                <div class="information">
+                  <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=asilvarodrigues05@gmail.com&su=&body=">asilvarodrigues05@gmail.com</a></li>
+                  <li>+55 51 99502-5990</li>
+                  <li><a href="https://t.me/A_R097">https://telegram.org/A_R097</a></li>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer>
+        &copy; <span id="currentYear"></span>
+        <span>by <a className="footer-name" href="https://github.com/AR097">
+          Andressa Rodrigues
+          </a> . </span>
+      </footer>
     </div>
-</body>
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  </body>
 </html>
