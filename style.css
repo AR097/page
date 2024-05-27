@@ -2,38 +2,39 @@
     margin: 0;
     padding: 0;
     scrollbar-width:none;
+    h1{          
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+    }
+    .headerbox{
+      width: 90%;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 6px -1px rgba(0, 0, 0, 0.212);
+    }
+      #headerbox{
+        font-size: 35px;
+        font-weight: 500;
+        color: rgb(125, 55, 143);
+        width: 90%;
+        display: flex;
+        text-align: left;
+      }
+      #Titlecard{
+        font-size: 25px;
+        font-weight: 400;
+        color: rgb(192, 190, 190);
+      }
 }
-/*padronizaçoes*/
-.headerbox{
-  width: 90%;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 6px -1px rgba(0, 0, 0, 0.212);
-}
-  #headerbox{
-    font-size: 35px;
-    font-weight: 500;
-    color: rgb(125, 55, 143);
-    width: 90%;
-    display: flex;
-    text-align: left;
-  }
-h1{          
-  font-size: 30px;
-  font-weight: 500;
-  color: white;
-}
-
 /*Caixa de texto(passar mouse)*/
 .redesheader {
   display: flex;
   gap: 10px;
 }
-
 .image-container {
   position: relative;
   display: inline-block;
 }
-
 .image-container img {
   display: block;
   width: 30px;
@@ -46,7 +47,6 @@ h1{
   height:60px;
   cursor: pointer;
 }
-
 .description {
   visibility: hidden;
   width: 200px;
@@ -63,7 +63,6 @@ h1{
   opacity: 0;
   transition: opacity 0.3s;
 }
-
 .image-container:hover .description {
   visibility: visible;
   opacity: 1;
@@ -177,61 +176,30 @@ h1{
       justify-content: center;
       flex-direction:column;
       text-align: center;
-    }
-        /*Digitation animation*/
-        .text-animation{
-          font-size:54px;
-          font-weight: 400;
+      /*animation in Page down (end)*/
+      .text-animation{
+        font-size:54px;
+        font-weight: 400;
+      }
+        .text-animation span{
+          position: relative;
         }
-          .text-animation span{
-            position: relative;
+          .text-animation span::before{
+            content: "";
+            color: rgb(57, 15, 85);
+            animation: animation 20s infinite;
           }
-            .text-animation span::before{
-              content: "";
-              color: rgb(57, 15, 85);
-              animation: animation 20s infinite;
-            }
-                @keyframes animation {
-                  0%, 20%{
-                    content: "HELLO WORLD!";
-                  }
-                  21%, 40%{
-                    content: "I'm Front-end developer!";
-                  }
-                  41%, 60%{
-                    content: "I love Code!";
-                  }
-                  61%, 80%{
-                    content: "I love Coffee!";
-                  }
-                  81%, 100%{
-                    content: "Let's go!";
-                  }
-                }
-            .text-animation span::after{
-              content: "";
-              position: absolute;
-              height: 100%;
-              border-left: 2px solid rgb(224, 218, 218);
-              right: -10px;
-              animation: cursor .8s infinite, digite 20s steps(15) infinite;
-              width: calc(100% + 17px);
-              background-color: black;
-            }
-                @keyframes cursor {
-                  0%{
-                      border-left: 2px solid rgb(0, 0, 0);
-                  }
-                }
-                @keyframes digite {
-                  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-                      width: 0;
-                  }
-                  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-                      width: calc(100% + 17px);
-                  }
-                }
-
+          .text-animation span::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            border-left: 2px solid rgb(224, 218, 218);
+            right: -10px;
+            animation: cursor .8s infinite, digite 20s steps(15) infinite;
+            width: calc(100% + 17px);
+            background-color: black;
+          }
+    }
     #pgoverview{
       display: flex;
       align-items: center;
@@ -258,7 +226,6 @@ h1{
 
       }
     }
-
     #pgperfil{
       display: flex;
       align-items: center;
@@ -459,17 +426,13 @@ h1{
         }
     }
       }
-
-
     #pgportfolio{
       margin-top: 20px;
       margin-bottom: 25px;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       .txtportfoliobox{
         width: 90%;
         margin-top: 8px;
@@ -477,9 +440,7 @@ h1{
         font-weight: 300;
         color: #d1cfcf;
         text-align: left;
-
         #headerbox{
-
           p{
           margin-top: 8px;
           font-size: 19px;
@@ -488,7 +449,6 @@ h1{
           }
         }
       }
-
       .boxportfolio{
         align-items: center;
         justify-content: center;
@@ -504,6 +464,7 @@ h1{
           display: flex;
           flex-direction: column;
           overflow: hidden;
+          margin: 10px 15px;
 
           .imagecard{
             width: 100%;
@@ -521,47 +482,47 @@ h1{
             height: 100px;
             font-weight: 300;
             text-align: left;
+            font-size: 15px;
           }
         }
       }
+      .linkrepo{
+        display:flex;
+        flex-direction: row-reverse;
+        width: 250px;
+        z-index: 10;
+        position: absolute;
+        margin: 10px -15px;
+        img{
+          width: 40px;
+          height: 40px;
+        }
+        a{
+          width: 40px;
+          height: 40px;
+        }
+        a:hover{
+          background: rgb(128, 26, 148);
+          border-radius: 50%;
+          box-shadow: 0px 3px 20px rgb(117, 33, 134);
+        }
+  
+      }
+      .languages{
+        display:flex;
+        flex-direction: row-reverse;
+        z-index: 10;
+        bottom: 0;
+        padding: 5px;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+        a{
+          text-decoration: none;
+        }
+      }
     }
-    .linkrepo{
-      display:flex;
-      flex-direction: row-reverse;
-      width: 250px;
-      z-index: 10;
-      position: absolute;
-      margin: 10px -15px;
-      img{
-        width: 40px;
-        height: 40px;
-      }
-      a{
-        width: 40px;
-        height: 40px;
-      }
-      a:hover{
-        background: rgb(128, 26, 148);
-        border-radius: 50%;
-        box-shadow: 0px 3px 20px rgb(117, 33, 134);
-      }
-
-    }
-    .languages{
-      display:flex;
-      flex-direction: row-reverse;
-      z-index: 10;
-      bottom: 0;
-      padding: 5px;
-      img{
-        width: 30px;
-        height: 30px;
-      }
-      a{
-        text-decoration: none;
-      }
-    }
-
     #pgcontact{
       display: flex;
       width: 100%;
@@ -612,3 +573,34 @@ h1{
       font-size: 12px;
     }
   }
+ /*animation*/
+ @keyframes animation {
+  0%, 20%{
+    content: "HELLO WORLD!";
+  }
+  21%, 40%{
+    content: "I'm Front-end developer!";
+  }
+  41%, 60%{
+    content: "I love Code!";
+  }
+  61%, 80%{
+    content: "I love Coffee!";
+  }
+  81%, 100%{
+    content: "Let's go!";
+  }
+}
+@keyframes cursor {
+  0%{
+      border-left: 2px solid rgb(0, 0, 0);
+  }
+}
+@keyframes digite {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+      width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+      width: calc(100% + 17px);
+  }
+}
