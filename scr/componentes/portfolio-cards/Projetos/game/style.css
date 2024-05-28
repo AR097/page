@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+    color: white;
+    .header{
+        height: 200px;
+        width: 100%;
+        text-align: center;
+        p{
+            padding: 10px;
+        };
+    }
+}
+#gameCanvas {
+    border: 1px solid #28033d;
+    box-shadow: 5px 8px 200px 0 rgba(93, 36, 110, 0.89);
+}
