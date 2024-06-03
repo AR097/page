@@ -586,13 +586,15 @@ footer{
       margin-left: 80%;
       
     }
-
+    .box{
+      height: min-content;
+      border: solid red 1px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
     .conteinerperfil {
       display: flex;
       flex-direction: column;
-    }
-    .box{
-      max-height: min-content
     }
   
     .boxleft, .boxcenter {

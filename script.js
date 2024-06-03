@@ -1,13 +1,19 @@
-//hamburger menu
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const menuheader = document.querySelector('.menuheader');
+    const menuItems = document.querySelectorAll('.menuheader a'); // Assuming your menu items are links
 
     hamburger.addEventListener('click', function() {
         menuheader.classList.toggle('show');
     });
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            menuheader.classList.remove('show');
+        });
+    });
 });
-//
+
 
 //box text
 document.addEventListener('DOMContentLoaded', (event) => {
