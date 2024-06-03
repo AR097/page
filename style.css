@@ -131,7 +131,7 @@
         /*Responsividade */
         @media (max-width: 768px) {
            header{
-            width: 95%;
+            width: 80%;
           }
           header .menuheader {
               display: none;
