@@ -566,20 +566,9 @@ footer{
             color: #888;
           }
         }
-  @media (max-width: 768px) {
-    header{
-      background: #0000007a;
-      position: fixed;
-      display: flex;
-      flex-direction: row;
-      justify-content:space-between;
-      align-items: center;
-      width: 100%;
-      height: 100px;
-      z-index: 1000;
-      top: 0;
-    }
 
+
+  @media screen and (max-width: 599px) {
     .conteinerperfil {
       display: flex;
       flex-direction: column;
@@ -614,10 +603,7 @@ footer{
       flex-direction: row;
       margin-left: 0;
     }
-  }
 
-
-  @media screen and (max-width: 599px) {
     #Titlecard {
       font-size: 15px;
       text-decoration: underline;
