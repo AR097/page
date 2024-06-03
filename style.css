@@ -545,33 +545,36 @@ footer{
     font-size: 12px;
   }
         /*Responsividade hamburguer */
-        @media (max-width: 768px) {
-          header .menuheader {
-            display: none;
-            flex-direction: column;
-            text-align: center;
-            gap: 10px;
-            width: 100%;
-            background-color: #000;
-            position: absolute;
-            top: 100px;
-            left: 0;
-            z-index: 1001;
-          }
-          header .menuheader.show {
-            display: flex;
-          }
-          header .hamburger {
-            display: block;
-            color: #888;
-          }
-        }
+  @media (max-width: 768px) {
+    header .menuheader {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      width: 100%;
+      background-color: #000;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      z-index: 1001;
+    }
+    header .menuheader.show {
+      display: flex;
+    }
+    header .hamburger {
+      display: block;
+      color: #888;
+    }
+  }
 
 
   @media screen and (max-width: 599px) {
     .conteinerperfil {
       display: flex;
       flex-direction: column;
+    }
+    .box{
+      max-height: min-content
     }
   
     .boxleft, .boxcenter {
