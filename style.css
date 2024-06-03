@@ -3,7 +3,6 @@
   padding: 0 0 0 0;
   color: #f3f2f2;
   scrollbar-width: none;
-  text-align: justify;
 }
   h1{          
     font-size: 30px;
@@ -56,6 +55,7 @@ header {
       display: flex;
       gap: 20px;
       margin-right: 5%;
+      text-align: center;
     }
       header .menuheader a {
         padding: 5px;
@@ -546,6 +546,25 @@ footer{
   }
 
   @media screen and (max-width: 599px) {
+    .box_logo{
+      display: none;
+      }
+        .box_logo img{
+          display: none;
+        }
+    
+    header{
+    background: #0000007a;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    top: 0;
+    }
     header .menuheader {
       display: none;
       flex-direction: column;
@@ -564,6 +583,8 @@ footer{
     header .hamburger {
       display: block;
       color: #888;
+      margin-left: 80%;
+      
     }
 
     .conteinerperfil {
