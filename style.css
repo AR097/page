@@ -94,71 +94,77 @@ header {
   z-index: 1000;
   top: 0;
 }
-.box_logo{
-  width: 50px;
-  height: 50px;
-  img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-}
-header .menuheader {
-  display: flex;
-  gap: 20px;
-}
-
-header .menuheader a {
-  padding: 5px;
-  text-decoration: none;
-  color: #caadad;
-  font-weight: 200;
-  cursor: pointer;
-}
-
-header .menuheader a:hover {
-  background: rgb(128, 26, 148);
-  border-radius: 5%;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-
-header .hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-/*Responsividade */
-@media (max-width: 768px) {
-  header {
-      padding: 0 20px;
-  }
-
-  header .menuheader {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      width: 100%;
-      background-color: #000;
-      position: absolute;
-      top: 100px;
-      left: 0;
-      z-index: 1001;
-  }
-
-  header .menuheader.show {
+    .box_logo{
+      width: 50px;
+      height: 50px;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+    header .menuheader {
       display: flex;
-  }
+      gap: 20px;
+    }
 
-  header .hamburger {
-      display: block;
-      color: #888;
-  }
+    header .menuheader a {
+      padding: 5px;
+      text-decoration: none;
+      color: #caadad;
+      font-weight: 200;
+      cursor: pointer;
+    }
+
+    header .menuheader a:hover {
+      background: rgb(128, 26, 148);
+      border-radius: 5%;
+      box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+
+    header .hamburger {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /*Responsividade */
+    @media (max-width: 768px) {
+      header {
+          padding: 0 20px;
+      }
+
+      header .menuheader {
+          display: none;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+          background-color: #000;
+          position: absolute;
+          top: 100px;
+          left: 0;
+          z-index: 1001;
+      }
+
+      header .menuheader.show {
+          display: flex;
+      }
+
+      header .hamburger {
+          display: block;
+          color: #888;
+      }
+    }
+
+.pages{
+  margin-top: 100px;
+  width: 97%;
+  border: solid rgb(0, 255, 221) 1px;
 }
-
   .box{
-    width: 95%; 
+    width: 100%; 
     height: 800px;
+    
   }
     #pghome{
       margin-top: 90px;
@@ -191,6 +197,37 @@ header .hamburger {
             background-color: black;
           }
     }
+     /*animation*/
+ @keyframes animation {
+  0%, 20%{
+    content: "HELLO WORLD!";
+  }
+  21%, 40%{
+    content: "I'm Front-end developer!";
+  }
+  41%, 60%{
+    content: "I love Code!";
+  }
+  61%, 80%{
+    content: "I love Coffee!";
+  }
+  81%, 100%{
+    content: "Let's go!";
+  }
+}
+@keyframes cursor {
+  0%{
+      border-left: 2px solid rgb(0, 0, 0);
+  }
+}
+@keyframes digite {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+      width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+      width: calc(100% + 17px);
+  }
+}
     #pgoverview{
       display: flex;
       align-items: center;
@@ -564,34 +601,4 @@ header .hamburger {
       font-size: 12px;
     }
   }
- /*animation*/
- @keyframes animation {
-  0%, 20%{
-    content: "HELLO WORLD!";
-  }
-  21%, 40%{
-    content: "I'm Front-end developer!";
-  }
-  41%, 60%{
-    content: "I love Code!";
-  }
-  61%, 80%{
-    content: "I love Coffee!";
-  }
-  81%, 100%{
-    content: "Let's go!";
-  }
-}
-@keyframes cursor {
-  0%{
-      border-left: 2px solid rgb(0, 0, 0);
-  }
-}
-@keyframes digite {
-  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-      width: 0;
-  }
-  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-      width: calc(100% + 17px);
-  }
-}
+
