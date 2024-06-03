@@ -39,6 +39,27 @@ header {
     z-index: 1000;
     top: 0;
   }
+  @media (max-width: 768px) {
+    header{
+      background: #0000007a;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      z-index: 1000;
+      top: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .box_logo{
+      width: 50px;
+      height: 50px;
+      margin-left: 5%;
+      }
+  }
     .box_logo{
       width: 50px;
       height: 50px;
@@ -72,18 +93,12 @@ header {
       cursor: pointer;
       margin-right: 5%;
     }
-      /* Responsive Adjustments */
+      /*Responsividade hamburguer */
       @media (max-width: 768px) {
-
-        header{
-          width: 100%;
-        }
-        .box_logo{
-          margin-left: 2%;
-        }
         header .menuheader {
           display: none;
           flex-direction: column;
+          text-align: center;
           gap: 10px;
           width: 100%;
           background-color: #000;
@@ -99,81 +114,8 @@ header {
           display: block;
           color: #888;
         }
-
-        .conteinerperfil {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .boxleft, .boxcenter {
-            width: 100%;
-            padding: 10px;
-        }
-
-        .HardSkills {
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 90%;
-          }
-
-        .HardSkills .Skills{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          row-gap: 30px;
-        }
-        .HardSkills .otherskills img{
-          width: 30px;
-          padding: 10px;
-        }
-        .HardSkills .otherskills {
-          display:flex;
-          flex-direction: row;
-          margin-left: 0;
-        }
       }
 
-      @media (max-width: 480px) {
-        header{
-          width: 100%;
-        }
-        .box_logo{
-          margin-left: 2%;
-        }
-        .conteinerperfil {
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin: 0 0 10px 15px;
-        }
-
-        li {
-            font-size: 14px;
-        }
-
-        .imgtxt {
-            width: 100%;
-            flex-direction: column;
-
-            img {
-                width: 100px;
-            }
-        }
-
-        .boximg img {
-            width: 40px;
-        }
-
-        .otherskills img {
-            width: 25px;
-            padding: 10px;
-        }
-      }
 .pages{
   margin-top: 100px;
   width:100%;
@@ -491,7 +433,76 @@ header {
                   width: 50px;
                 }
         /*fim perfil*/
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .conteinerperfil {
+          display: flex;
+          flex-direction: column;
+        }
 
+        .boxleft, .boxcenter {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .HardSkills {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 90%;
+          }
+
+        .HardSkills .Skills{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          row-gap: 30px;
+        }
+        .HardSkills .otherskills img{
+          width: 30px;
+          padding: 10px;
+        }
+        .HardSkills .otherskills {
+          display:flex;
+          flex-direction: row;
+          margin-left: 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .conteinerperfil {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 0 0 10px 15px;
+        }
+
+        li {
+            font-size: 14px;
+        }
+
+        .imgtxt {
+            width: 100%;
+            flex-direction: column;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .boximg img {
+            width: 40px;
+        }
+
+        .otherskills img {
+            width: 25px;
+            padding: 10px;
+        }
+      }
         #pgportfolio{
           margin-top: 20px;
           margin-bottom: 25px;
