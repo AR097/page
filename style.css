@@ -72,8 +72,12 @@ header {
       cursor: pointer;
       margin-right: 5%;
     }
-      /*Responsividade hamburguer */
+      /* Responsive Adjustments */
       @media (max-width: 768px) {
+
+        header{
+          width: 100%;
+        }
         header .menuheader {
           display: none;
           flex-direction: column;
@@ -91,6 +95,77 @@ header {
         header .hamburger {
           display: block;
           color: #888;
+        }
+
+        .conteinerperfil {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .boxleft, .boxcenter {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .HardSkills {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 90%;
+          }
+
+        .HardSkills .Skills{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          row-gap: 30px;
+        }
+        .HardSkills .otherskills img{
+          width: 30px;
+          padding: 10px;
+        }
+        .HardSkills .otherskills {
+          display:flex;
+          flex-direction: row;
+          margin-left: 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header{
+          width: 100%;
+        }
+        .conteinerperfil {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 0 0 10px 15px;
+        }
+
+        li {
+            font-size: 14px;
+        }
+
+        .imgtxt {
+            width: 100%;
+            flex-direction: column;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .boximg img {
+            width: 40px;
+        }
+
+        .otherskills img {
+            width: 25px;
+            padding: 10px;
         }
       }
 .pages{
@@ -410,76 +485,7 @@ header {
                   width: 50px;
                 }
         /*fim perfil*/
-      /* Responsive Adjustments */
-      @media (max-width: 768px) {
-        .conteinerperfil {
-          display: flex;
-          flex-direction: column;
-        }
 
-        .boxleft, .boxcenter {
-            width: 100%;
-            padding: 10px;
-        }
-
-        .HardSkills {
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 90%;
-          }
-
-        .HardSkills .Skills{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          row-gap: 30px;
-        }
-        .HardSkills .otherskills img{
-          width: 30px;
-          padding: 10px;
-        }
-        .HardSkills .otherskills {
-          display:flex;
-          flex-direction: row;
-          margin-left: 0;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .conteinerperfil {
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin: 0 0 10px 15px;
-        }
-
-        li {
-            font-size: 14px;
-        }
-
-        .imgtxt {
-            width: 100%;
-            flex-direction: column;
-
-            img {
-                width: 100px;
-            }
-        }
-
-        .boximg img {
-            width: 40px;
-        }
-
-        .otherskills img {
-            width: 25px;
-            padding: 10px;
-        }
-      }
         #pgportfolio{
           margin-top: 20px;
           margin-bottom: 25px;
