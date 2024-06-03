@@ -1,8 +1,8 @@
 *{
   margin: 0;
   padding: 0;
-  scrollbar-width:none;
   color: #f3f2f2;
+  scrollbar-width: none;
 }
   h1{          
     font-size: 30px;
@@ -26,6 +26,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden
 }
 header {
     background: #0000007a;
@@ -39,27 +40,7 @@ header {
     z-index: 1000;
     top: 0;
   }
-  @media (max-width: 768px) {
-    header{
-      background: #0000007a;
-      position: fixed;
-      display: flex;
-      flex-direction: row;
-      justify-content:space-between;
-      align-items: center;
-      width: 100%;
-      height: 100px;
-      z-index: 1000;
-      top: 0;
-    }
-  }
-  @media (max-width: 480px) {
-    .box_logo{
-      width: 50px;
-      height: 50px;
-      margin-left: 5%;
-      }
-  }
+
     .box_logo{
       width: 50px;
       height: 50px;
@@ -93,28 +74,6 @@ header {
       cursor: pointer;
       margin-right: 5%;
     }
-      /*Responsividade hamburguer */
-      @media (max-width: 768px) {
-        header .menuheader {
-          display: none;
-          flex-direction: column;
-          text-align: center;
-          gap: 10px;
-          width: 100%;
-          background-color: #000;
-          position: absolute;
-          top: 100px;
-          left: 0;
-          z-index: 1001;
-        }
-        header .menuheader.show {
-          display: flex;
-        }
-        header .hamburger {
-          display: block;
-          color: #888;
-        }
-      }
 
 .pages{
   margin-top: 100px;
@@ -239,6 +198,7 @@ header {
           text-align: center;
         }
         .Education{/*Formação*/
+
           width: 100%;
         }
         .educationgrid{
@@ -441,188 +401,99 @@ header {
               .imagehobbies img{
                   width: 50px;
                 }
-        /*fim perfil*/
-      /* Responsive Adjustments */
-      @media (max-width: 768px) {
-        .conteinerperfil {
-          display: flex;
-          flex-direction: column;
-        }
-      
-        .boxleft, .boxcenter {
-            width: 100%;
-            padding: 10px;
-        }
+#pgportfolio{
+margin-top: 20px;
+margin-bottom: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+.txtportfoliobox{
+  width: 90%;
+  margin-top: 8px;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: left;
+}
+.boxportfolio{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction:row;
+  width: 90%;
 
-        .HardSkills {
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 90%;
-          }
+  .card{
+    width: 250px;
+    height: 300px;
+    background-color: #0f0f0f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 10px 15px;
+    border: solid red 1px;
+  }
+  .imagecard{
+    width: 100%;
+    height: 50%;
+    border-bottom:solid .1px #ffffff;
+    box-shadow: 0px 0px 10px rgb(111, 40, 119);
+  }
+  .imagecard img{
+    width: 100%;
+    height: 100%;
+  }
+  .textcard{
+    color: #f1e8e8;
+    padding: 10px;
+    height: 100px;
+    font-weight: 300;
+    text-align: left;
+    font-size: 15px;
+  }
+  .linkrepo{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 50px;
+    z-index: 1001;
+    position: absolute;
+    padding: 5px;
+  }
+  .linkrepo img{
+    width: 40px;
+    height: 40px;
+  }
+  .linkrepo a{
+    width: 40px;
+    height: 40px;
+  }
+  .linkrepo a:hover{
+    background: rgb(128, 26, 148);
+    border-radius: 50%;
+    box-shadow: 0px 3px 20px rgb(117, 33, 134);
+  }
+}
+#Titlecard{       
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(192, 190, 190);
+}
 
-        .HardSkills .Skills{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          row-gap: 30px;
-        }
-        .HardSkills .otherskills img{
-          width: 30px;
-          padding: 10px;
-        }
-        .HardSkills .otherskills {
-          display:flex;
-          flex-direction: row;
-          margin-left: 0;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .conteinerperfil {
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin: 0 0 10px 15px;
-        }
-
-        li {
-            font-size: 14px;
-        }
-
-        .Education .imgtxt{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin-left: 10px;
-          border: #000 solid 1PX;
-        }
-          .Education .imgtxt p{
-            font-size: 15px;
-          }
-        .imgtxt {
-            width: 100%;
-            flex-direction: column;
-
-        }
-
-        .boximg img {
-            width: 40px;
-        }
-
-        .otherskills img {
-            width: 25px;
-            padding: 10px;
-        }
-      }
-        #pgportfolio{
-          margin-top: 20px;
-          margin-bottom: 25px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .txtportfoliobox{
-            width: 90%;
-            margin-top: 8px;
-            font-size: 19px;
-            font-weight: 300;
-            color: #d1cfcf;
-            text-align: left;
-            #headerbox{
-              #headerboxp{
-              margin-top: 8px;
-              font-size: 19px;
-              font-weight: 300;
-              color: #d1cfcf;
-              }
-            }
-          }
-          .boxportfolio{
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            flex-direction:row;
-            width: 90%;
-
-            .card{
-              width: 250px;
-              height: 300px;
-              background-color: #0f0f0f;
-              border-radius: 15px;
-              display: flex;
-              flex-direction: column;
-              overflow: hidden;
-              margin: 10px 15px;
-
-              .imagecard{
-                width: 100%;
-                height: 50%;
-                border-bottom:solid .1px #ffffff;
-                box-shadow: 0px 0px 10px rgb(111, 40, 119);
-                img{
-                  width: 100%;
-                  height: 100%;
-                }
-              }
-              .textcard{
-                color: #f1e8e8;
-                padding: 10px;
-                height: 100px;
-                font-weight: 300;
-                text-align: left;
-                font-size: 15px;
-              }
-              .linkrepo{
-                display:flex;
-                flex-direction: row-reverse;
-                width: 50px;
-                z-index: 1001;
-                position: absolute;
-                padding: 5px;
-                img{
-                  width: 40px;
-                  height: 40px;
-                }
-                a{
-                  width: 40px;
-                  height: 40px;
-                }
-                a:hover{
-                  background: rgb(128, 26, 148);
-                  border-radius: 50%;
-                  box-shadow: 0px 3px 20px rgb(117, 33, 134);
-                }
-          
-              }
-            }
-          }
-          #Titlecard{       
-            font-size: 25px;
-            font-weight: 400;
-            color: rgb(192, 190, 190);
-          }
-          
-          .languages{
-            display:flex;
-            flex-direction: row-reverse;
-            z-index: 10;
-            bottom: 0;
-            padding: 5px;
-            img{
-              width: 30px;
-              height: 30px;
-            }
-            a{
-              text-decoration: none;
-            }
-          }
-        }
+.languages{
+  display:flex;
+  flex-direction: row-reverse;
+  z-index: 10;
+  bottom: 0;
+  padding: 5px;
+  img{
+    width: 30px;
+    height: 30px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+}
         #pgcontact{
           display: flex;
           width: 100%;
@@ -677,4 +548,136 @@ footer{
     color: #fff;
     font-weight: 200;
     font-size: 12px;
+  }
+        /*Responsividade hamburguer */
+        @media (max-width: 768px) {
+          header .menuheader {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            width: 100%;
+            background-color: #000;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            z-index: 1001;
+          }
+          header .menuheader.show {
+            display: flex;
+          }
+          header .hamburger {
+            display: block;
+            color: #888;
+          }
+        }
+
+        
+
+  @media (max-width: 768px) {
+    header{
+      background: #0000007a;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      z-index: 1000;
+      top: 0;
+    }
+
+    .conteinerperfil {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .boxleft, .boxcenter {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .HardSkills {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 90%;
+      }
+
+    .HardSkills .Skills{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 30px;
+    }
+    .HardSkills .otherskills img{
+      width: 30px;
+      padding: 10px;
+    }
+    .HardSkills .otherskills {
+      display:flex;
+      flex-direction: row;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .box_logo{
+      width: 50px;
+      height: 50px;
+      margin-left: 5%;
+      }
+
+    .conteinerperfil {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin: 0 0 10px 15px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .Education .imgtxt{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      border: #000 solid 1PX;
+    }
+      .Education .imgtxt p{
+        font-size: 15px;
+      }
+    .imgtxt {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .boximg img {
+        width: 40px;
+    }
+
+    .otherskills img {
+        width: 25px;
+        padding: 10px;
+    }
+
+    .card{
+      min-width: 150px;
+      max-height:200px;
+      background-color: #0f0f0f;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 10px 15px;
+      border: solid red 1px;}
   }
