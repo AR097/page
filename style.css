@@ -239,6 +239,7 @@ header {
           text-align: center;
         }
         .Education{/*Formação*/
+          width: 100%;
         }
         .educationgrid{
           display: flex;
@@ -258,7 +259,7 @@ header {
             padding: 12px;
           }
           .Education .imgtxt p{
-            font-size: 20px;
+            font-size: 15px;
           }
 
       .Languages{
@@ -447,7 +448,7 @@ header {
           display: flex;
           flex-direction: column;
         }
-
+      
         .boxleft, .boxcenter {
             width: 100%;
             padding: 10px;
@@ -499,10 +500,8 @@ header {
           align-items: center;
           justify-content: center;
           margin-left: 10px;
+          border: #000 solid 1PX;
         }
-          .Education .imgtxt img{
-            padding: 12px;
-          }
           .Education .imgtxt p{
             font-size: 15px;
           }
@@ -510,9 +509,6 @@ header {
             width: 100%;
             flex-direction: column;
 
-            img {
-                width: 100px;
-            }
         }
 
         .boximg img {
