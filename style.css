@@ -137,6 +137,9 @@ header {
         header{
           width: 100%;
         }
+        .box_logo{
+          margin-left: 5%;
+        }
         .conteinerperfil {
             width: 100%;
         }
