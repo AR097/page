@@ -544,8 +544,8 @@ footer{
     font-weight: 200;
     font-size: 12px;
   }
-        /*Responsividade hamburguer */
-  @media (max-width: 768px) {
+
+  @media screen and (max-width: 599px) {
     header .menuheader {
       display: none;
       flex-direction: column;
@@ -565,10 +565,7 @@ footer{
       display: block;
       color: #888;
     }
-  }
 
-
-  @media screen and (max-width: 599px) {
     .conteinerperfil {
       display: flex;
       flex-direction: column;
