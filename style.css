@@ -616,7 +616,19 @@ footer{
     }
   }
 
-  @media (max-width: 480px) {
+
+  @media screen and (max-width: 599px) {
+    #Titlecard {
+      font-size: 15px;
+      text-decoration: underline;
+    }
+    .languages img{
+      max-width: 25px;
+    }
+    .textcard{
+      max-height: 40px;
+      font-size: 15px;
+    }
     .box_logo{
       width: 50px;
       height: 50px;
@@ -680,19 +692,6 @@ footer{
     .linkrepo a{
       width: 25px;
       height: 25px;
-    }
-  }
-  @media screen and (max-width: 599px) {
-    #Titlecard {
-      font-size: 15px;
-      text-decoration: underline;
-    }
-    .languages img{
-      max-width: 25px;
-    }
-    .textcard{
-      max-height: 40px;
-      font-size: 15px;
     }
   }
   
