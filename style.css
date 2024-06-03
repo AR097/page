@@ -260,18 +260,19 @@
           flex-direction:column;
           text-align: center;
           padding: 20px;
+        }
           /*text**/
-            h1{
+          #pgperfil h1{
               text-align: center;
               width: 100%;
             }
-            h2{/*titulos*/
+            #pgperfil h2{/*titulos*/
               font-weight: 200;
               font-size: 20px;
               margin: /*sup*/0 /*dir*/0  /*inf*/10px/*esq*/25px ;
               color: #fff;
             }
-            li{/*info*/
+            #pgperfil li{/*info*/
               list-style-type: none;
               padding: 5px;
               margin-left: 20px;
@@ -286,6 +287,7 @@
             width: 90%;
             height: auto;
             text-align: left;
+          }
 
             .boxleft{/*.Education, .Languages*/
               float: left;
@@ -294,8 +296,9 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
+            }
 
-              h2{
+              .boxleft h2{
                 text-align: center;
               }
               .educationgrid{
@@ -307,83 +310,83 @@
                 flex-direction: row;
                 align-items: center;
                 width: 150px;
-
-                img{
+              }
+                .imgtxt img{
                   padding: 10px;
                 }
-                p{
+                .imgtxt p{
                   color: #fff;
                 }
-              }
 
               .Languages{
                 margin-top: 50px;
               }
-                .Education, .Languages{
+              .Education, .Languages{
                 margin-top: 50px;
                 width: 100%;
                 align-items: center;
-                h2{margin-bottom: 10px;}
-                .boximg{
-                  display: flex;
-                  flex-direction:row;
-                  justify-content: center;
-                  align-items: center;
-                  text-align: center;
-                  
-                  img{
-                    width: 60px;
-                  }
-                }
+
               }
-            }
+              .Education, .Languages h2{
+                margin-bottom: 10px;
+              }
+                .boximg{
+                display: flex;
+                flex-direction:row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+              }
+                .boximg img{
+                  width: 60px;
+                }
+            
 
             .boxcenter{/*Skills*/
               height: 100%;
               display: flex;
               flex-direction: column;
               justify-content: center;
-
-              h2{
+            }
+              .boxcenter h2{
                 text-align: center; 
                 margin-bottom: 50px;
               }
-
-              .HardSkills{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-content: center;
-                height: 100%;
-                margin-left: 70px;
-                
-                .Skills{
-                  display: grid;
-                  grid-template-columns: 1fr 1fr 1fr 1fr;
-
-                }
-                .otherskills{
-                  display: grid;
-                  grid-template-columns: 1fr;
-                  margin-left: 200px;
-                  height: 100%;
-                  width: min-content;
-                  img{
-                    width: 30px;
-                    padding: 20px;
-                  }
-                }
-              }
+            .HardSkills{
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              justify-content: center;
+              height: 100%;
+              width: 100%;
+              border: solid rgb(17, 0, 255) 1px;
             }
-          }
+              .HardSkills .Skills{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+              }
+              .HardSkills .otherskills{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-left: 200px;
+                height: 100%;
+                width: min-content;
+               
+                border: solid rgb(17, 0, 255) 1px;
+              }
+              .HardSkills.otherskills img{
+                width: 30px;
+                padding: 20px;
+              }
+          /*fim perfil*/
 
         /* MODAL*/
         .otherskills img {
           display: block;
-          width: 50px; /* Ajuste o tamanho conforme necessário */
+          width: 50px;
           height: 50px;
           cursor: pointer;
         }
-
         /* Estilo para o modal */
         .modal {
           display: none; /* Hidden by default */
@@ -396,7 +399,6 @@
           overflow: auto;
           background-color: rgba(0, 0, 0, 0.4);
         }
-
         /* Estilo para o conteúdo do modal */
         .modal-content {
           background-color: #fefefe;
@@ -408,7 +410,6 @@
           border-radius: 10px;
           text-align: center;
         }
-
         /* Estilo para o botão de fechar */
         .close {
           color: #aaa;
@@ -416,14 +417,12 @@
           font-size: 28px;
           font-weight: bold;
         }
-
         .close:hover,
         .close:focus {
           color: black;
           text-decoration: none;
           cursor: pointer;
         }
-
         .modal-google, .modal-microsoft{
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -443,7 +442,6 @@
             }
           }
           }
-
           /*FIM MODAL*/
             
           .hobiesinteresses{
@@ -461,11 +459,12 @@
                   width: 50px;
                 }
             }
-        }
+        /*fim perfil*/
       /* Responsive Adjustments */
       @media (max-width: 768px) {
         .conteinerperfil {
-            grid-template-columns: 1fr;
+          display: flex;
+          flex-direction: column;
         }
 
         .boxleft, .boxcenter {
@@ -476,15 +475,26 @@
 
         .HardSkills {
             margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            img{
+              padding: 10px;
+             }
         }
 
-        .otherskills {
-            margin-left: 0;
+        .HardSkills .otherskills {
+            display:flex;
+           flex-direction: row;
+           img{
+            padding: 10px;
+           }
         }
 
         .hobiesinteresses .imagehobbies {
-            flex-direction: column;
-            align-items: center;
+
         }
       }
 
