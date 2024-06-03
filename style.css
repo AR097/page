@@ -231,60 +231,63 @@ header {
       flex-direction:row;
     }
       .boxleft{/*.Education, .Languages*/
-        float: left;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 50%;
       }
-        .boxleft h2{
+        .boxleft h2{/*Titulo*/
           text-align: center;
         }
-        .educationgrid{
-          display:grid;
-          grid-template-columns: 1fr 1fr;
+        .Education{/*Formação*/
         }
-        .imgtxt{
+        .educationgrid{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          text-align: center;
+        }
+        .Education .imgtxt{
           display: flex;
           flex-direction: row;
           align-items: center;
-          width: 150px;
+          justify-content: center;
+          width: min-content;
+          margin-left: -40px;
         }
-          .imgtxt img{
-            padding: 10px;
+          .Education .imgtxt img{
+            padding: 12px;
           }
-          .imgtxt p{
+          .Education .imgtxt p{
             font-size: 20px;
           }
+
       .Languages{
-        margin-top: 50px;
-      }
-      .Education, .Languages{
         margin-top: 50px;
         width: 100%;
         align-items: center;
-
       }
-      .Education, .Languages h2{
-        margin-bottom: 10px;
-      }
-        .boximg{
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-        .boximg img{
-          width: 60px;
+        .Languages h2{
+          margin-bottom: 10px;
         }
+        .Languages  .boximg{
+          display: flex;
+          flex-direction:row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .Languages  .boximg img{
+            width: 60px;
+          }
+
     .boxcenter{/*Skills*/
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
     }
       .boxcenter h2{
         text-align: center; 
@@ -638,10 +641,14 @@ header {
                   text-align: left;
                   justify-items: center;
                   line-height: 30px;
+                  color: black;
                 }
+                  li{
+                    color: #000;
+                  }
                   a{
                     text-decoration: none;
-                    color: black;
+                    color: rgb(0, 0, 0);
                   }
               }
         }
