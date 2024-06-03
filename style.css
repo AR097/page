@@ -252,8 +252,7 @@ header {
           flex-direction: row;
           align-items: center;
           justify-content: center;
-          width: min-content;
-          margin-left: -40px;
+          margin-left: -15px;
         }
           .Education .imgtxt img{
             padding: 12px;
@@ -494,6 +493,19 @@ header {
             font-size: 14px;
         }
 
+        .Education .imgtxt{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-left: 10px;
+        }
+          .Education .imgtxt img{
+            padding: 12px;
+          }
+          .Education .imgtxt p{
+            font-size: 15px;
+          }
         .imgtxt {
             width: 100%;
             flex-direction: column;
