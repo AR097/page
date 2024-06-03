@@ -377,7 +377,6 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-
             img{
               height: auto;
               width: 50px;
@@ -408,6 +407,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+
 .txtportfoliobox{
   width: 90%;
   margin-top: 8px;
@@ -422,61 +423,54 @@ align-items: center;
   flex-direction:row;
   width: 90%;
 
-  .card{
-    width: 250px;
-    height: 300px;
-    background-color: #0f0f0f;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 10px 15px;
-    border: solid red 1px;
-  }
-  .imagecard{
-    width: 100%;
-    height: 50%;
-    border-bottom:solid .1px #ffffff;
-    box-shadow: 0px 0px 10px rgb(111, 40, 119);
-  }
-  .imagecard img{
-    width: 100%;
-    height: 100%;
-  }
-  .textcard{
-    color: #f1e8e8;
-    padding: 10px;
-    height: 100px;
-    font-weight: 300;
-    text-align: left;
-    font-size: 15px;
-  }
-  .linkrepo{
-    display:flex;
-    flex-direction: row-reverse;
-    width: 50px;
-    z-index: 1001;
-    position: absolute;
-    padding: 5px;
-  }
-  .linkrepo img{
-    width: 40px;
-    height: 40px;
-  }
-  .linkrepo a{
-    width: 40px;
-    height: 40px;
-  }
-  .linkrepo a:hover{
-    background: rgb(128, 26, 148);
-    border-radius: 50%;
-    box-shadow: 0px 3px 20px rgb(117, 33, 134);
-  }
+  
+}
+.card{
+  width: 250px;
+  height: 300px;
+  background-color: #0f0f0f;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 10px 15px;
+}
+.imagecard{
+  width: 100%;
+  height: 50%;
+  border-bottom:solid .1px #ffffff;
+  box-shadow: 0px 0px 10px rgb(111, 40, 119);
+}
+.imagecard img{
+  width: 100%;
+  height: 100%;
+}
+.textcard{
+  color: #f1e8e8;
+  padding: 10px;
+  height: 100px;
+  font-weight: 300;
+  text-align: left;
+  font-size: 15px;
+}
+.linkrepo{
+  display:flex;
+  flex-direction: row-reverse;
+  width: 50px;
+  z-index: 1001;
+  position: absolute;
+  padding: 5px;
+}
+.linkrepo img{
+  width: 40px;
+  height: 40px;
+}
+.linkrepo a{
+  width: 40px;
+  height: 40px;
 }
 #Titlecard{       
-  font-size: 25px;
-  font-weight: 400;
-  color: rgb(192, 190, 190);
+  font-size: 20px;
 }
 
 .languages{
@@ -493,45 +487,45 @@ align-items: center;
     text-decoration: none;
   }
 }
-}
-        #pgcontact{
-          display: flex;
-          width: 100%;
-          justify-content:center;
-            .boxcontato{
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
 
-              .contato{
-                list-style: none;
-                display: grid;
-                grid-template-columns: 1fr 5fr;
-                float:left ;
-                height: 50%;
-                justify-content: center;
-                align-items: center;
-                img{
-                  width: 25px;
-                }
-                .information{
-                  text-align: left;
-                  justify-items: center;
-                  line-height: 30px;
-                  color: black;
-                }
-                  li{
-                    color: #000;
-                  }
-                  a{
-                    text-decoration: none;
-                    color: rgb(0, 0, 0);
-                  }
-              }
+#pgcontact{
+  display: flex;
+  width: 100%;
+  justify-content:center;
+    .boxcontato{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      .contato{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        float:left ;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 25px;
         }
+        .information{
+          text-align: left;
+          justify-items: center;
+          line-height: 30px;
+          color: black;
         }
+          li{
+            color: #000;
+          }
+          a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+          }
+      }
+}
+}
 
 footer{
   background-color: #0f0f0f;
@@ -571,9 +565,6 @@ footer{
             color: #888;
           }
         }
-
-        
-
   @media (max-width: 768px) {
     header{
       background: #0000007a;
@@ -636,8 +627,7 @@ footer{
     }
 
     h2 {
-        font-size: 18px;
-        margin: 0 0 10px 15px;
+        font-size: 15px;
     }
 
     li {
@@ -671,13 +661,37 @@ footer{
     }
 
     .card{
-      min-width: 150px;
+      max-width: 150px;
       max-height:200px;
-      background-color: #0f0f0f;
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      margin: 10px 15px;
-      border: solid red 1px;}
+
+    }
+    .boxportfolio{
+      width: max-content;
+    }
+    .linkrepo{
+      max-width: 30px;
+      max-height: 30px;
+    }
+    .linkrepo img{
+      max-width: 25px;
+      max-height: 25px;
+    }
+    .linkrepo a{
+      width: 25px;
+      height: 25px;
+    }
   }
+  @media screen and (max-width: 599px) {
+    #Titlecard {
+      font-size: 15px;
+      text-decoration: underline;
+    }
+    .languages img{
+      max-width: 25px;
+    }
+    .textcard{
+      max-height: 40px;
+      font-size: 15px;
+    }
+  }
+  
