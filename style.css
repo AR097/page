@@ -30,53 +30,51 @@ body{
   overflow-x: hidden
 }
 header {
-    background: #0000007a;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    z-index: 1000;
-    top: 0;
+  background: #0000007a;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  top: 0;
+}
+  .box_logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 2%;
   }
-
-    .box_logo{
-      width: 50px;
-      height: 50px;
-      margin-left: 2%;
-      }
-        .box_logo img{
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-        }
-    header .menuheader {
-      display: flex;
-      gap: 20px;
-      margin-right: 5%;
-      text-align: center;
+    .box_logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     }
-      header .menuheader a {
-        padding: 5px;
-        text-decoration: none;
-        color: #caadad;
-        font-weight: 200;
-        cursor: pointer;
-      }
-      header .menuheader a:hover {
-        background: rgb(128, 26, 148);
-        border-radius: 5%;
-        box-shadow: 0px 0px 10px rgb(255, 255, 255);
-      }
-    header .hamburger {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
-      margin-right: 5%;
+  header .menuheader {
+  display: flex;
+  gap: 20px;
+  margin-right: 5%;
+  text-align: center;
+  }
+    header .menuheader a {
+    padding: 5px;
+    text-decoration: none;
+    color: #caadad;
+    font-weight: 200;
+    cursor: pointer;
     }
-
+    header .menuheader a:hover {
+    background: rgb(128, 26, 148);
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+  header .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 5%;
+  }
 .pages{
   margin-top: 100px;
   width:100%;
@@ -86,75 +84,70 @@ header {
     height: 800px;
     margin-top: 10px; 
   }
-  #pghome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    text-align: center;
-    height: 300px;
-  }
-  .text-animation{
-    font-size:54px;
-    font-weight: 400;
-  }
-  @media (max-width: 480px){
-    .text-animation{
-      font-size:25px;
-      font-weight: 400;
+    #pghome{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction:column;
+      text-align: center;
+      height: 300px;
     }
-  }
-    .text-animation span{
-      position: relative;
-    }
-      .text-animation span::before{
-        content: "";
-        color: rgb(57, 15, 85);
-        animation: animation 20s infinite;
+      .text-animation{
+        font-size:54px;
+        font-weight: 400;
       }
-      .text-animation span::after{
-        content: "";
-        position: absolute;
-        height: 100%;
-        border-left: 2px solid rgb(224, 218, 218);
-        right: -10px;
-        animation: cursor .8s infinite, digite 20s steps(15) infinite;
-        width: calc(100% + 17px);
-        background-color: black;
-      }
+        .text-animation span{
+          position: relative;
+        }
+        .text-animation span::before{
+          content: "";
+          color: rgb(57, 15, 85);
+          animation: animation 20s infinite;
+        }
+        .text-animation span::after{
+          content: "";
+          position: absolute;
+          height: 100%;
+          border-left: 2px solid rgb(224, 218, 218);
+          right: -10px;
+          animation: cursor .8s infinite, digite 20s steps(15) infinite;
+          width: calc(100% + 17px);
+          background-color: black;
+        }
           /*animation*/
-      @keyframes animation {
-        0%, 20%{
-          content: "HELLO WORLD!";
-        }
-        21%, 40%{
-          content: "I'm Front-end developer!";
-        }
-        41%, 60%{
-          content: "I love Code!";
-        }
-        61%, 80%{
-          content: "I love Coffee!";
-        }
-        81%, 100%{
-          content: "Let's go!";
-        }
-      }
-      @keyframes cursor {
-        0%{
-            border-left: 2px solid rgb(0, 0, 0);
-        }
-      }
-      @keyframes digite {
-        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-            width: 0;
-        }
-        5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-            width: calc(100% + 17px);
-        }
-      }
+          @keyframes animation {
+            0%, 20%{
+              content: "HELLO WORLD!";
+            }
+            21%, 40%{
+              content: "I'm Front-end developer!";
+            }
+            41%, 60%{
+              content: "I love Code!";
+            }
+            61%, 80%{
+              content: "I love Coffee!";
+            }
+            81%, 100%{
+              content: "Let's go!";
+            }
+          }
+          @keyframes cursor {
+            0%{
+                border-left: 2px solid rgb(0, 0, 0);
+            }
+          }
+          @keyframes digite {
+            10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+                width: 0;
+            }
+            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+                width: calc(100% + 17px);
+            }
+          }
   #pgoverview{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -585,7 +578,10 @@ footer{
       display: flex;
       flex-direction: column;
     }
-  
+    .text-animation{
+      font-size:25px;
+      font-weight: 400;
+    }
     .boxleft, .boxcenter {
         width: 100%;
         padding: 10px;
