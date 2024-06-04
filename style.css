@@ -1,6 +1,6 @@
 *{
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0, 0, 0, 0;
+  padding: 0, 0, 0, 0;
   color: #f3f2f2;
   scrollbar-width: none;
 }
@@ -527,20 +527,12 @@ align-items: center;
 }
 
 footer{
-  background-color: #0f0f0f;
-  color: #fff;
-  padding: 5px;
   text-align: center;
-  bottom: 0;
-  width: 99.2%;
   font-size: 12px;
   font-weight: 200;
 }
   footer a{
     text-decoration: none;
-    color: #fff;
-    font-weight: 200;
-    font-size: 12px;
   }
 
   @media screen and (max-width: 599px) {
