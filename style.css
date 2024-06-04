@@ -565,6 +565,7 @@ footer{
     height: 100px;
     z-index: 1000;
     top: 0;
+    overflow: hidden;
     }
     header .menuheader {
       display: none;
