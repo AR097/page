@@ -20,14 +20,15 @@
     color: rgb(125, 55, 143);
     text-align: left;
   }      
-body{
-  background: linear-gradient(rgb(0, 0, 0)15%,rgb(36, 9, 34),rgb(58, 26, 57));
-  height: 100VH;
+html, body{
+  height: 100%;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  overflow-x: hidden
+  justify-content: center;
+}
+  body{
+  background: linear-gradient(rgb(0, 0, 0)15%,rgb(36, 9, 34),rgb(58, 26, 57));
 }
 header {
   background: #0000007a;
@@ -78,6 +79,8 @@ header {
 .pages{
   margin-top: 100px;
   width:100%;
+  display: grid;
+  place-items: center;
 }
   .content{
     width: 90%;
@@ -148,6 +151,9 @@ header {
   #pgoverview{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
   }
       #name{
         font-size: 25px;
