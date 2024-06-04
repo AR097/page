@@ -81,13 +81,10 @@ header {
   margin-top: 100px;
   width:100%;
 }
-  .box{
-    width: 100%; 
-    height: 800px;
-    margin-top: 10px;
-  }
   .content{
     width: 90%;
+    height: 800px;
+    margin-top: 10px; 
   }
   #pghome{
     display: flex;
