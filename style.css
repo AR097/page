@@ -148,10 +148,6 @@ header {
   #pgoverview{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-
   }
       #name{
         font-size: 25px;
@@ -528,14 +524,12 @@ footer{
     text-decoration: none;
   }
 
+
+
+
+
   @media screen and (max-width: 599px) {
-    .box_logo{
-      display: none;
-      }
-        .box_logo img{
-          display: none;
-        }
-    
+    /*Header e menu*/
     header{
     background: #0000007a;
     position: fixed;
@@ -548,32 +542,33 @@ footer{
     z-index: 1000;
     top: 0;
     }
-    header .menuheader {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-      width: 100%;
-      background-color: #000;
-      position: absolute;
-      top: 100px;
-      left: 0;
-      z-index: 1001;
-    }
-    header .menuheader.show {
-      display: flex;
-    }
-    header .hamburger {
-      display: block;
-      color: #888;
-      margin-left: 80%;
-      
-    }
-    .box{
-      height: min-content;
-      border: solid red 1px;
-      margin-top: 100px;
-    }
+      header .menuheader {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1001;
+      }
+      header .hamburger {
+        display: block;
+        color: #888;
+        margin-left: 80%;
+      }
+        header .menuheader.show {
+          display: flex;
+        }
+      .box_logo{
+        display: none;
+        }
+        .box_logo img{
+          display: none;
+        }
+    /*Paginas*/
     .conteinerperfil {
       display: flex;
       flex-direction: column;
