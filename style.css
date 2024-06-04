@@ -25,7 +25,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden
 }
 header {
     background: #0000007a;
