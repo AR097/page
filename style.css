@@ -454,7 +454,7 @@ header {
 
 #pgcontact{
   display: flex;
-  height: 500px;
+  height: 600px;
   justify-content:center;
     .boxcontato{
         width: 90%;
