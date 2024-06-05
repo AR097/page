@@ -1,0 +1,767 @@
+*{
+  margin: 0, 0, 0, 0;
+  padding: 0, 0, 0, 0;
+  color: #f3f2f2;
+  scrollbar-width: none;
+}
+  h1{          
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .headerbox{/*titulos das paginas (caixa)*/
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 6px -1px rgba(0, 0, 0, 0.212);
+  }
+  #headerbox{ /*titulos das paginas*/
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(125, 55, 143);
+    text-align: left;
+  }      
+html, body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  body{
+  background: linear-gradient(rgb(0, 0, 0)15%,rgb(36, 9, 34),rgb(58, 26, 57));
+}
+header {
+  background: #0000007a;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  top: 0;
+}
+  .box_logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 2%;
+  }
+    .box_logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    }
+  header .menuheader {
+  display: flex;
+  gap: 20px;
+  margin-right: 5%;
+  text-align: center;
+  }
+    header .menuheader a {
+    padding: 5px;
+    text-decoration: none;
+    color: #caadad;
+    font-weight: 200;
+    cursor: pointer;
+    }
+    header .menuheader a:hover {
+    background: rgb(128, 26, 148);
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+  header .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 5%;
+  }
+.pages{
+  top: 100px;
+  width:100%;
+  display: grid;
+  place-items: center;
+}
+  .content{ /*emgloba todos os id de pg*/
+    width: 90%;
+    height: 800px;
+    margin-top: 10px; 
+  }
+    #pghome{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction:column;
+      text-align: center;
+      height: 400px;
+      margin-top: 100px;
+    }
+      .text-animation{
+        font-size:54px;
+        font-weight: 400;
+      }
+        .text-animation span{
+          position: relative;
+        }
+        .text-animation span::before{
+          content: "";
+          color: rgb(57, 15, 85);
+          animation: animation 20s infinite;
+        }
+        .text-animation span::after{
+          content: "";
+          position: absolute;
+          height: 101%;
+          border-left: 2px solid rgb(224, 218, 218);
+          right: -10px;
+          animation: cursor .8s infinite, digite 20s steps(15) infinite;
+          width: calc(100% + 17px);
+          background-color: black;
+        }
+          /*animation*/
+          @keyframes animation {
+            0%, 20%{
+              content: "HELLO WORLD!";
+            }
+            21%, 40%{
+              content: "I'm Front-end developer!";
+            }
+            41%, 60%{
+              content: "I love Code!";
+            }
+            61%, 80%{
+              content: "I love Coffee!";
+            }
+            81%, 100%{
+              content: "Let's go!";
+            }
+          }
+          @keyframes cursor {
+            0%{
+                border-left: 2px solid rgb(0, 0, 0);
+            }
+          }
+          @keyframes digite {
+            10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+                width: 0;
+            }
+            5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+                width: calc(100% + 17px);
+            }
+          }
+    #pgoverview{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 500px;
+    }
+      #name{
+        font-size: 25px;
+        font-weight: 400;
+      }
+        p{
+          text-align: justify;
+        }
+          p, h2{
+            font-size: 22px;
+            font-weight: 300;
+          }
+
+#pgperfil{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  height: 500px;
+}
+  .divsupperfil{
+    display: flex;
+    flex-direction:row;
+  }
+  #pgperfil h2{/*titulos*/
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+  }
+      .boxleft{/*.Education, .Languages*/
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+      }
+        .educationgrid{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          text-align: center;
+        }
+        .Education .imgtxt{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-left: -15px;
+        }
+          .Education .imgtxt img{
+            padding: 12px;
+          }
+          .Education .imgtxt p{
+            font-size: 15px;
+          }
+
+      .Languages{
+        margin-top: 50px;
+        width: 100%;
+        align-items: center;
+      }
+        .Languages h2{
+          margin-bottom: 10px;
+        }
+        .Languages  .boximg{
+          display: flex;
+          flex-direction:row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .Languages  .boximg img{
+            width: 60px;
+          }
+    .boxcenter{/*Skills*/
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .HardSkills{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      height: 100%;
+      width: 80%;
+    }
+      .Skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        width: min-content;
+      }
+      .HardSkills .otherskills{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        margin-left: 30%;
+        width: min-content;
+      }
+        .HardSkills .otherskills img{
+          width: 40px;
+          padding: 20px;
+          border-left: #0505055d 1px solid;
+        }
+      /*Caixa de texto(passar mouse)*/
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      .image-container img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      .image-container, #imgskills img{
+        display: block;
+        width:60px;
+        height:60px;
+        cursor: pointer;
+      }
+      .description {
+        visibility: hidden;
+        width: 200px;
+        background-color: none;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .image-container:hover .description {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      /* MODAL*/
+
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background-color: #000000;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        max-width: 500px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .modal-content h2{
+        font-size: 15px;
+      }
+      .modal-content p{
+        margin-top: 5px;
+        font-size: 12px;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .modal-google, .modal-microsoft{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        .grid{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+            height: auto;
+            width: 50px;
+          }
+        }
+      }
+            
+  .hobiesinteresses{
+    text-align: center;
+    margin-top: 10px;
+    }
+    .imagehobbies{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      .hobiesinteresses h2{
+        margin-bottom: 15px;
+      }
+        .imagehobbies img{
+            width: 50px;
+          }
+#pgportfolio{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  height: 600px;
+}
+  .txtportfoliobox{
+    font-size: 19px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .boxportfolio{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+  }
+    .card{
+      width: 250px;
+      height: 300px;
+      background-color: #0f0f0f;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 10px 15px;
+    }
+      .imagecard{
+        width: 100%;
+        height: 50%;
+        border-bottom:solid .1px #ffffff;
+        box-shadow: 0px 0px 10px rgb(111, 40, 119);
+      }
+        .imagecard img{
+          width: 100%;
+          height: 100%;
+        }
+        .linkrepo{
+          display:flex;
+          flex-direction: row-reverse;
+          width: 50px;
+          z-index: 1001;
+          position: absolute;
+          padding: 5px;
+        }
+          .linkrepo img{
+            width: 40px;
+            height: 40px;
+          }
+          .linkrepo a{
+            width: 40px;
+            height: 40px;
+          }
+      .textcard{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        text-align: left;
+        width: 100%;
+        padding-left: 10px;
+      }
+        #Titlecard{       
+          font-size: 20px;
+          margin: 0;
+        }
+        #infocard{
+          font-size: 17px;
+        }
+      .languages{
+        display:flex;
+        flex-direction: row-reverse;
+        z-index: 10;
+        bottom: 0;
+        padding: 5px;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+
+#pgcontact{
+  display: flex;
+  height: 500px;
+  justify-content:center;
+    .boxcontato{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      .contato{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        float:left ;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 25px;
+        }
+        .information{
+          text-align: left;
+          justify-items: center;
+          line-height: 30px;
+          color: black;
+        }
+          li{
+            color: #000;
+          }
+          a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+          }
+      }
+}
+}
+footer{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+  bottom: 0;
+}
+  footer a{
+    text-decoration: none;
+  }
+
+  /**/
+  @media screen and (max-width:599px) {
+    /*Header e menu*/
+    header{
+    background: #0000007a;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    top: 0;
+    }
+      header .menuheader {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1001;
+      }
+      header .hamburger {
+        display: block;
+        color: #888;
+        margin-left: 80%;
+      }
+        header .menuheader.show {
+          display: flex;
+        }
+      .box_logo{
+        display: none;
+        }
+        .box_logo img{
+          display: none;
+        }
+    /*Paginas*/
+    .content{ /*emgloba todos os id de pg*/
+      min-width: 50%;
+      height: max-content;
+      margin-top: 10px; 
+    }
+    .content h1{          
+      font-size: 25px;
+    }
+    .headerbox{/*titulos das paginas (caixa)*/
+      width: 100%;
+    }
+    #headerbox{ /*titulos das paginas*/
+      font-size: 30px;
+    }
+    /*#pghome*/
+    .text-animation{
+      font-size:25px;
+      font-weight: 400;
+    }
+    /*#pgoverview*/
+      #name{
+        font-size: 25px;
+        margin: -10px 0;
+      }
+        p, h2{
+          font-size: 16px;
+          padding: 0 20px;
+        }
+    /*#pgprofile*/  
+    .description{/*retirada os efeitos de caixa de mensagem*/
+      display: none;
+    }
+    #pgperfil{
+     height: 100%;
+    }
+    #pgperfil h1{
+      margin-bottom: -20px;
+    }
+    .boxleft, .boxcenter {
+        width: 100%;
+        margin-top: 0;
+    }
+    .divsupperfil{
+      display: flex;
+      flex-direction:column;
+    }
+      .educationgrid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+        .Education .imgtxt{
+          display: flex;
+          margin-left: -50px;
+          margin-top: 10px;
+          padding: 0;
+          width: max-content;
+        }
+        .Education .imgtxt img{
+          margin: 0;
+          padding: 0;
+        }
+      .Education .imgtxt p{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 15px;
+        padding: 0;
+      }
+      .Education h2{
+        margin-bottom: -10px;
+      }
+    .Languages{
+      margin: 0;
+      width: 100%;
+      align-items: center;
+    }
+    .HardSkills{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: min-content;
+    }
+    .Skills{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
+    }
+    .HardSkills .otherskills{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      border: none;
+    }
+    .HardSkills .otherskills img{ 
+      border-left: none;
+    }
+
+    
+      /* MODAL*/
+
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background-color: #000000;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        max-width: 500px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .modal-content h2{
+        font-size: 15px;
+      }
+      .modal-content p{
+        font-size: 12px;
+        margin-bottom: -5px;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .modal-google, .modal-microsoft{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        .grid{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+            height: auto;
+            width: 30px;
+          }
+        }
+      }
+
+    /*#pgprofile*/
+    .card{
+      min-width: 100px;
+      max-height: 200px;
+      background-color: #0f0f0f;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 10px 15px;
+    }
+    .imagecard{
+      width: 100%;
+      height: 40%;
+      border-bottom:solid .1px #ffffff;
+      box-shadow: 0px 0px 10px rgb(111, 40, 119);
+    }
+      .imagecard img{
+        width: 100%;
+        height: 100%;
+      }
+    #Titlecard{       
+      font-size: 15px;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      text-align: left;
+      text-decoration: underline;
+    }
+    .textcard{
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      text-align: left;
+      margin-top: 5px;
+      width: 100%;
+      padding: 0;
+    }
+    #infocard{
+      font-size: 13px;
+      margin-top: -2%;
+      text-align: left;
+    }
+    .languages{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      padding: -4px;
+
+      img{
+        width: 20px;
+        height: auto;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+  }
