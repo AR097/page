@@ -215,16 +215,47 @@ header {
         .Languages h2{
           margin-bottom: 10px;
         }
-        .Languages  .boximg{
+        .Languages  .boxidiomas{
           display: flex;
           flex-direction:row;
           justify-content: center;
           align-items: center;
           text-align: center;
         }
-        .Languages  .boximg img{
+        .Languages  .boxidiomasimg{
             width: 60px;
           }
+            #namelanguage{
+              margin-top: 15px;
+            }
+            #caption{
+              margin-top: 10px;
+              font-size: 16px;
+              font-weight: 100;
+              color: #726f6f;
+              text-align: center;
+            }
+            table {
+              border-collapse: collapse; /* Ensures borders don't overlap */
+              border: 1px solid #363636; /* Adds a 1px solid gray border */
+              margin-top: 15px;
+            }
+            
+            th, td {
+              padding: 10px; /* Adds some padding to the cells */
+
+            }
+
+            th {
+              background-color: #1d1c1c; /* Adds a light gray background to the header */
+              text-align: center; /* Aligns text to the left */
+              color: #726f6f;
+            }
+            #textmodal{
+              font-size: 20px;
+              margin-bottom: 0;
+              align-items: center;
+            }
     .boxcenter{/*Skills*/
       width: 100%;
       display: flex;
@@ -257,7 +288,7 @@ header {
           padding: 20px;
           border-left: #0505055d 1px solid;
         }
-      /*Caixa de texto(passar mouse)*/
+/*Caixa de texto(passar mouse)*/
       .image-container {
         position: relative;
         display: inline-block;
@@ -276,7 +307,7 @@ header {
       }
       .description {
         visibility: hidden;
-        width: 200px;
+        width: max-content;
         background-color: none;
         color: #fff;
         text-align: center;
@@ -284,7 +315,7 @@ header {
         padding: 5px;
         position: absolute;
         z-index: 1;
-        top: 100%;
+        top: 90%;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -296,7 +327,6 @@ header {
       }
 
       /* MODAL*/
-
       .modal {
         display: none; /* Hidden by default */
         position: fixed;
@@ -310,13 +340,18 @@ header {
       }
       .modal-content {
         background-color: #000000;
-        margin: 15% auto; /* 15% from the top and centered */
+        margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
+        width: 80%; 
         max-width: 500px;
         border-radius: 10px;
         text-align: center;
+      }
+      #modal-content-idiomas{
+        width: max-content;
+        height: 200px;
+
       }
       .modal-content h2{
         font-size: 15px;
@@ -330,10 +365,11 @@ header {
         float: right;
         font-size: 28px;
         font-weight: bold;
+        
       }
       .close:hover,
       .close:focus {
-        color: black;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         cursor: pointer;
       }
@@ -353,21 +389,34 @@ header {
           }
         }
       }
+        .modal-idiomas{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
             
   .hobiesinteresses{
     text-align: center;
     margin-top: 10px;
-    }
+    height: 100px;
+  }
     .imagehobbies{
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      height: 50px;
       }
       .hobiesinteresses h2{
-        margin-bottom: 15px;
+        margin-bottom: 0;
       }
         .imagehobbies img{
             width: 50px;
+            padding-top: 15px;
           }
 #pgportfolio{
   display: flex;
