@@ -115,70 +115,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             cookDescription.style.visibility = 'hidden';
             cookDescription.style.opacity = '0';
         });
-
-    const idiomasicon = document.getElementById('idiomascookicon');
-    const idiomasDescription = document.getElementById('idiomascookDescription')
-        
-        idiomasicon.addEventListener('mouseover', () => {
-            idiomasDescription.style.visibility = 'visible';
-            idiomasDescription.style.opacity = '1';
-            });
-        idiomasicon.addEventListener('mouseout', () => {
-            idiomasDescription.style.visibility = 'hidden';
-            idiomasDescription.style.opacity = '0';
-        });
-
-            //Language
-
-    const pticon = document.getElementById('pticon');
-    const ptDescription = document.getElementById('ptDescription')
-      
-        pticon.addEventListener('mouseover', () => {
-            ptDescription.style.visibility = 'visible';
-            ptDescription.style.opacity = '1';
-        });
-        pticon.addEventListener('mouseout', () => {
-            ptDescription.style.visibility = 'hidden';
-            ptDescription.style.opacity = '0';
-        });
-
-    const enicon = document.getElementById('enicon');
-    const enDescription = document.getElementById('enDescription')
-        
-        enicon.addEventListener('mouseover', () => {
-            enDescription.style.visibility = 'visible';
-            enDescription.style.opacity = '1';
-        });
-        enicon.addEventListener('mouseout', () => {
-            enDescription.style.visibility = 'hidden';
-            enDescription.style.opacity = '0';
-        });     
-
-    const jpicon = document.getElementById('jpicon');
-    const jpDescription = document.getElementById('jpDescription')
-        
-        jpicon.addEventListener('mouseover', () => {
-            jpDescription.style.visibility = 'visible';
-            jpDescription.style.opacity = '1';
-        });
-        jpicon.addEventListener('mouseout', () => {
-            jpDescription.style.visibility = 'hidden';
-            jpDescription.style.opacity = '0';
-        });
-
-    const cnicon = document.getElementById('cnicon');
-    const cnDescription = document.getElementById('cnDescription')
-        
-        cnicon.addEventListener('mouseover', () => {
-            cnDescription.style.visibility = 'visible';
-            cnDescription.style.opacity = '1';
-        });
-        cnicon.addEventListener('mouseout', () => {
-            cnDescription.style.visibility = 'hidden';
-            cnDescription.style.opacity = '0';
-        });
-
-
 });
 
 //modal
@@ -197,7 +133,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var imageModalPairs = [
         { imgId: 'googleicon', modalId: 'ModalGoogle' },
         { imgId: 'microsofticon', modalId: 'ModalMicrosoft' },
-        { imgId: 'dadosicon', modalId: 'ModalDados' }
+        { imgId: 'pticon', modalId: 'ModalPt' },
+        { imgId: 'enicon', modalId: 'ModalEn' },
+        { imgId: 'esicon', modalId: 'ModalEs' },
+        { imgId: 'jpicon', modalId: 'ModalJp' },
+
     ];
 
     imageModalPairs.forEach(pair => {
