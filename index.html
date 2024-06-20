@@ -556,12 +556,12 @@
           </div>
          <div>
     <h2>Contacte-nos</h2>
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Seu Nome" required>
-        <input type="email" id="email" placeholder="Seu Email" required>
-        <textarea id="message" placeholder="Sua Mensagem" required></textarea>
-        <button type="button" onclick="submitForm()">Enviar</button>
-    </form>
+    <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyoMn_MYq9X1om14-J7bnQYpoLcTRFfk0OaDM6lGhhqLyWHBaIodT4Bi0UDUMrpUcN17w/exec" method="POST">
+                <input type="text" id="contactName" name="name" placeholder="Seu Nome" required>
+                <input type="email" id="contactEmail" name="email" placeholder="Seu Email" required>
+                <textarea id="contactMessage" name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
 </div>
   
         </div>
