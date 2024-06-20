@@ -556,12 +556,12 @@
           </div>
          <div class="contact-form">
             <h2>Send a message</h2>
-            <form action="send_email.php" method="post">
+            <form id="contactForm">
                 <input type="text" name="name" placeholder="Seu Nome" required>
                 <input type="email" name="email" placeholder="Seu Email" required>
                 <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+                 <button type="button" onclick="submitForm()">Let's talk</button>
+</form>
         </div>
   
         </div>
