@@ -44,6 +44,9 @@ body.dark-mode {
   body.dark-mode header .hamburger {
     color: var(--tertiarydark);
   }
+  body.dark-mode header .menuheader {
+    background-color: #070707b0;
+  }
   body.dark-mode .card{
     background-color:#1d1c1ca2;
   }
@@ -680,11 +683,11 @@ footer{
       text-align: center;
       gap: 10px;
       width: 100%;
-      background-color: #000;
+      background-color: #e7e5e5e3;
       position: absolute;
       top: 100px;
       left: 0;
-      z-index: 1001;
+      z-index: inherit;
     }
     header .hamburger {
       display: block;
