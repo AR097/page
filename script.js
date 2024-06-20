@@ -189,9 +189,10 @@ function submitForm() {
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
+    // Chama a função sendEmail no Google Apps Script via google.script.run
     google.script.run.sendEmail(name, email, message, function(response) {
-        alert(response);
-        document.getElementById("contactForm").reset();
+        alert(response); // Exibe um alerta com a resposta do script
+        document.getElementById("contactForm").reset(); // Reseta o formulário após o envio
     });
 }
 
