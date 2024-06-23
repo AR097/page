@@ -175,12 +175,15 @@ header {
       justify-content: center;
       flex-direction:column;
       text-align: center;
-      .text-animation{
-        font-size:54px;
+      .text-animation {
+        width: 100%;
+        font-size: 4vw;
         font-weight: 400;
       }
+    
         .text-animation span{
           position: relative;
+  
         }
         .text-animation span::before{
           content: "";
@@ -204,7 +207,7 @@ header {
           content: "HELLO WORLD!";
         }
         21%, 40%{
-          content: "I'm Front-end developer!";
+          content: "I'm Andressa!";
         }
         41%, 60%{
           content: "I love Code!";
@@ -213,7 +216,7 @@ header {
           content: "I love Coffee!";
         }
         81%, 100%{
-          content: "Let's go!";
+          content: "I love Tech world!";
         }
       }
       @keyframes cursor {
@@ -725,12 +728,6 @@ footer{
   #headerbox {
     font-size: 30px;
   }
-
-  /* Página inicial */
-  .text-animation {
-    font-size: 4vw;
-    font-weight: 400;
-  }  
 
   /* Visão geral */
   #name {
