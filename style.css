@@ -35,17 +35,19 @@ body.dark-mode {
     background: rgb(132, 121, 143);
     color: #000;
   }
+  body.dark-mode header .hamburger {/*icone*/
+    color: var(--tertiarydark);
+  }
+      
+  body.dark-mode header .menuheader.show {
+    display: flex;
+    background-color: #000000d0;
+  }
   /*dark-Animação pg inicial*/
   body.dark-mode #pghome{
     .text-animation span::after{
       background-color: black;
     }
-  }
-  body.dark-mode header .hamburger {
-    color: var(--tertiarydark);
-  }
-  body.dark-mode header .menuheader {
-    background-color: #070707b0;
   }
   body.dark-mode .card{
     background-color:#1d1c1ca2;
