@@ -675,266 +675,305 @@ footer{
 }
 /*--------------------------------*/
 
-  @media screen and (max-width:599px) {
-  /*menu*/
-    header .menuheader {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-      width: 100%;
-      background-color: #e7e5e5e3;
-      position: absolute;
-      top: 100px;
-      left: 0;
-      z-index: inherit;
-    }
-    header .hamburger {
-      display: block;
-      color: var(--secondlight);
-      margin-left: 80%;
-    }
-    header .menuheader.show {
-      display: flex;
-    }
-    .box_logo{/*none*/
-      display: none;
-    }
-    .box_logo img{/*none*/
-      display: none;
-    }
+@media screen and (max-width: 599px) {
+  /* Menu */
+  header .menuheader {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #e7e5e5e3;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: inherit;
+  }
+  
+  header .hamburger {
+    display: block;
+    color: var(--secondlight);
+    margin-left: 80%;
+  }
+  
+  header .menuheader.show {
+    display: flex;
+  }
+  
+  .box_logo {
+    display: none;
+  }
+  
+  .box_logo img {
+    display: none;
+  }
 
-  .content{ /*emgloba todos os id de pg*/
+  /* Conteúdo */
+  .content {
     min-width: 50%;
-    margin-top: 10px; 
+    margin-top: 10px;
   }
-    .content h1{          
-      font-size: 25px;
-    }
-    .headerbox{/*titulos das paginas (caixa)*/
-      width: 100%;
-    }
-    #headerbox{ /*titulos das paginas*/
-      font-size: 30px;
-    }
-    /*#pghome*/
-    .text-animation{
-      font-size:20px;
-      font-weight: 400;
-    }
-    /*#pgoverview*/
-      #name{
-        font-size: 25px;
-        margin: -10px 0;
-      }
-        p, h2{
-          font-size: 16px;
-          padding: 0 20px;
-        }
-    /*#pgprofile*/  
-    .description{/*retirada os efeitos de caixa de mensagem*/
-      display: none;
-    }
-    #pgperfil{
-     height: 100%;
-    }
-    #pgperfil h1{
-      margin-bottom: -20px;
-    }
-    .boxleft, .boxcenter {
-        width: 100%;
-        margin-top: 0;
-    }
-    .boxsuperiorperfil{
-      display: flex;
-      flex-direction:column;
-    }
-      .educationgrid{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-        .Education .imgtxt{
-          display: flex;
-          margin-left: -50px;
-          margin-top: 10px;
-          padding: 0;
-          width: max-content;
-        }
-        .Education .imgtxt img{
-          padding: 5px;
-        }
-
-      .Education .imgtxt p{
-        font-size: 15px;
-        margin-left: 10px;
-        margin-top: 15px;
-        padding: 0;
-      }
-      .Education h2{
-        margin-bottom: -10px;
-      }
-    .Languages{
-      margin: 0;
-      width: 100%;
-      align-items: center;
-    }
-    .HardSkills{
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: min-content;
-    }
-    .Skills{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 25px;
-    }
-    .HardSkills .otherskills{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      border: none;
-    }
-    .HardSkills .otherskills img{ 
-      border-left: none;
-    }
-
-    
-      /* MODAL*/
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 100px;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-      }
-      .modal-content {
-        background-color: #000000;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-        max-width: 500px;
-        border-radius: 10px;
-        text-align: center;
-      }
-      .modal-content h2{
-        font-size: 15px;
-      }
-      .modal-content p{
-        font-size: 12px;
-        margin-bottom: -5px;
-      }
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-      .modal-google, .modal-microsoft{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: 250px;
-        justify-content: center;
-        align-items: center;
-        .grid{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          img{
-            height: auto;
-            width: 30px;
-          }
-        }
-      }
-
-    /*#pgportfolio*/
-    .boxportfolio{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .card{
-      width: 150px;
-      height: 140px;
-      background-color:white;
-    }
-    .imagecard{
-      width: 100%;
-      height: 80px;
-      border-bottom:solid .1px #ffffff;
-      box-shadow: 0px 0px 10px rgb(111, 40, 119);
-    }
-    .imagecard img{
-      width: 100%;
-      height: 100%;
-    }
-    .textcard{
-      display: flex;
-      flex-direction: column;
-      height: max-content;
-      text-align: center;
-      justify-content: center;
-      margin: 0;
-      width: 95%;
-      padding: 0;
-
-    }
-    #Titlecard{       
-      font-size: 13px;
-      width: 100%;
-      margin:0;
-      padding: 5px;
-    }
-    #infocard{
-      display: none;
-    }
-    .languages{
-      display:flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      padding: 0;
-      margin-top: 5px;
-
-      img{
-        width: auto;
-        height: 18px;
-      }
-      a{
-        text-decoration: none;
-      }
-    }
-    #pgcontact .conteudocontato{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      height: 100%;
-    }
-    .contact-form{
-      margin: 2px auto 20px auto;
-      width: 100%;
-      height: 350px;
-      overflow: hidden;
-    }
+  
+  .content h1 {
+    font-size: 25px;
   }
+  
+  .headerbox {
+    width: 100%;
+  }
+  
+  #headerbox {
+    font-size: 30px;
+  }
+
+  /* Página inicial */
+  .text-animation {
+    font-size: 4vw;
+    font-weight: 400;
+  }  
+
+  /* Visão geral */
+  #name {
+    font-size: 25px;
+    margin: -10px 0;
+  }
+  
+  p, h2 {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  /* Perfil */
+  .description {
+    display: none;
+  }
+  
+  #pgperfil {
+    height: 100%;
+  }
+  
+  #pgperfil h1 {
+    margin-bottom: -20px;
+  }
+  
+  .boxleft, .boxcenter {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .boxsuperiorperfil {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .educationgrid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .Education .imgtxt {
+    display: flex;
+    margin-left: -50px;
+    margin-top: 10px;
+    padding: 0;
+    width: max-content;
+  }
+  
+  .Education .imgtxt img {
+    padding: 5px;
+  }
+  
+  .Education .imgtxt p {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 0;
+  }
+  
+  .Education h2 {
+    margin-bottom: -10px;
+  }
+  
+  .Languages {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .HardSkills {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: min-content;
+  }
+  
+  .Skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  
+  .HardSkills .otherskills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: none;
+  }
+  
+  .HardSkills .otherskills img {
+    border-left: none;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    font-size: 15px;
+  }
+  
+  .modal-content p {
+    font-size: 12px;
+    margin-bottom: -5px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-google, .modal-microsoft {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-google .grid, .modal-microsoft .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-google .grid img, .modal-microsoft .grid img {
+    height: auto;
+    width: 30px;
+  }
+
+  /* Portfolio */
+  .boxportfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .card {
+    width: 150px;
+    height: 140px;
+    background-color: white;
+  }
+  
+  .imagecard {
+    width: 100%;
+    height: 80px;
+    border-bottom: solid .1px #ffffff;
+    box-shadow: 0px 0px 10px rgb(111, 40, 119);
+  }
+  
+  .imagecard img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .textcard {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    width: 95%;
+    padding: 0;
+  }
+  
+  #Titlecard {
+    font-size: 13px;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  #infocard {
+    display: none;
+  }
+  
+  .languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 5px;
+  }
+  
+  .languages img {
+    width: auto;
+    height: 18px;
+  }
+  
+  .languages a {
+    text-decoration: none;
+  }
+
+  /* Contato */
+  #pgcontact .conteudocontato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .contact-form {
+    margin: 2px auto 20px auto;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+}
