@@ -442,8 +442,8 @@ footer{
     grid-template-columns: 1fr 1fr;
   }
   .card{ 
-    width: 230px;
-    height: 180px;
+    width: 210px;
+    height: 170px;
     margin: 0;
     padding: 0;
   }
