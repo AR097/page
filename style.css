@@ -437,37 +437,18 @@ footer{
     height:60px;
   }
   /* Portfolio */
-  .boxportfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .card{ 
     width: 210px;
     height: 170px;
-    margin: 0;
-    padding: 0;
   }
   #items{
-    align-items: center;
-    justify-content: center;
     display: grid;
     grid-template-columns:  1fr 1fr;
-    place-items: center;
   }
   .imagecard img{
     width: 100%;
     height:100%;
     border-radius: 15px;
-  }
-  .textcard {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    width: 95%;
-    padding: 0;
   }
   #Titlecard {
     font-size: 13px;
