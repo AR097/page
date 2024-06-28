@@ -6,25 +6,23 @@
 :root{
   --background-page: rgb(0, 0, 0);
   --background-header: rgb(107, 107, 107);
-
   --color-all-text: rgb(255, 255, 255);
 }
 
 body{
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-body {
+  /*theme*/
   background-color: var(--background-page);
   color: var(--color-all-text);
+  /*0 formatação*/
+  margin: 0;
+  padding: 0;
 }
 
 header {
+  /*theme*/
   background: var(--background-header);
+  border-bottom: #1f2020 solid 1px;
+  /*confg*/
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -33,7 +31,6 @@ header {
   width: 100%;
   z-index: 1000;
   top: 0;
-  border-bottom: #1f2020 solid 1px;
 
   .box_logo{
     width: 50px;
@@ -73,13 +70,10 @@ header {
 
 .pages{
   width:100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
 }
-  .content{ /*Todos os id de pg*/
-    width: 90%;
-  }
-    
     .headerbox{/*BOX*/
       width: 100%;
       margin-top: 30px;
@@ -98,7 +92,7 @@ header {
       flex-direction: column;
       align-items: center;
       padding-top: 100px;
-
+      width: 100%;
       #name{
         font-size: 27px;
         font-weight: 400;
@@ -384,12 +378,14 @@ footer{
 @media screen and (max-width: 599px) {
   /* Menu */
   header .menuheader {
+    /*theme hamburguer*/
+    background-color: #252525;
+    /*conf*/
     display: none;
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    width: 100%;
-    background-color: #e7e5e5e3;
+    width: 90%;
     position: absolute;
     top: 100px;
     left: 0;
@@ -397,37 +393,21 @@ footer{
   }
   
   header .hamburger {
+    /*theme hamburguer*/
+    color: white;
+    /*confg*/
     display: block;
-    color: var(--secondlight);
     margin-left: 80%;
   }
   
   header .menuheader.show {
     display: flex;
   }
-  
-  .box_logo {
-    display: none;
-  }
-  
-  .box_logo img {
-    display: none;
-  }
 
   /* Conteúdo */
-  .content {
-    min-width: 50%;
-    margin-top: 10px;
-  }
-  
-  .content h1 {
-    font-size: 25px;
-  }
-  
   .headerbox {
     width: 100%;
   }
-  
   #headerbox {
     font-size: 30px;
   }
@@ -437,14 +417,29 @@ footer{
     font-size: 25px;
     margin: -10px 0;
   }
-  
   p, h2 {
     font-size: 16px;
     padding: 0 20px;
   }
+  #pgabout{
+    height: 100%;
+    }
+    .hobbies{
+        color: #75787a;
+        height: 100%;
+    .img{
+      display: flex;
+      flex-direction: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    svg{
+      width: 20px;
+      padding: 0 20px;
+    }
+  }
+
 
   /* Perfil */
- 
   #pgperfil {
     height: 100%;
   }
@@ -482,29 +477,29 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
-  .card {
-    width: 150px;
-    height: 140px;
+  .card{ 
+    width: 250px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
   }
+
+
   #items{
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
     place-items: center;
   }
   
-  .imagecard {
+  .imagecard img{
     width: 100%;
-    height: 80px;
+    height:100%;
+    border-radius: 15px;
   }
-  
-  .imagecard img {
-    width: 100%;
-    height: 100%;
-  }
+
   
   .textcard {
     display: flex;
@@ -525,13 +520,67 @@ footer{
   }
   
   /* Contato */
-  #pgcontact .conteudocontato {
+  #pgcontact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100%;
-  }
-  
+    height:100%;
+    .provisorio{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin-top: 50px;
+    }
+        .boxleftcontato{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items:center;
+          text-align: center;
+          h1{
+            font-size: 20px;
+            font-weight: 200;
+            color: #d8d6d6;
+          }
+        }
+        .contato{
+          width:100%;
+          list-style: none;
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          
+          svg{
+            width: 18px;
+            padding: 15px;
+           
+          }
+          .information{
+            text-align: left;
+            justify-items: center;
+            line-height: 30px;
+            color: var(--secondlight)
+          }
+          li a{
+            text-decoration: none;
+            color: var(--secondlight);
+            line-height: 50px;
+            font-size: 15px;
+            color: #ffffff;
+          }
+        } 
+        .localizacao{
+        svg{
+          width: 80px;
+          margin-top: 20px;
+          margin-bottom: -15px;
+        }
+      }
+      padding-bottom: 25px;
+    }
+  footer{
+  display: flex;
+  flex-direction: column;
+  } 
 }
