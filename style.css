@@ -452,7 +452,6 @@ footer{
     justify-content: center;
     display: grid;
     grid-template-columns:  1fr 1fr;
-    gap: 10px;
     place-items: center;
   }
   .imagecard img{
