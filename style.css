@@ -452,8 +452,7 @@ footer{
     flex-direction: column;
   }
   .card{ 
-    margin: 0;
-    padding: 0;
+    margin-left: 2px;
     width: 210px;
     height: 170px;
   }
