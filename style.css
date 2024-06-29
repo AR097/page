@@ -443,10 +443,11 @@ footer{
   }
   /* Portfolio */
   .pgportfolio{
+    margin: 0;
+    padding: 0;
     width: 100%;
-  display: flex;
-  flex-direction: column;
-  border: solid red 1px;
+    display: flex;
+    flex-direction: column;
   }
   .card{ 
     width: 210px;
@@ -457,7 +458,6 @@ footer{
     padding: 0 30px;
     display: grid;
     grid-template-columns:  1fr 1fr;
-    border: solid red 1px;
   }
   .imagecard img{
     width: 100%;
