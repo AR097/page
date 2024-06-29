@@ -497,6 +497,9 @@ footer svg {
 
   #pgcontact {
     height: 100%;
+    h1{
+      margin-bottom: 40px;
+    }
   }
 
   .provisorio {
