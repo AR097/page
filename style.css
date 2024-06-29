@@ -377,19 +377,23 @@ footer{
 
 @media screen and (max-width: 599px) {
   /* Menu */
+  header{
+    color: wheat;
+  }
   header .menuheader {
     /*theme hamburguer*/
-    background-color: #252525;
+    background-color: #555555;
     /*conf*/
     display: none;
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    width: 90%;
+    width: 70%;
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 60px;
+    right: 0;
     z-index: inherit;
+    
   }
   
   header .hamburger {
@@ -397,12 +401,13 @@ footer{
     color: white;
     /*confg*/
     display: block;
-    margin-left: 80%;
+
   }
   
   header .menuheader.show {
     display: flex;
   }
+
 
   /* Conteúdo */
   .headerbox {
@@ -421,7 +426,7 @@ footer{
     font-size: 16px;
     padding: 0 20px;
   }
-
+  /* Home */
   /* Perfil */
   .boxleft, .boxcenter {
     width: 100%;
@@ -437,13 +442,22 @@ footer{
     height:60px;
   }
   /* Portfolio */
+  .pgportfolio{
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: solid red 1px;
+  }
   .card{ 
     width: 210px;
     height: 170px;
   }
   #items{
+    width: 80%;
+    padding: 0 30px;
     display: grid;
     grid-template-columns:  1fr 1fr;
+    border: solid red 1px;
   }
   .imagecard img{
     width: 100%;
