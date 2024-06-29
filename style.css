@@ -416,6 +416,7 @@ footer{
   /* Home */
   #pghome{
     h1{
+      text-align: center;
       font-size: 4vh;
     }
   }
