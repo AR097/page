@@ -486,6 +486,9 @@ footer svg {
 
   #pgabout {
     height: 100%;
+    h1{
+      margin-bottom: 25px;
+    }
   }
 
   .hobbies .img {
