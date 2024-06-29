@@ -394,7 +394,8 @@ footer{
     right: 0;
     z-index: inherit;
     
-  } 
+  }
+  
   header .hamburger {
     /*theme hamburguer*/
     color: white;
@@ -402,9 +403,12 @@ footer{
     display: block;
 
   }
+  
   header .menuheader.show {
     display: flex;
   }
+
+
   /* Conteúdo */
   .headerbox {
     width: 100%;
@@ -412,6 +416,7 @@ footer{
   #headerbox {
     font-size: 30px;
   }
+
   /* Visão geral */
   #name {
     font-size: 25px;
@@ -422,40 +427,6 @@ footer{
     padding: 0 20px;
   }
   /* Home */
-  #helloworld{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    .text-animation {
-      width: 100%;
-      font-size: 5vw;
-      font-weight: 400;
-    }
-  
-      .text-animation span{
-        position: relative;
-
-      }
-      .text-animation span::before{
-        content: "";
-        color: rgb(57, 15, 85);
-        animation: animation 20s infinite;
-      }
-      .text-animation span::after{
-        content: "";
-        position: absolute;
-        height: 103%;
-        border-left: 2px solid rgb(224, 218, 218);
-        right: -10px;
-        animation: cursor .8s infinite, digite 20s steps(15) infinite;
-        width: calc(100% + 17px);
-        background-color: var(--background-page)
-      }
-  }
   /* Perfil */
   .boxleft, .boxcenter {
     width: 100%;
@@ -485,6 +456,7 @@ footer{
   }
   #items{
     width: 100%;
+
     display: grid;
     grid-template-columns:  1fr 1fr;
   }
