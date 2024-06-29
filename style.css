@@ -97,13 +97,6 @@ header {
         font-size: 27px;
         font-weight: 400;
       }
-        p{
-          text-align: justify;
-        }
-          p, h2{
-            font-size: 22px;
-            font-weight: 300;
-          }
           h1{
             font-size: 30px;
           }
@@ -394,8 +387,7 @@ footer{
     right: 0;
     z-index: inherit;
     
-  }
-  
+  } 
   header .hamburger {
     /*theme hamburguer*/
     color: white;
@@ -403,12 +395,9 @@ footer{
     display: block;
 
   }
-  
   header .menuheader.show {
     display: flex;
   }
-
-
   /* Conteúdo */
   .headerbox {
     width: 100%;
@@ -416,7 +405,6 @@ footer{
   #headerbox {
     font-size: 30px;
   }
-
   /* Visão geral */
   #name {
     font-size: 25px;
@@ -427,6 +415,18 @@ footer{
     padding: 0 20px;
   }
   /* Home */
+  #pghome{
+    h1{
+      font-size: 4vh;
+      text-align: center;
+    }
+  }
+  #helloworld{
+    .text-animation {
+      font-size: 8vw;
+      font-weight: 800;
+    }
+  }
   /* Perfil */
   .boxleft, .boxcenter {
     width: 100%;
