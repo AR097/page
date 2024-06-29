@@ -2,6 +2,7 @@
   margin: 0, 0, 0, 0;
   padding: 0, 0, 0, 0;
   scrollbar-width: none;
+  border: solid wheat 1px;
 }
 :root{
   --background-page: rgb(0, 0, 0);
@@ -202,7 +203,6 @@ header {
   justify-content: center;
   padding-top: 10px;
 }
-
   .card {
     display: none;
   }
@@ -342,7 +342,7 @@ header {
   .provisorio{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 100%;
     margin-top: 50px;
   }
 
