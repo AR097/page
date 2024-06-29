@@ -490,7 +490,9 @@ footer svg {
       margin-bottom: 25px;
     }
   }
-
+  .hobbies{
+    width: 100%;
+  }
   .hobbies .img {
     flex-direction: row;
     flex-wrap: wrap;
