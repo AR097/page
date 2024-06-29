@@ -307,22 +307,24 @@ header .hamburger {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 15px;
+
 }
 
 .boxleftcontato h1 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 200;
   color: #d8d6d6;
 }
 
 .contato {
-  width: 70%;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 5fr;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 15px;
 }
 
 .contato svg {
@@ -347,7 +349,10 @@ header .hamburger {
 .localizacao svg {
   width: 80px;
   margin-top: 20px;
-  margin-bottom: -15px;
+  margin-bottom: 10px;
+}
+.localizacao{
+  margin-bottom: 10px;
 }
 
 footer {
@@ -530,7 +535,7 @@ footer svg {
   .localizacao{
     margin-bottom: 50px;
     p{
-      margin-top: 15px;
+      margin-top: 0px;
     }
   }
 
