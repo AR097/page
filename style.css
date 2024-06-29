@@ -495,7 +495,6 @@ footer svg {
   }
   .hobbies .img {
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 5px;
   }
 
