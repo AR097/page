@@ -16,6 +16,9 @@ body{
   /*0 formatação*/
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
 
 header {
