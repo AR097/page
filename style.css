@@ -455,8 +455,7 @@ footer{
     height: 170px;
   }
   #items{
-    width: 80%;
-    padding: 0 30px;
+    width: 100%;
     display: grid;
     grid-template-columns:  1fr 1fr;
   }
