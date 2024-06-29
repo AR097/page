@@ -435,6 +435,7 @@ footer svg {
   #pghome h1 {
     text-align: center;
     font-size: 3vh;
+    padding-top: 50px;
   }
 
   #helloworld .text-animation {
