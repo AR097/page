@@ -97,6 +97,13 @@ header {
         font-size: 27px;
         font-weight: 400;
       }
+        p{
+          text-align: justify;
+        }
+          p, h2{
+            font-size: 22px;
+            font-weight: 300;
+          }
           h1{
             font-size: 30px;
           }
@@ -415,17 +422,32 @@ footer{
     padding: 0 20px;
   }
   /* Home */
-  #pghome{
-    h1{
-      font-size: 4vh;
-      text-align: center;
-    }
-  }
   #helloworld{
     .text-animation {
+      width: 100%;
       font-size: 8vw;
-      font-weight: 800;
+      font-weight: 400;
     }
+  
+      .text-animation span{
+        position: relative;
+
+      }
+      .text-animation span::before{
+        content: "";
+        color: rgb(57, 15, 85);
+        animation: animation 20s infinite;
+      }
+      .text-animation span::after{
+        content: "";
+        position: absolute;
+        height: 103%;
+        border-left: 2px solid rgb(224, 218, 218);
+        right: -10px;
+        animation: cursor .8s infinite, digite 20s steps(15) infinite;
+        width: calc(100% + 17px);
+        background-color: var(--background-page)
+      }
   }
   /* Perfil */
   .boxleft, .boxcenter {
