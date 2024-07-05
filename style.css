@@ -368,7 +368,7 @@ footer {
   z-index: 1000;
   background: var(--background-header);
   display: flex;
-  flex-diretion:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
