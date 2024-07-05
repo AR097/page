@@ -248,7 +248,15 @@ header .hamburger {
   height: 70%;
   border: #1c1d1d 1px solid;
   border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+
 }
+    .imagecard img:hover {
+      transform: scale(1.5);
+      position:relative;
+    }
+  
 
 .imagecard img {
   width: 100%;
