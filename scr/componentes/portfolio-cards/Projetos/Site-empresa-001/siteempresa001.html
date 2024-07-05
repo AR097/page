@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="scr/componentes/home/img/perfil.png" type="image/x-icon"/>
+    <title>Portfólio - Site empresa 001</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
+</head> 
+
+<body>
+
+  <header>
+    <div class="box_logo">
+
+    </div>
+      <nav class="menuheader">
+        <a href="https://ar097.github.io/page/#pghome">Home</a>
+        <a href="https://ar097.github.io/page/#pgoverview">Overview</a>
+        <a href="https://ar097.github.io/page/#pgperfil">Perfil</a>
+        <a href="https://ar097.github.io/page/#pgportfolio">Portfolio</a>
+        <a href="https://ar097.github.io/page/#pgcontact">Contact</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        &#9776; 
+      </div>
+  </header>
+
+  <div class="previewefeatures">
+    <div class="slideshow-container">
+      <div class="slides active">
+          <img src="image1.png" alt="Imagem 1">
+      </div>
+      <div class="slides">
+          <img src="image2.png" alt="Imagem 2">
+      </div>
+      <div class="slides">
+          <img src="image3.png" alt="Imagem 3">
+      </div>
+      <div class="slides">
+        <img src="image4.png" alt="Imagem 3">
+      </div>
+
+      <!-- Botões de navegação -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="lateralrigth">
+      <div class="box1">
+        <h2 id="h2title">Site Empresa - 001</h2>
+        <p id="pintroduction">
+          Este site foi projetado para atender às demandas básicas, com quatro seções: Página Inicial, Sobre, Serviços e Contato. <br>
+          O código-fonte é organizado, facilitando a manutenção, inclusão de novos recursos e a escalabilidade para atender a diversas necessidades. 
+        </p> 
+      </div>
+
+      <div class="box2">
+        <h2 id="h2title">Características</h2>
+        <div class="featuresbox">
+
+          <div class="features">
+            <h1  id="h1features">Desenvolvido em React.JS</h1>
+          </div>
+          <div class="features">
+            <h1 id="h1features">Documentação</h1>
+          </div>
+
+          <div class="features">
+            <h1 id="h1features">Interface responsiva e simples</h1>
+          </div>
+
+          <div class="features">
+            <h1 id="h1features">Front-end</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; <span id="currentYear"></span>
+    <span>by <a className="footer-name" href="https://github.com/AR097">
+      Andressa Rodrigues
+      </a> . </span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
