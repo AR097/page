@@ -183,9 +183,23 @@ width: fit-content;
 }
 
 #linkfeature{
-  background-color: rgb(64, 23, 102);
+  background-color:black;
   border: solid rgb(48, 30, 59) 1px;
   padding: 5px 10px;
+  margin-right: 30px;
+  a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    color: white;
+    font-size: 12px;
+  }
+  svg{
+    width: 70px;
+    margin: -20px 0;
+  }
 }
 footer{
   bottom: 0;
