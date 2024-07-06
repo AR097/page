@@ -123,7 +123,7 @@
     flex-direction: row;
     width: 70%;
     background-color: none;
-
+    margin-bottom: 50px;
   }
   .box1, .box2{
     display: flex;
@@ -170,19 +170,35 @@
   }
 }
   
-  footer{
-    display: flex;
-    justify-content: center;
-    padding: 50px 0 10px 0;
-    width: 100%;
-    background-color: #000;
-    color:rgb(255, 255, 255);
-    a, span{
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-    }
+footer{
+  bottom: 0;
+  z-index: 1000;
+  background: var(--background-header);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  padding: 5px 0;
+  border-top: #1f2020 solid 1px;
+}
+footer .redessociais {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  margin-left: 20px;
+}
 
-  }
+footer span, a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer svg {
+  width: 30px;
+  height: auto;
+}
   @media screen and (max-width:599px) {
     p{
       font-size: 13px;
