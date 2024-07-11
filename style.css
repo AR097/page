@@ -28,7 +28,16 @@ header {
   z-index: 1000;
   top: 0;
 }
-
+.language-icons{
+  display: flex;
+  flex-direction:row;
+  gap: 10px;
+  z-index: 1001;
+  margin-right: 10px;
+  svg{
+    width: 25px;
+  }
+}
 header .box_logo {
   width: 50px;
   height: 50px;
