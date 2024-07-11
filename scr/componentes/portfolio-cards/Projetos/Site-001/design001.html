@@ -2,32 +2,26 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="scr/componentes/home/img/perfil.png" type="image/x-icon"/>
     <title>Portfólio - WebSite-001</title>
     
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
 </head> 
 
 <body>
 
   <header>
-    <div class="box_logo">
-
-    </div>
     <nav class="menuheader">
-      <a href="https://ar097.github.io/page/#pghome">Pagina inicial</a>
-      <a href="https://ar097.github.io/page/#pgskills">Skills</a>
-      <a href="https://ar097.github.io/page/#pgportfolio">Portfólio</a>
-      <a href="https://ar097.github.io/page/#pgabout">Sobre</a>
-      <a href="https://ar097.github.io/page/#pgcontact">Contato</a>
+      <a href="https://ar097.github.io/page/#pghome" data-translate="nav-home">Pagina inicial</a>
+      <a href="https://ar097.github.io/page/#pgskills" data-translate="nav-skills">Skills</a>
+      <a href="https://ar097.github.io/page/#pgportfolio" data-translate="nav-portfolio">Portfólio</a>
+      <a href="https://ar097.github.io/page/#pgabout" data-translate="nav-about">Sobre</a>
+      <a href="https://ar097.github.io/page/#pgcontact" data-translate="nav-contact">Contato</a>
     </nav>
     <div class="language-icons">
       <a href="#" data-lang="pt"><svg viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_503_4726)"> <rect width="28" height="20" rx="2" fill="white"></rect> <mask id="mask0_503_4726" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"> <rect width="28" height="20" rx="2" fill="white"></rect> </mask> <g mask="url(#mask0_503_4726)"> <rect width="28" height="20" fill="#05AB41"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.53152 10.5597C3.12552 10.297 3.12552 9.70301 3.53152 9.44031L13.6377 2.90103C13.8581 2.75843 14.1416 2.75843 14.362 2.90103L24.4682 9.44031C24.8742 9.70301 24.8742 10.297 24.4682 10.5597L14.362 17.099C14.1416 17.2416 13.8581 17.2416 13.6377 17.099L3.53152 10.5597Z" fill="#FDD216"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0002 14.6666C16.5775 14.6666 18.6668 12.5773 18.6668 9.99998C18.6668 7.42265 16.5775 5.33331 14.0002 5.33331C11.4228 5.33331 9.3335 7.42265 9.3335 9.99998C9.3335 12.5773 11.4228 14.6666 14.0002 14.6666Z" fill="#053087"></path> <mask id="mask1_503_4726" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="5" width="10" height="10"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0002 14.6666C16.5775 14.6666 18.6668 12.5773 18.6668 9.99998C18.6668 7.42265 16.5775 5.33331 14.0002 5.33331C11.4228 5.33331 9.3335 7.42265 9.3335 9.99998C9.3335 12.5773 11.4228 14.6666 14.0002 14.6666Z" fill="white"></path> </mask> <g mask="url(#mask1_503_4726)"> <path d="M8.77987 8.78021C9.51257 8.18688 11.8769 8.74895 14.084 9.33769C16.291 9.92643 18.5929 11.1604 19.179 11.8842" stroke="white" stroke-width="1.33333" stroke-linecap="square"></path> </g> </g> </g> <defs> <clipPath id="clip0_503_4726"> <rect width="28" height="20" rx="2" fill="white"></rect> </clipPath> </defs> </g></svg></a>
@@ -54,15 +48,14 @@
         <img src="image4.png" alt="Imagem 3">
       </div>
 
-      <!-- Botões de navegação -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="lateralrigth">
       <div class="box1">
-        <h2 id="h2title">WebSite - 001</h2>
-        <p id="pintroduction">
+        <h2 id="h2title"  data-translate="title">WebSite - 001</h2>
+        <p id="pintroduction" data-translate="introduction">
           Este site foi projetado para atender às demandas básicas, com quatro seções: Página Inicial, Sobre, Serviços e Contato. <br>
           O código-fonte é organizado, facilitando a manutenção, inclusão de novos recursos e a escalabilidade para atender a diversas necessidades. 
         </p>
@@ -70,30 +63,28 @@
           <div class="features" id="linkfeature">
             <a href="https://www.canva.com/design/DAGKJT2Ugt8/UN5GcQXKq3TGOqM9UTCgJg/edit?utm_content=DAGKJT2Ugt8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
               <img src="canvaimage.png" alt="">
-              <h1 id="h1features">Visualizar</h1>
+              <h1 id="h1features" data-translate="view">Visualizar</h1>
             </a>
           </div>
         </div>
       </div>
 
       <div class="box2">
-        <h2 id="h2title">Características</h2>
+        <h2 id="h2title" data-translate="features-title">Características</h2>
         <div class="featuresbox">
 
           <div class="features">
-            <h1  id="h1features">Desenvolvido em React.JS</h1>
-          </div>
-          <div class="features">
-            <h1 id="h1features">Documentação</h1>
+            <h1  id="h1features" data-translate="developed-in-react">Desenvolvido em React.JS</h1>
           </div>
 
           <div class="features">
-            <h1 id="h1features">Interface responsiva e simples</h1>
+            <h1 id="h1features"  data-translate="front-end">Front-end</h1>
           </div>
 
           <div class="features">
-            <h1 id="h1features">Front-end</h1>
+            <h1 id="h1features" data-translate="responsive-interface">Interface responsiva e funcional</h1>
           </div>
+
         </div>
       </div>
     </div>
@@ -117,6 +108,8 @@
         </a> . </span>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

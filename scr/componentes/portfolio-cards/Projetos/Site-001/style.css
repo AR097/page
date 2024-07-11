@@ -17,7 +17,16 @@ header {
   height: 75px;
   top: 0;
   z-index: 1000;
-
+}
+.language-icons{
+  display: flex;
+  flex-direction:row;
+  margin-left: 20px;
+  gap: 10px;
+  z-index: 1001;
+  svg{
+    width: 25px;
+  }
 }
   header .menuheader {
     display: none;
@@ -40,7 +49,7 @@ header {
   display: flex;
   font-size: 30px;
   cursor: pointer;
-  margin-left: 91%;
+  margin-left:85%;
   color: #ffffff;
   z-index: 1000;
 
@@ -240,8 +249,19 @@ footer svg {
   }
   /*Header e menu*/
   header {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #00000085;
   } 
+  .language-icons{
+    margin-left: 20PX;
+    gap: 10px;
+    z-index: 1001;
+    position: relative;
+    svg{
+      width: 25px;
+    }
+  }
     header .menuheader {
       display: none;
       flex-direction: column;
@@ -257,7 +277,7 @@ footer svg {
     header .hamburger {
       display: block;
       color: #888;
-      margin-left: 80%;
+      margin-left: 60%;
 
     }      
     header .menuheader.show {

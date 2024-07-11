@@ -250,8 +250,19 @@ footer svg {
   }
   /*Header e menu*/
   header {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #00000085;
   } 
+  .language-icons{
+    margin-left: 20PX;
+    gap: 10px;
+    z-index: 1001;
+    position: relative;
+    svg{
+      width: 25px;
+    }
+  }
     header .menuheader {
       display: none;
       flex-direction: column;
