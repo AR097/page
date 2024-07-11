@@ -32,6 +32,7 @@ function plusSlides(n) {
 }
 
 showSlides(slideIndex);
+
 //translate
 const translations = {
   en: {
@@ -98,4 +99,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = new Date().getFullYear();
     currentYearElement.textContent = currentYear;
 });
-
+ 
