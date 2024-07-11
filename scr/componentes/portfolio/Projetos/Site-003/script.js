@@ -46,7 +46,7 @@ const translations = {
     'view': 'View',
     'features-title': 'Features',
     'developed-in-react': 'Developed in React',
-    'front-end': 'Front-end',
+    'front-end': 'Full Front-End',
     'responsive-interface': 'Responsive and functional interface',
     'basic-js-resources': 'Basic JS resources'
   },
@@ -61,7 +61,7 @@ const translations = {
     'view': 'Visualizar',
     'features-title': 'Características',
     'developed-in-react': 'Desenvolvido em React',
-    'front-end': 'Front-end',
+    'front-end': 'Front-end completo',
     'responsive-interface': 'Interface responsiva e funcional',
     'basic-js-resources': 'Recursos JS básicos'
   },
@@ -76,7 +76,7 @@ const translations = {
     'view': 'Ver',
     'features-title': 'Características',
     'developed-in-react': 'Desarrollado en React',
-    'front-end': 'Front-end',
+    'front-end': 'Front-End Completo',
     'responsive-interface': 'Interfaz responsiva y funcional',
     'basic-js-resources': 'Recursos JS básicos'
   }
