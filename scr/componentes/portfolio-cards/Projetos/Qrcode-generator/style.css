@@ -31,11 +31,9 @@ header {
     top: 0;
     }
     header .menuheader a:hover {
-    background: rgb(63, 63, 63);
-    color: #000;
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+      background:none;
+      color: #75668d;
+      }
   header .hamburger {
   display: flex;
   font-size: 30px;
