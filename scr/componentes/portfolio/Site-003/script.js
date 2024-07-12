@@ -52,7 +52,7 @@ const translations = {
     'title-pay':'Buy with PayPal',
     'modelo-front-end':'Front-end Model',
     'modelo-front-end-description':'Description: Ready-made one-page portfolio website template with an exclusive design that highlights your work directly, ensuring a simple and focused browsing experience. Although the main template does not include secondary pages, these should be added for the portfolio section, offering a more detailed presentation of your projects.',
-    'valor':'Price: R$120.00'
+    'valor':'Price: R$80.00'
   },
   pt: {
     'nav-home': 'Pagina inicial',
@@ -71,7 +71,7 @@ const translations = {
     'title-pay':'Comprar com PayPal',
     'modelo-front-end':'Modelo Front-end',
     'modelo-front-end-description':'Descrição: Modelo pronto de um site de portfólio de uma única página, com design exclusivo que destaca diretamente seu trabalho, garantindo uma experiência de navegação simples e focada. Embora o modelo principal não inclua páginas secundárias, estas devem ser adicionadas para a seção de portfólio, oferecendo uma apresentação mais detalhada dos seus projetos.',
-    'valor':'Valor: R$120.00'
+    'valor':'Valor: R$80.00'
   },
   es: {
     'nav-home': 'Página inicial',
