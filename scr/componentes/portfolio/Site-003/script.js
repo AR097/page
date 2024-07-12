@@ -48,7 +48,8 @@ const translations = {
     'developed-in-react': 'Developed in React',
     'front-end': 'Full Front-End',
     'responsive-interface': 'Responsive and functional interface',
-    'basic-js-resources': 'Basic JS resources'
+    'basic-js-resources': 'Basic JS resources',
+    'title-pay':'Buy with PayPal'
   },
   pt: {
     'nav-home': 'Pagina inicial',
@@ -63,7 +64,8 @@ const translations = {
     'developed-in-react': 'Desenvolvido em React',
     'front-end': 'Front-end completo',
     'responsive-interface': 'Interface responsiva e funcional',
-    'basic-js-resources': 'Recursos JS básicos'
+    'basic-js-resources': 'Recursos JS básicos',
+    'title-pay':'Comprar com PayPal'
   },
   es: {
     'nav-home': 'Página inicial',
@@ -78,7 +80,8 @@ const translations = {
     'developed-in-react': 'Desarrollado en React',
     'front-end': 'Front-End Completo',
     'responsive-interface': 'Interfaz responsiva y funcional',
-    'basic-js-resources': 'Recursos JS básicos'
+    'basic-js-resources': 'Recursos JS básicos',
+    'title-pay':'Comprar con PayPal'
   }
 };
 
@@ -92,6 +95,7 @@ $(document).ready(function() {
     });
   });
 });
+
 
 //footer
 document.addEventListener('DOMContentLoaded', function() {

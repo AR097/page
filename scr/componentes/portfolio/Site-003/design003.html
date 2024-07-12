@@ -96,13 +96,18 @@
     </div>
   </div>
   <div class="payments">
+    <div class="pricing">
+      <h1>Modelo Front-end</h1>
+      <p>Design003</p>
+      <h1>Valor: R$120,00</h1>
+    </div>
     <div class="box-paypal">
-      <div><h1>Comprar com PayPal</h1></div>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <div><h1 data-translate="title-pay">Comprar com PayPal</h1></div>
+      <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="H7UAER93M44YQ" />
-        <input type="hidden" name="currency_code" value="BRL" />
-        <input type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="O PayPal é a forma fácil e segura de pagar suas compras on-line." alt="Comprar agora" />
+        <input type="hidden" id="paypal-hosted-button-id" name="hosted_button_id" value="H7UAER93M44YQ" />
+        <input type="hidden" id="paypal-currency-code" name="currency_code" value="BRL" />
+        <input id="paypal-button" type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="O PayPal é a forma fácil e segura de pagar suas compras on-line." alt="Comprar agora" />
       </form>
     </div>
   </div>
