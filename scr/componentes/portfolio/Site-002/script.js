@@ -53,7 +53,7 @@ const translations = {
       'title-pay':'Buy with PayPal',
       'modelo-front-end':'Front-end Model',
       'modelo-front-end-description':'Description: One-page portfolio website template with an intuitive design that highlights your work and offers simple, focused navigation.',
-      'valor':'Price: R$150.00'
+      'valor':'Price: R$100.00'
     },
     pt: {
       'nav-home': 'Pagina inicial',
@@ -72,7 +72,7 @@ const translations = {
       'title-pay':'Comprar com PayPal',
       'modelo-front-end':'Modelo Front-end',
       'modelo-front-end-description':'Descrição: Modelo de site de portfólio de uma página, com design intuitivo que destaca seu trabalho e oferece navegação simples e focada. ',
-      'valor':'Valor: R$150.00'
+      'valor':'Valor: R$100.00'
     },
     es: {
       'nav-home': 'Página inicial',
@@ -91,7 +91,7 @@ const translations = {
       'title-pay':'Comprar con PayPal',
       'modelo-front-end':'Modelo Front-end',
       'modelo-front-end-description':'Descripción: Plantilla de sitio web de portafolio de una sola página con un diseño intuitivo que destaca su trabajo y ofrece una navegación simple y enfocada.',
-      'valor':'Precio: R$150.00'
+      'valor':'Precio: R$100.00'
     }
   };
   
