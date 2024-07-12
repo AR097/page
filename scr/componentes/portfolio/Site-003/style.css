@@ -210,31 +210,36 @@ width: fit-content;
 
 .payments{
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  flex-direction: column;
+  margin:0 20px;
   border: solid rgba(255, 255, 255, 0.137) 1px;
   height: fit-content;
+  width: 30%;
+}
+.pricing{
+  border: solid rgba(255, 255, 255, 0.137) 1px;
+  justify-content: center;
+  padding: 10px 15px;
+  h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  p{
+    margin: 20px 0;
+    color: rgba(240, 248, 255, 0.384);
+  }
+}
+
+.box-paypal{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 50px;
   h1{
     font-size: 15px;
     margin-bottom: 10px;
     color: #ffffff;
   }
-}
-.pricing{
-  margin: 20px 0 0 20px;
-  justify-content: center;
-  padding: 20px 0 0 20px;
-  p{
-    margin-top: -10px;
-    color: rgba(240, 248, 255, 0.384);
-    margin-bottom: 10px;
-  }
-}
-.box-paypal{
-  width: fit-content;
-  height: fit-content;
-  margin: 20px;
-  padding: 20px;
 }
 
 footer{

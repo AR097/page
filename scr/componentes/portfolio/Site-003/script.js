@@ -49,7 +49,10 @@ const translations = {
     'front-end': 'Full Front-End',
     'responsive-interface': 'Responsive and functional interface',
     'basic-js-resources': 'Basic JS resources',
-    'title-pay':'Buy with PayPal'
+    'title-pay':'Buy with PayPal',
+    'modelo-front-end':'Front-end Model',
+    'modelo-front-end-description':'Description: Ready-made model of a single-page portfolio website, featuring a unique design that directly emphasizes your work. This model does not include secondary pages, ensuring a simple and focused browsing experience.',
+    'valor':'Price: R$120.00'
   },
   pt: {
     'nav-home': 'Pagina inicial',
@@ -65,7 +68,11 @@ const translations = {
     'front-end': 'Front-end completo',
     'responsive-interface': 'Interface responsiva e funcional',
     'basic-js-resources': 'Recursos JS básicos',
-    'title-pay':'Comprar com PayPal'
+    'title-pay':'Comprar com PayPal',
+    'modelo-front-end':'Modelo Front-end',
+    'modelo-front-end-description':'Descrição: Modelo pronto de um site de portfólio de uma única página, com design exclusivo que enfatiza diretamente seu trabalho. Este modelo não inclui páginas secundárias, garantindo uma experiência de navegação simples e focada.',
+    'valor':'Valor: R$120.00'
+
   },
   es: {
     'nav-home': 'Página inicial',
@@ -81,7 +88,11 @@ const translations = {
     'front-end': 'Front-End Completo',
     'responsive-interface': 'Interfaz responsiva y funcional',
     'basic-js-resources': 'Recursos JS básicos',
-    'title-pay':'Comprar con PayPal'
+    'title-pay':'Comprar con PayPal',
+    'modelo-front-end':'Modelo Front-end',
+    'modelo-front-end-description':'Descripción: Modelo listo de un sitio web de portafolio de una sola página, con un diseño exclusivo que enfatiza directamente su trabajo. Este modelo no incluye páginas secundarias, garantizando una experiencia de navegación simple y enfocada.',
+    'valor':'Precio: R$120.00'
+
   }
 };
 
