@@ -73,6 +73,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: auto;
+width: fit-content;
 }
   
 .slideshow-container {
@@ -81,9 +82,9 @@ height: auto;
   align-items: center;
   justify-content: center;
   position: relative;
-  width:80%;
+  width:90%;
   height: fit-content;
-  }
+}
   .slides {
       display: none;
       width: 100%;
@@ -128,8 +129,8 @@ height: auto;
 
 .lateralrigth{
   display: flex;
-  flex-direction: row;
-  width: 70%;
+  flex-direction: column;
+  width: 80%;
   background-color: none;
   margin-bottom: 50px;
 }
@@ -147,8 +148,7 @@ height: auto;
     }
   }
   .box2{
-    width: 70%;
-    border-left: #ffffff 1px solid ;
+    width: 100%;
     padding-left: 20px;
   }
     #h2title{
@@ -217,7 +217,6 @@ width: fit-content;
   width: 30%;
 }
 .pricing{
-  border: solid rgba(255, 255, 255, 0.137) 1px;
   justify-content: center;
   padding: 10px 15px;
   h1{

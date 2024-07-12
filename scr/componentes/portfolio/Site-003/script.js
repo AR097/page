@@ -51,7 +51,7 @@ const translations = {
     'basic-js-resources': 'Basic JS resources',
     'title-pay':'Buy with PayPal',
     'modelo-front-end':'Front-end Model',
-    'modelo-front-end-description':'Description: Ready-made model of a single-page portfolio website, featuring a unique design that directly emphasizes your work. This model does not include secondary pages, ensuring a simple and focused browsing experience.',
+    'modelo-front-end-description':'Description: Ready-made one-page portfolio website template with an exclusive design that highlights your work directly, ensuring a simple and focused browsing experience. Although the main template does not include secondary pages, these should be added for the portfolio section, offering a more detailed presentation of your projects.',
     'valor':'Price: R$120.00'
   },
   pt: {
@@ -70,9 +70,8 @@ const translations = {
     'basic-js-resources': 'Recursos JS básicos',
     'title-pay':'Comprar com PayPal',
     'modelo-front-end':'Modelo Front-end',
-    'modelo-front-end-description':'Descrição: Modelo pronto de um site de portfólio de uma única página, com design exclusivo que enfatiza diretamente seu trabalho. Este modelo não inclui páginas secundárias, garantindo uma experiência de navegação simples e focada.',
+    'modelo-front-end-description':'Descrição: Modelo pronto de um site de portfólio de uma única página, com design exclusivo que destaca diretamente seu trabalho, garantindo uma experiência de navegação simples e focada. Embora o modelo principal não inclua páginas secundárias, estas devem ser adicionadas para a seção de portfólio, oferecendo uma apresentação mais detalhada dos seus projetos.',
     'valor':'Valor: R$120.00'
-
   },
   es: {
     'nav-home': 'Página inicial',
@@ -90,9 +89,8 @@ const translations = {
     'basic-js-resources': 'Recursos JS básicos',
     'title-pay':'Comprar con PayPal',
     'modelo-front-end':'Modelo Front-end',
-    'modelo-front-end-description':'Descripción: Modelo listo de un sitio web de portafolio de una sola página, con un diseño exclusivo que enfatiza directamente su trabajo. Este modelo no incluye páginas secundarias, garantizando una experiencia de navegación simple y enfocada.',
+    'modelo-front-end-description':'Descripción: Plantilla de sitio web de portafolio de una sola página con un diseño exclusivo que destaca directamente su trabajo, garantizando una experiencia de navegación simple y enfocada. Aunque la plantilla principal no incluye páginas secundarias, estas deben añadirse para la sección de portafolio, ofreciendo una presentación más detallada de sus proyectos.',
     'valor':'Precio: R$120.00'
-
   }
 };
 
