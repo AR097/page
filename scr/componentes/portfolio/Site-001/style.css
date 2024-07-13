@@ -17,6 +17,7 @@ header {
   height: 75px;
   top: 0;
   z-index: 1000;
+  background-color: #07070781;
 }
 .language-icons{
   display: flex;
@@ -40,14 +41,14 @@ header {
     top: 0;
     }
     header .menuheader a:hover {
-      background:none;
-      color: #75668d;
-      }
+    background:none;
+    color: #75668d;
+    }
   header .hamburger {
   display: flex;
   font-size: 30px;
   cursor: pointer;
-  margin-left:85%;
+  margin-left: 85%;
   color: #ffffff;
   z-index: 1000;
 
@@ -62,26 +63,28 @@ header {
       justify-content: center;
       position: absolute;
     }
-
+.content{
+  margin: 80px 0 0 20px;
+  display: flex;
+  flex-direction: row;
+}
 .previewefeatures{
-margin-top: 10px;
 display: flex;
 flex-direction: column;
-justify-content: center;
 align-items: center;
 height: auto;
-background-color: #000000;
+width: fit-content;
 }
-/*PREVIEW*/   
+  
 .slideshow-container {
   margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width:75%;
+  width:90%;
   height: fit-content;
-  }
+}
   .slides {
       display: none;
       width: 100%;
@@ -124,11 +127,10 @@ background-color: #000000;
       border-radius: 3px 3px 0 0;
   }
 
-/*FEATURES*/
 .lateralrigth{
   display: flex;
-  flex-direction: row;
-  width: 70%;
+  flex-direction: column;
+  width: 80%;
   background-color: none;
   margin-bottom: 50px;
 }
@@ -146,8 +148,7 @@ background-color: #000000;
     }
   }
   .box2{
-    width: 70%;
-    border-left: #ffffff 1px solid ;
+    width: 100%;
     padding-left: 20px;
   }
     #h2title{
@@ -173,7 +174,6 @@ width: fit-content;
   gap:0;
   width: fit-content;
 }
-
 .features{
 padding: 0 10px;
 background: rgb(119, 118, 119);  
@@ -188,7 +188,6 @@ width: fit-content;
     text-decoration: none;
   }
 }
-
 #linkfeature{
   background-color:black;
   border: solid rgb(48, 30, 59) 1px;
@@ -208,44 +207,67 @@ width: fit-content;
     margin: -20px 0;
   }
 }
+
+.payments{
+  display: flex;
+  flex-direction: column;
+  margin:0 20px;
+  height: fit-content;
+  width: 30%;
+}
+.pricing{
+  justify-content: center;
+  padding: 10px 15px;
+  h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  p{
+    margin: 20px 0;
+    color: rgba(240, 248, 255, 0.384);
+  }
+}
+
+.box-paypal{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 50px;
+  h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+}
+
 footer{
   bottom: 0;
   z-index: 1000;
-  background: var(--background-header);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #000000;
-  padding: 5px 0;
   border-top: #1f2020 solid 1px;
+  padding: 20px;
 }
 footer .redessociais {
   display: flex;
   padding: 10px;
-  gap: 10px;
-  margin-left: 20px;
+  gap: 20px;
 }
-
 footer span, a {
   text-decoration: none;
   color: #ffffff;
 }
-
 footer svg {
   width: 30px;
   height: auto;
 }
 @media screen and (max-width:599px) {
-  /*
-  h2: 
-  font-size: 20px;
-  */
   p{
     font-size: 13px;
   }
-  /*Header e menu*/
   header {
     display: flex;
     justify-content: center;
@@ -276,7 +298,6 @@ footer svg {
       display: block;
       color: #888;
       margin-left: 60%;
-
     }      
     header .menuheader.show {
       display: flex;
@@ -289,19 +310,17 @@ footer svg {
       position: absolute;
       margin-left:62%;
     }
-
     .box_logo{
       display: none;
       }
-      .box_logo img{
-        display: none;
-      }
+.content{
+  display: flex;
+  flex-direction: column;
+}
 .previewefeatures{
-  margin-top: 80px;
   justify-content: center;
   align-items: center;
-}
-/*PREVIEW*/   
+}  
 .slideshow-container {
   width:90%;
   margin-bottom: 25px;
@@ -309,9 +328,7 @@ footer svg {
   .prev, .next {
       padding: 10px;
   }
-
-/*FEATURES*/
-.lateralrigth{/*trocado para a aixa de baixo*/
+.lateralrigth{
   display: flex;
   flex-direction: column;
   max-width: fit-content;
@@ -321,7 +338,6 @@ footer svg {
       margin-bottom: 10px;
     }
   }
-
   .box1{
     align-items: baseline;
     #h2title{
@@ -374,5 +390,4 @@ footer svg {
       width: 40px;
     }
   }
-
 }
