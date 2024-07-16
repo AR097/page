@@ -12,6 +12,9 @@
 h1{
   font-size: large;
 }
+p{
+  font-size: 1.6vw;
+}
 body {
   background-color: var(--background-page);
   color: var(--color-all-text);
@@ -191,8 +194,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 p{
-  padding:0 50px;
-  font-size: 1.5vw;
 }
 }
 .contentskills{
