@@ -13,6 +13,7 @@
 p, h1{
   font-size: 1.6vw;
 }
+
 body {
   background-color: var(--background-page);
   color: var(--color-all-text);
@@ -186,13 +187,11 @@ header .hamburger {
 .sobremim{
 margin: 50px 0;
 height: fit-content;
-width: 100%;
+width: 95%;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-p{
-}
 }
 .contentskills{
   height: fit-content;
@@ -205,12 +204,12 @@ p{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  width: 100%;
+  gap: 10px;
+  width: 95%;
 }
 #imgskills SVG {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 .hobbies {
