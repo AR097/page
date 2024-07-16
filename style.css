@@ -411,6 +411,12 @@ footer svg {
   #headerbox {
     font-size: 30px;
   }
+  h1{
+    font-size: large;
+  }
+  p{
+    font-size: 3vw;
+  }
   .content-contact{/*media queryes para add espaço qnd em ela menor*/
     margin-top: 20px;  
   }
