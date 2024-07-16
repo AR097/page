@@ -505,7 +505,7 @@ footer svg {
     padding: 0 8px;
   }
 
-  
+
   #pgportfolio {
     width: 100%;
   }
@@ -517,7 +517,7 @@ footer svg {
 
   #items {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 3% 0;
+    gap: 20px 0;
   }
 
   .imagecard img {
