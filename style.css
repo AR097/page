@@ -9,10 +9,8 @@
   --background-header: rgb(107, 107, 107);
   --color-all-text: rgb(255, 255, 255);
 }
-h1{
-  font-size: large;
-}
-p{
+
+p, h1{
   font-size: 1.6vw;
 }
 body {
@@ -114,7 +112,8 @@ header .hamburger {
   font-weight: 400;
 }
 #pghome h1 {
-  font-size: 30px;
+  font-size: 4vw;
+  color: #ffffff1c;
 }
 #helloworld {
   display: flex;
@@ -124,10 +123,9 @@ header .hamburger {
   text-align: center;
   margin: 50px 0;
 }
-.text-animation {
+.text-animation {/*MQ para texto*/
   width: 100%;
-  font-size: 4vw;
-  font-weight: 400;
+  font-size: 5vw;
 }
 .text-animation span {
   position: relative;
@@ -411,11 +409,12 @@ footer svg {
   #headerbox {
     font-size: 30px;
   }
-  h1{
-    font-size: large;
-  }
-  p{
+
+  p, h1{
     font-size: 3vw;
+  }
+  .text-animation {/*MQ para texto*/
+    font-size: 8vw;
   }
   .content-contact{/*media queryes para add espaço qnd em ela menor*/
     margin-top: 20px;  
