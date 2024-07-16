@@ -17,6 +17,7 @@ body {
   background-color: var(--background-page);
   color: var(--color-all-text);
   width: 100%;
+  box-sizing: border-box;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
 }
@@ -489,31 +490,6 @@ footer svg {
     width: 60px;
     height: 60px;
   }
-
-  #pgportfolio {
-    width: 100%;
-  }
-
-  .card {
-    width: 200px;
-    height: 160px;
-  }
-
-  #items {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px 0;
-  }
-
-  .imagecard img {
-    width: 100%;
-    height: 100%;
-  }
-
-  #Titlecard {
-    font-size: 13px;
-    padding: 5px;
-  }
-
   .hobbies {
     width: 100%;
   }
@@ -529,30 +505,51 @@ footer svg {
     padding: 0 8px;
   }
 
-  #pgcontact {
+  
+  #pgportfolio {
+    width: 100%;
+  }
+
+  .card {
+    width: 190px;
+    height:160px;
+  }
+
+  #items {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3% 0;
+  }
+
+  .imagecard img {
+    width: 100%;
     height: 100%;
   }
 
+  #Titlecard {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+ 
+  #pgcontact {
+    height: 100%;
+  }
   .contato {
     width: 100%;
-    grid-template-columns: 1fr 5fr;
   }
-
-  .contato svg {
-    width: 18px;
-    padding: 15px;
+  .conteudocontato{
+    h1{
+      font-size: 2.8vh;
+      margin-bottom: 20px;
+    }
   }
-
+  .contatofooter svg {
+    width: 13px;
+  }
   .contato li a {
-    font-size: 15px;
+    font-size: 2.5vh;
   }
-
-  .localizacao {
+  .map-contact {
     margin-bottom: 50px;
-  }
-
-  footer {
-    flex-direction: column;
-    width: 100%;
   }
 }
