@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   scrollbar-width: none;
+  box-sizing: border-box;
 }
 :root {
   --background-page: rgb(0, 0, 0);
   --background-header: rgb(107, 107, 107);
   --color-all-text: rgb(255, 255, 255);
+}
+h1{
+  font-size: large;
 }
 body {
   background-color: var(--background-page);
@@ -24,6 +28,7 @@ header {
   width: 100%;
   z-index: 1000;
   top: 0;
+  height: 60px;
 }
 .language-icons{
   display: flex;
@@ -39,7 +44,6 @@ header .box_logo {
   width: 50px;
   height: 50px;
   margin-left: 2%;
-  padding: 5px;
 }
 header .box_logo img {
   width: 50px;
@@ -85,6 +89,12 @@ header .hamburger {
   color: rgb(104, 59, 146);
   text-align: center;
 }
+
+#pghome, #pgabout, #pgportfolio, #pgcontact{
+  width: 90%;
+}
+
+
 #pghome {
   display: flex;
   flex-direction: column;
@@ -182,6 +192,7 @@ align-items: center;
 text-align: center;
 p{
   padding:0 50px;
+  font-size: 3vh;
 }
 }
 .contentskills{
@@ -290,126 +301,90 @@ p{
 #pgcontact {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 90%;
+  min-height: 500px;
 }
 .conteudocontato {
-  display: grid;
   width: 100%;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
 }
-  .conteudocontato h1 {
-    font-size: 20px;
-  }
-.content-contact{
+.content-contact{/*media queryes para add espaço qnd em ela menor*/
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: fit-content;
+  justify-content: center;
+
 }
 .contato {
   list-style: none;
   display: flex;
-  justify-content: right;
   align-items: center;
-  padding: 0 80px;
-
-  width: 50%;
 }
-.contatofooter {
+.contatoinfos {
   display: flex;
   flex-direction: column;
 }
-.contatofooter li {
+.contato li a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 50px;
+  font-size:me;
+}
+.contatoinfos li {
     display: inline-flex;
     align-items: center;
     height: 30px; 
     padding: 10px;
-  }
-   .contatofooter li svg {
-    width: 25px;
-    margin-right: 10px;
+    svg{
+      width: 40px;
+      padding: 10px;
+    }
   }
   .map-contact {
-    max-width: 300px;
-    height: 200px; 
+    width: 220px;
+    height: 220px; 
     margin: 20px auto; 
     border: 1px solid #000000;
     padding: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #e7e7e7;
-  }
+    background-color: #e7e7e7;  }
   .map-footer iframe {
     width: 100%;
     height: 100%;
     border: 0;
     border-radius: 8px;
   }
-.contato svg {
-  width: 25px;
-  padding: 10px;
-}
 
-.contato .information {
-  text-align: left;
-  justify-items: center;
-  line-height: 30px;
-  color: var(--secondlight);
-}
-
-.contato li a {
-  text-decoration: none;
-  color: #ffffff;
-  line-height: 50px;
-  font-size: 20px;
-}
-
-.localizacao svg {
-  width: 80px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.localizacao{
-  margin-bottom: 10px;
-}
 
 footer {
   bottom: 0;
   z-index: 1000;
   background: var(--background-header);
+  padding: 5px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   color: #000000;
-  padding: 5px 0;
-  border-top: #1f2020 solid 1px;
 }
-
-footer .redessociais {
-  display: flex;
-  padding: 5px;
-  gap: 10px;
-  margin-left: 20px;
-}
-
 footer a {
   text-decoration: none;
   color: #000000;
 }
-
 footer svg {
   width: 30px;
+  padding: 5px;
   height: auto;
 }
 
-/* Responsividade */
 
 @media screen and (max-width: 599px) {
   header {
     color: wheat;
   }
-
   header .menuheader {
     background-color: #555555;
     display: none;
@@ -422,141 +397,20 @@ footer svg {
     right: 0;
     z-index: inherit;
   }
-
   header .hamburger {
     color: white;
     display: block;
   }
-
   header .menuheader.show {
     display: flex;
   }
-
   .headerbox {
     width: 100%;
   }
-
   #headerbox {
     font-size: 30px;
   }
-
-  #name {
-    font-size: 25px;
-    margin: -10px 0;
-  }
-
-  h2 {
-    font-size: 16px;
-    padding: 0 20px;
-  }
-
-  #pghome h1 {
-    text-align: center;
-    font-size: 3vh;
-    margin-top: 100px;
-  }
-
-  #helloworld .text-animation {
-    font-size: 8vw;
-  }
-
-  .boxleft, .boxcenter {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .Skills {
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 25px;
-  }
-
-  #imgskills img {
-    width: 60px;
-    height: 60px;
-  }
-
-  #pgportfolio {
-    width: 100%;
-  }
-
-  .card {
-    margin-left: 2px;
-    width: 210px;
-    height: 170px;
-  }
-
-  #items {
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px 0;
-  }
-
-  .imagecard img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
-
-  #Titlecard {
-    font-size: 13px;
-    padding: 5px;
-  }
-
-  #pgabout {
-    height: 100%;
-    h1{
-      margin-bottom: 25px;
-    }
-  }
-  .hobbies{
-    width: 100%;
-  }
-  .hobbies .img {
-    flex-direction: row;
-    gap: 5px;
-  }
-
-  .hobbies svg {
-    margin-top: 15px;
-    width: 20px;
-    padding: 0 8px;
-  }
-
-  #pgcontact {
-    height: 100%;
-    h1{
-      margin-bottom: 40px;
-    }
-  }
-
-  .provisorio {
-    width: 60%;
-  }
-
-  .boxleftcontato h1 {
-    font-size: 20px;
-  }
-
-  .contato {
-    width: 100%;
-    grid-template-columns: 1fr 5fr;
-  }
-
-  .contato svg {
-    width: 18px;
-    padding: 15px;
-  }
-
-  .contato li a {
-    font-size: 15px;
-  }
-  .map-contact{
-    margin-bottom: 50px;
-  }
-
-  footer {
-    flex-direction: column;
-    width: 100%;
+  .content-contact{/*media queryes para add espaço qnd em ela menor*/
+    margin-top: 20px;  
   }
 }
