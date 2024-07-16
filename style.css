@@ -284,8 +284,7 @@ header .hamburger {
 }
 
 .card {
-  width: 100%;
-  max-width: 350px;
+  width: 350px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -496,8 +495,8 @@ footer svg {
   }
 
   .card {
-    width: 210px;
-    height: 170px;
+    width: 200px;
+    height: 160px;
   }
 
   #items {
