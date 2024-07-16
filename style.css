@@ -416,7 +416,7 @@ footer svg {
   .text-animation {/*MQ para texto*/
     font-size: 8vw;
   }
-  .content-contact{/*media queryes para add espaço qnd em ela menor*/
+  .content-contact{/*MQ para add espaço qnd em ela menor*/
     margin-top: 20px;  
   }
 }
