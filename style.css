@@ -427,16 +427,12 @@ footer svg {
     padding-bottom: 50%;
   }
   #items {/*MQ*/
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
   }
   .card {/*MQ*/
     width: 150px;
     height:130px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
   .content-contact{/*MQ*/
     margin-top: 20px;  
