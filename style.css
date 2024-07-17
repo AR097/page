@@ -10,10 +10,11 @@
   --background-page: rgb(0, 0, 0);
   --background-header: rgb(107, 107, 107);
   --color-all-text: rgb(255, 255, 255);
-  --color-subtitle-text: #ffffff1c;
+  --color-subtitle-text: #ffffff3a;
 }
 
-p, h1, span, h2{/*MQ*/
+p, h1, span, h2
+{/*MQ*/
   font-size: 1.6vw;
   font-weight: 100;
   font-style: normal;
