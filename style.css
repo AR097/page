@@ -13,8 +13,10 @@
   --color-subtitle-text: #ffffff1c;
 }
 
-p, h1{/*MQ*/
+p, h1, span, h2{/*MQ*/
   font-size: 1.6vw;
+  font-weight: 100;
+  font-style: normal;
 }
 
 body {
@@ -332,7 +334,6 @@ header .hamburger {
   text-decoration: none;
   color: #ffffff;
   line-height: 50px;
-  font-size:me;
 }
 .contatoinfos li {
     display: inline-flex;
