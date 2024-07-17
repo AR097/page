@@ -3,14 +3,17 @@
   padding: 0;
   scrollbar-width: none;
   box-sizing: border-box;
+  place-items: center;
+
 }
 :root {
   --background-page: rgb(0, 0, 0);
   --background-header: rgb(107, 107, 107);
   --color-all-text: rgb(255, 255, 255);
+  --color-subtitle-text: #ffffff1c;
 }
 
-p, h1{
+p, h1{/*MQ*/
   font-size: 1.6vw;
 }
 
@@ -77,43 +80,43 @@ header .hamburger {
 }
 .pages {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   place-items: center;
+
 }
 .headerbox {
   width: 100%;
   margin-top: 70px;
   margin-bottom: 15px;
 }
-#headerbox {
-  font-size: 35px;
-  font-weight: 500;
-  color: rgb(104, 59, 146);
+#headerbox {/*MQ*/
+  font-size: 3vw;
+  color: var(--color-subtitle-text);
   text-align: center;
 }
 
 #pghome, #pgabout, #pgportfolio, #pgcontact{
   width: 90%;
+  min-height: 400px;
 }
 
 
-#pghome {
+#pghome {/*MQ*/
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 150px;
-  padding-bottom: 70px;
-  width: 100%;
+  height: 500px;
   h1{
     padding-top: 10px;
   }
 }
-#pghome #name {
-  font-size: 27px;
-  font-weight: 400;
-}
-#pghome h1 {
-  font-size: 4vw;
+
+#pghome h1 {/*MQ*/
+  font-size: 3vw;
   color: #ffffff1c;
 }
 #helloworld {
@@ -176,25 +179,24 @@ header .hamburger {
     width: calc(100% + 17px);
   }
 }
+
+
 #pgabout {
-  font-size: 22px;
-  font-weight: 300;
   text-align: center;
   height: fit-content;
   flex-direction: column;
   display: flex;
 }
 .sobremim{
-margin: 50px 0;
-height: fit-content;
-width: 95%;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .contentskills{
   height: fit-content;
+  margin-top: 20px;
   p{
     color: #75787a;
     margin-bottom: 10px;
@@ -213,19 +215,20 @@ text-align: center;
   cursor: pointer;
 }
 .hobbies {
-  margin-top: 30px;
-  color: #75787a;
+  margin-top: 20px;
+  p{
+    color: #75787a;
+    margin-bottom: 10px;
+  }
 }
-
 .hobbies .img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
-
 .hobbies svg {
   width: 30px;
-  padding: 25px 40px;
 }
 
 
@@ -234,7 +237,6 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   padding-top: 10px;
-  width: 90%;
   h1{
     padding-bottom: 10px;
   }
@@ -255,12 +257,13 @@ text-align: center;
 
 #items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
   place-items: center;
+  width: 90%;
 }
 
-.card {
+.card {/*MQ*/
   width: 350px;
   height: 300px;
   display: flex;
@@ -409,13 +412,20 @@ footer svg {
     font-size: 30px;
   }
 
-  p, h1{
+  p, h1{/*MQ*/
     font-size: 3vw;
   }
-  .text-animation {/*MQ para texto*/
+  .text-animation {/*MQ*/
     font-size: 8vw;
   }
-  .content-contact{/*MQ para add espaço qnd em ela menor*/
+  #pghome h1, #headerbox {/*MQ*/
+    font-size: 6vw;
+  }
+  #pghome {/*MQ*/
+    padding-top: 100px;
+    height: 300px;
+  }
+  .content-contact{/*MQ*/
     margin-top: 20px;  
   }
 }
