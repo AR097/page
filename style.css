@@ -422,8 +422,9 @@ footer svg {
     font-size: 6vw;
   }
   #pghome {/*MQ*/
-    padding-top: 100px;
-    height: 300px;
+    padding-top: 50%;
+    height: fit-content;
+    padding-bottom: 50%;
   }
   .content-contact{/*MQ*/
     margin-top: 20px;  
