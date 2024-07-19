@@ -120,7 +120,7 @@ header .hamburger {
 
 #pghome h1 {/*MQ*/
   font-size: 3vw;
-  color: #ffffff1c;
+  color: var(--color-subtitle-text);
 }
 #helloworld {
   display: flex;
