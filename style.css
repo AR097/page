@@ -111,16 +111,15 @@ header .hamburger {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
-  height: 500px;
-  h1{
-    padding-top: 10px;
-  }
+  justify-content: center;
+  margin: 100px;
+  height: 1vh;
 }
 
 #pghome h1 {/*MQ*/
   font-size: 3vw;
   color: var(--color-subtitle-text);
+  padding-top: 10px;
 }
 #helloworld {
   display: flex;
@@ -132,10 +131,15 @@ header .hamburger {
 }
 .text-animation {/*MQ para texto*/
   width: 100%;
-  font-size: 5vw;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .text-animation span {
   position: relative;
+  display: inline-block;
+  font-size: 8vw;
 }
 .text-animation span::before {
   content: "";
@@ -384,7 +388,7 @@ footer svg {
 }
 
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 720px) {
   header {
     color: wheat;
   }
@@ -424,9 +428,8 @@ footer svg {
     font-size: 6vw;
   }
   #pghome {/*MQ*/
-    padding-top: 50%;
     height: fit-content;
-    padding-bottom: 50%;
+    margin: 100px 0 0 0;
   }
   #items {/*MQ*/
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
