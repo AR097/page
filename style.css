@@ -377,14 +377,16 @@ footer {
   align-items: center;
   color: #000000;
 }
-footer a {
+footer a, span{
   text-decoration: none;
   color: #000000;
+  font-size: small;
 }
 footer svg {
-  width: 30px;
+  width: 50px;
   padding: 5px;
   height: auto;
+  margin-bottom: 20px;
 }
 
 
