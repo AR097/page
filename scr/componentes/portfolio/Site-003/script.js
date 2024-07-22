@@ -90,7 +90,7 @@ const translations = {
     'title-pay':'Comprar con PayPal',
     'modelo-front-end':'Modelo Front-end',
     'modelo-front-end-description':'Descripción: Plantilla de sitio web de portafolio de una sola página con un diseño exclusivo que destaca directamente su trabajo, garantizando una experiencia de navegación simple y enfocada. Aunque la plantilla principal no incluye páginas secundarias, estas deben añadirse para la sección de portafolio, ofreciendo una presentación más detallada de sus proyectos.',
-    'valor':'Precio: R$120.00'
+    'valor':'Precio: R$80.00'
   }
 };
 
