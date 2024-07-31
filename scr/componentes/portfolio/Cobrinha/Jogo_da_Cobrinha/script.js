@@ -6,13 +6,12 @@ const canvasSize = canvas.width;
 const totalBoxes = canvasSize / box;
 
 let snake = [{ x: 9 * box, y: 10 * box }];
-let direction = '';
+let direction = { x: 0, y: 0 };
 let food = {
     x: Math.floor(Math.random() * totalBoxes) * box,
     y: Math.floor(Math.random() * totalBoxes) * box
 };
 let score = 0;
-
 
 const foodImg = new Image();
 foodImg.src = 'apple-svgrepo-com.svg';
@@ -20,19 +19,16 @@ foodImg.src = 'apple-svgrepo-com.svg';
 document.addEventListener('keydown', setDirection);
 
 function setDirection(event) {
-    if (event.ctrlKey) {
-        if (event.key === 'ArrowLeft' && direction !== 'RIGHT') {
-            direction = 'LEFT';
-        } else if (event.key === 'ArrowUp' && direction !== 'DOWN') {
-            direction = 'UP';
-        } else if (event.key === 'ArrowRight' && direction !== 'LEFT') {
-            direction = 'RIGHT';
-        } else if (event.key === 'ArrowDown' && direction !== 'UP') {
-            direction = 'DOWN';
-        }
+    if (event.key === 'ArrowLeft' && direction.x === 0) {
+        direction = { x: -box, y: 0 };
+    } else if (event.key === 'ArrowUp' && direction.y === 0) {
+        direction = { x: 0, y: -box };
+    } else if (event.key === 'ArrowRight' && direction.x === 0) {
+        direction = { x: box, y: 0 };
+    } else if (event.key === 'ArrowDown' && direction.y === 0) {
+        direction = { x: 0, y: box };
     }
 }
-
 
 function collision(newHead, snake) {
     for (let i = 0; i < snake.length; i++) {
@@ -92,13 +88,8 @@ function draw() {
 
     ctx.drawImage(foodImg, food.x, food.y, box, box);
 
-    let snakeX = snake[0].x;
-    let snakeY = snake[0].y;
-
-    if (direction === 'LEFT') snakeX -= box;
-    if (direction === 'UP') snakeY -= box;
-    if (direction === 'RIGHT') snakeX += box;
-    if (direction === 'DOWN') snakeY += box;
+    let snakeX = snake[0].x + direction.x;
+    let snakeY = snake[0].y + direction.y;
 
     if (snakeX === food.x && snakeY === food.y) {
         score++;
@@ -117,7 +108,6 @@ function draw() {
     }
 
     let newHead = { x: snakeX, y: snakeY };
-
     snake.unshift(newHead);
 }
 
