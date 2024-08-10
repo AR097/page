@@ -53,6 +53,7 @@ header .menuheader {
   gap: 20px;
   margin-right: 5%;
   text-align: center;
+  display: none;
 }
 header .menuheader a {
   padding: 8px;
