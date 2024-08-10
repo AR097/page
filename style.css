@@ -31,7 +31,7 @@ header {
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   width: 100%;
   z-index: 1000;
@@ -47,16 +47,6 @@ header {
   svg{
     width: 25px;
   }
-}
-header .box_logo {
-  width: 50px;
-  height: 50px;
-  margin-left: 2%;
-}
-header .box_logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }
 header .menuheader {
   display: flex;
@@ -143,7 +133,7 @@ header .hamburger {
 }
 .text-animation span::before {
   content: "";
-  color: rgb(57, 15, 85);
+  color: rgb(107, 107, 107);
   animation: animation 20s infinite;
 }
 .text-animation span::after {
@@ -191,15 +181,63 @@ header .hamburger {
 #pgabout {
   text-align: center;
   height: fit-content;
-  flex-direction: column;
+  width:100%;
   display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 0;
+  background-color: #727272;
+  color: #000000;
+  img{
+    max-width: 20%;
+  }
+  h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  h2{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 1.2em;
+  }
 }
-.sobremim{
+section{
+  width: 75%;
   height: fit-content;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+.download-button {
+  margin: 20px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #3d3d3d;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #1d1d1d;
+  transform: scale(1.05);
+}
+.ondemeencontrarlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  svg{
+    width: 50px;
+  }
 }
 .contentskills{
   height: fit-content;
@@ -212,32 +250,14 @@ header .hamburger {
 .Skills {
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   width: 95%;
 }
-#imgskills SVG {
-  width: 40px;
-  height: 40px;
+#imgskills SVG{
+  width:50px;
+  height: auto;
   cursor: pointer;
 }
-.hobbies {
-  margin-top: 20px;
-  p{
-    color: #75787a;
-    margin-bottom: 10px;
-  }
-}
-.hobbies .img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.hobbies svg {
-  width: 30px;
-}
-
 
 #pgportfolio {
   display: flex;
@@ -305,11 +325,16 @@ header .hamburger {
   margin-top: 3%;
 }
 
-
 #pgcontact {
   display: flex;
   flex-direction: column;
   min-height: 500px;
+  width: 100%;
+  background-color: #727272;
+  color: #000000;
+  h1{
+    color: #000000; 
+  }
 }
 .conteudocontato {
   width: 100%;
@@ -337,7 +362,7 @@ header .hamburger {
 }
 .contato li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   line-height: 50px;
 }
 .contatoinfos li {
@@ -354,7 +379,7 @@ header .hamburger {
     width: 220px;
     height: 220px; 
     margin: 20px auto; 
-    border: 1px solid #000000;
+    border: 1px solid #333333;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -370,29 +395,31 @@ header .hamburger {
 footer {
   bottom: 0;
   z-index: 1000;
-  background: var(--background-header);
+  background:rgb(0, 0, 0);
   padding: 5px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #000000;
+  color: #ffffff;
 }
 footer a, span{
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   font-size: small;
 }
 footer svg {
-  width: 50px;
-  padding: 5px;
+  width: 40px;
   height: auto;
   margin-bottom: 20px;
 }
 
 
 @media screen and (max-width: 720px) {
+
   header {
     color: wheat;
+    justify-content: space-between;
+    padding-left: 5px;
   }
   header .menuheader {
     background-color: #555555;
@@ -432,6 +459,22 @@ footer svg {
   #pghome {/*MQ*/
     height: fit-content;
     margin: 100px 0 0 0;
+  }
+  #pgabout {
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    svg{
+      width: 35px
+    }
+    img{
+      display: none;
+    }
+  }
+  #imgskills SVG{
+    width:30px;
+    height: auto;
+    cursor: pointer;
   }
   #items {/*MQ*/
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

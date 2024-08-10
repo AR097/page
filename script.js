@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//skills
+
+
+
 //filtro portfolio
 function filterItems(filter) {
     const items = document.querySelectorAll('.item');

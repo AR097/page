@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const menuheader = document.querySelector('.menuheader');
-    const menuItems = document.querySelectorAll('.menuheader a'); // Assuming your menu items are links
+    const menuItems = document.querySelectorAll('.menuheader a'); 
 
     hamburger.addEventListener('click', function() {
         menuheader.classList.toggle('show');
