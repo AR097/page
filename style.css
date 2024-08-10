@@ -285,15 +285,15 @@ section{
 
 #items {/*MQ*/
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
   place-items: center;
   width: 90%;
 }
 
 .card {/*MQ*/
-  width: 350px;
-  height: 300px;
+  width: 340px;
+  height: 290px;
   display: flex;
   flex-direction: column;
   text-align: center;
