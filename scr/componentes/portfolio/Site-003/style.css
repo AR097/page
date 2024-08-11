@@ -153,14 +153,17 @@ header .menuheader.show {
 #pintroduction {
   color: #ffffff;
 }
-.featuresbox, .featuresboxlinks {
+.featuresbox{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px 0;
 }
 .featuresboxlinks {
-  gap: 0;
+  gap: 25px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
 }
 .features {
   padding: 0 10px;
@@ -174,22 +177,26 @@ header .menuheader.show {
 }
 #linkfeature {
   background-color: black;
-  border: solid rgb(48, 30, 59) 1px;
-  padding: 5px 10px;
-  margin-right: 30px;
+  border: solid rgb(48, 30, 59) 1px;  
 }
 #linkfeature a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
 }
 #linkfeature h1 {
   color: white;
   font-size: 12px;
 }
-#linkfeature svg {
-  width: 70px;
-  margin: -15px 0;
+#h1github{
+  margin-top: -20px;
+}
+#svggithub {
+  margin-top: -20px;
+}
+.features img{
+  width: 65px;
 }
 
 /* Footer */
