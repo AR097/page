@@ -13,13 +13,6 @@
   --color-subtitle-text: #ffffff75;
 }
 
-p, h1, span, h2
-{/*MQ*/
-  font-size: 1.6vw;
-  font-weight: 100;
-  font-style: normal;
-}
-
 body {
   background-color: var(--background-page);
   color: var(--color-all-text);
@@ -81,22 +74,11 @@ header .hamburger {
   place-items: center;
 
 }
-.headerbox {
-  width: 100%;
-  margin-top: 70px;
-  margin-bottom: 15px;
-}
-#headerbox {/*MQ*/
-  font-size: 3vw;
-  color: var(--color-subtitle-text);
-  text-align: center;
-}
 
-#pghome, #pgabout, #pgportfolio, #pgcontact{
+#pghome, #pgabout, #pgproject, #pgcontact{
   width: 90%;
   min-height: 400px;
 }
-
 
 #pghome {/*MQ*/
   display: flex;
@@ -194,14 +176,14 @@ header .hamburger {
   }
   h1{
     font-size: 2em;
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
   h2{
     font-size: 1.2em;
     margin-bottom: 15px;
   }
   p{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 section{
@@ -213,7 +195,8 @@ section{
   justify-content: center;
   align-items: center;
 }
-.download-button {
+.button-link,
+.download-button{
   margin: 20px 0;
   display: inline-block;
   padding: 10px 20px;
@@ -225,7 +208,7 @@ section{
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+.button-link:hover,
 .download-button:hover {
   background-color: #1d1d1d;
   transform: scale(1.05);
@@ -243,10 +226,6 @@ section{
 .contentskills{
   height: fit-content;
   margin-top: 20px;
-  p{
-    color: #75787a;
-    margin-bottom: 10px;
-  }
 }
 .Skills {
   justify-content: center;
@@ -259,84 +238,84 @@ section{
   height: auto;
   cursor: pointer;
 }
-
-#pgportfolio {
+.project {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
-  h1{
-    padding-bottom: 10px;
-  }
+}
+.project h1 {
+  font-size: 2em;
+  margin: 20px 0;
 }
 
-.buttons {
-  display: flex;
-  gap: 30px;
-  place-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.buttons button {
-  padding: 8px 15px;
-  background-color: #75787a;
-}
-
-#items {/*MQ*/
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
-  place-items: center;
-  width: 90%;
-}
-
-.card {/*MQ*/
-  width: 340px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
+.project p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 800px;
   text-align: center;
 }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-.imagecard {
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
   overflow: hidden;
-  width: 100%;
-  height: 70%;
-  border: #1c1d1d 1px solid;
-  border-radius: 15px;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-
-}
-    .imagecard img:hover {
-      transform: scale(1.5);
-      position:relative;
-    }
-  
-
-.imagecard img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+  cursor: pointer;
 }
 
-#Titlecard {
-  font-size: 20px;
-  margin-top: 3%;
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.card a:hover {
+  text-decoration: none;
 }
 
 #pgcontact {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  min-height: fit-content;
   width: 100%;
   background-color: #727272;
   color: #000000;
-  h1{
-    color: #000000; 
-  }
 }
+
 .conteudocontato {
   width: 100%;
   text-align: center;
@@ -344,8 +323,15 @@ section{
   align-items: center;
   display:flex;
   flex-direction: column;
+  h1{
+    font-size: 2em;
+    margin: 15px 0;
+  }
+  p{
+    font-size: 1.1em;
+  }
 }
-.content-contact{/*media queryes para add espaço qnd em ela menor*/
+.content-contact{
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
@@ -392,7 +378,6 @@ section{
     border-radius: 8px;
   }
 
-
 footer {
   bottom: 0;
   z-index: 1000;
@@ -414,9 +399,7 @@ footer svg {
   margin-bottom: 20px;
 }
 
-
 @media screen and (max-width: 720px) {
-
   header {
     color: wheat;
     justify-content: space-between;
@@ -481,10 +464,7 @@ footer svg {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
   }
-  .card {/*MQ*/
-    width: 150px;
-    height:130px;
-  }
+
   .content-contact{/*MQ*/
     margin-top: 20px;  
   }

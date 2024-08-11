@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    place-items: center;
+  
+  }
+  :root {
+    --background-page: rgb(0, 0, 0);
+    --background-header: rgb(107, 107, 107);
+    --color-all-text: rgb(255, 255, 255);
+    --color-subtitle-text: #ffffff75;
+  }
+  
+  .filtro {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .Titlecard {
+    color: #666;
+    font-size: 0.9em;
+  }
+  body {
+    background-color: var(--background-page);
+    color: var(--color-all-text);
+    width: 100%;
+  }
+  header {
+    background: var(--background-header);
+    border-bottom: #1f2020 solid 1px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    height: 60px;
+  }
+  .language-icons{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    z-index: 1001;
+    margin-right: 10px;
+    svg{
+      width: 25px;
+    }
+  }
+  header .menuheader {
+    display: flex;
+    gap: 20px;
+    margin-right: 5%;
+    text-align: center;
+    display: none;
+  }
+  header .menuheader a {
+    padding: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  header .menuheader a:hover {
+    color: #3d0c50;
+  }
+  header .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 5%;
+    padding: 9px;
+  }
+  .pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+  
+  }
+  .headerbox {
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+    h1{
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    p{
+      font-size: 1.1em;
+    }
+  }
+
+  #pgportfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    h1{
+      padding-bottom: 10px;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 30px;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .buttons button {
+    padding: 8px 15px;
+    background-color: #75787a;
+  }
+  
+  #items {/*MQ*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    place-items: center;
+    width: 90%;
+  }
+  
+  .card {/*MQ*/
+    width: 340px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .imagecard {
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    border: #1c1d1d 1px solid;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+    .imagecard img:hover {
+      transform: scale(1.5);
+      position:relative;
+    }
+
+  .imagecard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  
+  #Titlecard {
+    margin-top: 3%;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  
+  footer {
+    bottom: 0;
+    z-index: 1000;
+    background: var(--background-header);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+  }
+  footer a, span{
+    text-decoration: none;
+    color: #000000;
+    font-size: small;
+  }
+  footer svg {
+    width: 40px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  
+  @media screen and (max-width: 720px) {
+    header {
+      color: wheat;
+      justify-content: space-between;
+      padding-left: 5px;
+    }
+    header .menuheader {
+      background-color: #555555;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      width: 70%;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: inherit;
+    }
+    header .hamburger {
+      color: white;
+      display: block;
+    }
+    header .menuheader.show {
+      display: flex;
+    }
+    #items {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .card {
+      width: 150px;
+      height:130px;
+    }
+    .content-contact{
+      margin-top: 20px;  
+    }
+  }

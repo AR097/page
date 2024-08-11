@@ -16,7 +16,7 @@
       <nav class="menuheader">
         <a href="#pghome" data-translate="nav-home">Pagina inicial</a>
         <a href="#pgabout"  data-translate="nav-about">Sobre</a>
-        <a href="#pgportfolio"  data-translate="nav-portfolio">Portfólio</a>
+        <a href="#pgprojetos"  data-translate="nav-projeto">Projetos</a>
         <a href="#pgcontact" data-translate="nav-contact">Contato</a>
       </nav>
       <div class="language-icons">
@@ -47,7 +47,7 @@
       <h1 data-translate="about-me">Sobre mim</h1>
       <p data-translate="sobre-mim">Estudo programação desde 2021 por conta própria como hobby e atualmente estou no 4º periodo de Ciência da Computação. Aprendo rápido, gosto de desenvolver projetos e estou sempre em busca de novas ideias e sigo ampliando continuamente minhas habilidades, sempre que posso navego em perfis do github, acredito que assim posso desenvolver meu conhecimento e cultivar minha criatividade.</p>
       <a href="scr/componentes/home/CV.pdf" download class="download-button">CV</a>
-      <h2  data-translate="onde-me-encontrar">Onde me encontrar</h2>
+      <h2 data-translate="onde-me-encontrar">Onde me encontrar</h2>
       <div class="ondemeencontrarlinks">
         <a href="https://www.linkedin.com/in/ar097/"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="14" fill="#1275B1"></rect> <path d="M12.6186 9.69215C12.6186 10.6267 11.8085 11.3843 10.8093 11.3843C9.81004 11.3843 9 10.6267 9 9.69215C9 8.7576 9.81004 8 10.8093 8C11.8085 8 12.6186 8.7576 12.6186 9.69215Z" fill="white"></path> <path d="M9.24742 12.6281H12.3402V22H9.24742V12.6281Z" fill="white"></path> <path d="M17.3196 12.6281H14.2268V22H17.3196C17.3196 22 17.3196 19.0496 17.3196 17.2049C17.3196 16.0976 17.6977 14.9855 19.2062 14.9855C20.911 14.9855 20.9008 16.4345 20.8928 17.5571C20.8824 19.0244 20.9072 20.5219 20.9072 22H24V17.0537C23.9738 13.8954 23.1508 12.4401 20.4433 12.4401C18.8354 12.4401 17.8387 13.1701 17.3196 13.8305V12.6281Z" fill="#ffffff"></path> </g></svg></a>
         <a href="https://github.com/AR097"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github</title> <rect width="24" height="24" fill="none"></rect> <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path> </g></svg></a>
@@ -100,141 +100,65 @@
       </div>
     </div>
     </section>
-
   </div>
 
-    <div class="" id="pgportfolio">
-        <div class="headerbox">
-          <h1 id='headerbox' data-translate="nav-portfolio">Portfólio</h1>
+  <div class="project" id="pgproject">
+    <h1 data-translate="navegue-pelos-meus-projetos">Navegue pelos meus projetos</h1>
+    <p data-translate="explore-meus-projetos">Explore meus projetos recentes, dê uma olhada no meu perfil no GitHub para ver código-fonte e contribuições, e descubra alguns materiais de estudo que estou utilizando para aprimorar minhas habilidades.</p>
+  
+    <div class="card-container">
+        <div class="card">
+            <h3>GitHub</h3>
+            <p data-translate="descricao-projeto-github">Explore meu perfil no GitHub para acessar uma variedade de projetos e repositórios que desenvolvi ao longo dos anos. Aqui você encontrará código-fonte, contribuições para projetos de código aberto e exemplos práticos do meu trabalho em desenvolvimento web e outras áreas.</p>
+            <a href="https://github.com/AR097" target="_blank" class="button-link">GitHub</a>
         </div>
-        <div class="buttons">
-          <button onclick="filterItems('all')" data-translate="filter-all">Todos</button>
-          <button onclick="filterItems('FrontEnd')">Front-end</button>
-          <button onclick="filterItems('FullStack')">Full-stack</button>
+        <div class="card">
+            <h3>CodePen</h3>
+            <p data-translate="descricao-projeto-codepen">Acesse meus projetos e experimentos interativos no CodePen. Veja como transformo ideias em realidade com HTML, CSS e JavaScript, e explore demonstrações práticas de animações, layouts e outras técnicas de front-end.</p>
+            <a href="https://codepen.io/AR_097" target="_blank" class="button-link">CodePen</a>
         </div>
-          <div id="items">
-            <!--Jogo da cobrinha -->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/Cobrinha/cobrinha.html"> 
-                    <img src="scr/componentes/portfolio/Cobrinha/imagecard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">Jogo da Cobrinha</h2>
-              </div>
-            </div>
-            <!--Site empresa 003-->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/Site-003/design003.html"> 
-                    <img src="scr/componentes/portfolio/Site-003/imgcard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">Site - 003</h2>
-              </div>
-            </div>
-            <!--Site empresa 002-->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/Site-002/design002.html"> 
-                    <img src="scr/componentes/portfolio/Site-002/imgcard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">Site - 002</h2>
-              </div>
-            </div>
-            <!--Site empresa 001-->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/Site-001/design001.html"> 
-                    <img src="scr/componentes/portfolio/Site-001/imgcard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">Site - 001</h2>
-              </div>
-            </div>
-            <!--ToDo List App-->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/todo-list/todo.html"> 
-                    <img src="scr/componentes/portfolio/todo-list/imagecard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">ToDo List App</h2>
-              </div>
-            </div>
-            <!--Controle Financeiro-->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/Financial-control-app/Financialcontrol.html"> 
-                    <img src="scr/componentes/portfolio/Financial-control-app/imagecard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">Financial control</h2>
-              </div>
-            </div>
-            <!--QR Code Generator-->
-            <div class="item FrontEnd"><!--Define o filtro-->
-              <div class="card"><!--Estilo geral img+txt-->
-                <div class="imagecard"><!--Estilo imagem-->
-                  <a href="scr/componentes/portfolio/Qrcode-generator/qrcode.html"> 
-                    <img src="scr/componentes/portfolio/Qrcode-generator/imagecard.png" alt="">
-                  </a>
-                </div>
-                <span class="filtro">Front-end</span>
-                <h2 id="Titlecard">QR Code Generator</h2>
-              </div>
-            </div>
+        <div class="card">
+            <h3>Ver Galeria de Projetos</h3>
+            <p data-translate="descricao-projeto-portfolio">Navegue pela minha galeria de projetos para ver uma seleção dos meus trabalhos mais recentes e destacados. Cada projeto inclui uma breve descrição, imagens e links para acesso direto aos projetos completos, mostrando minha abordagem criativa e habilidades técnicas.</p>
+            <a href="scr/componentes/portfolio/index.html" target="_blank" class="button-link">Galeria</a>
         </div>
     </div>
+  </div>
 
-    <div class="" id="pgcontact">
-      <h1 class="headerbox" id='headerbox' data-translate="nav-contact">Contato</h1>
-      <div class="conteudocontato">
-        <h1 data-translate="contact-text">Ficou com alguma dúvida?<br>Entre em contato!</h1>
-        <div class="content-contact">
-          <div class="contato">
-            <ul class="contatoinfos">
-              <li>
-                <svg class="iconecontato" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd11f972"> <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M511.5,446.753V65.247H0.5v381.506H511.5L511.5,446.753 L511.5,446.753z M438.245,368.552v74.224H79.53v-70.247h0.615l1.816-0.605l134.664-108.435l40.74,34.519l36.176-31.78 L438.245,368.552L438.245,368.552L438.245,368.552z M438.245,355.428l-137.114-95.917l137.114-118.819V355.428L438.245,355.428 L438.245,355.428z M415.453,69.215L396.898,86.93l-8.811,8.569l-8.205,8.532l-8.514,7.944l-7.898,7.945l-7.6,7.33l-7.004,7.33 l-7.294,6.725l-6.688,6.725l-12.462,12.519l-11.867,11.298l-5.457,5.197l-4.871,5.188l-5.16,4.285l-4.574,4.266l-8.195,7.954 l-3.959,3.354l-3.344,3.371l-3.344,2.72l-2.748,3.074l-5.16,4.284l-2.123,1.509l-1.527,1.845l-1.816,0.912l-1.221,1.229 l-1.518,1.211L101.102,68.609L415.453,69.215L415.453,69.215L415.453,69.215z M208.727,256.764L79.53,360.001l0.298-212.893 L208.727,256.764L208.727,256.764L208.727,256.764z"> </path> </g> </g></svg>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andressasrdg@gmail.com&su=&body=">
-                  andressasrdg@gmail.com
-                </a>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z" fill="#00000"></path> </g></svg>
-                <a href="https://t.me/A_R097">
-                  https://telegram.org/A_R097
-                </a>
-              </li>
-              <li>
-                <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st1{fill:none;stroke: #000000;;stroke-width:2;} .st2{fill:none;stroke: #000000;stroke-width:2;stroke-miterlimit:10;} </style> <path class="st0" d="M17,1C9.3,1,3,7.3,3,15c0,3.4,1.3,6.6,3.3,9L4,31l7.3-3.2C13,28.6,15,29,17,29c7.7,0,14-6.3,14-14S24.7,1,17,1z "></path> <g id="Page-1"> <g id="Whatsapp" transform="translate(1.000000, 1.000000)"> <path id="Stroke-28" class="st1" d="M23.7,19.1c0.3-0.9,0.3-1.6,0.2-1.8c-0.1-0.2-0.3-0.2-0.7-0.4c-0.4-0.2-2.2-1.1-2.5-1.2 c-0.3-0.1-0.7-0.1-0.9,0.3c-0.4,0.5-0.7,1-1,1.3c-0.2,0.2-0.6,0.3-0.9,0.1c-0.4-0.2-1.6-0.6-3-1.8c-1.1-1-1.8-2.2-2.1-2.6 c-0.2-0.4,0-0.6,0.2-0.8c0.2-0.2,0.4-0.4,0.6-0.6c0.2-0.2,0.3-0.3,0.4-0.6c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.8-2-1.1-2.7 c-0.2-0.6-0.4-0.6-0.8-0.6c-0.1,0-0.3,0-0.4,0c-0.5,0-1,0.1-1.3,0.5C9.9,7.9,9,8.8,9,10.6c0,1.8,1.3,3.6,1.5,3.8 c0.2,0.2,2.6,4,6.3,5.6c2.9,1.2,3.8,1.1,4.4,1C22.2,20.7,23.4,20,23.7,19.1L23.7,19.1z"></path> </g> </g> </g></svg>
-                <a href="https://t.me/A_R097">
-                  (51) 99502-5990
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="map-contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55453.852283660344!2d-51.516619865389124!3d-29.69467116473429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951bfb29cda85367%3A0xf043241a82efa89f!2sMontenegro%2C%20RS%2C%2095780-000!5e0!3m2!1sen!2sbr!4v1720992275243!5m2!1sen!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+  <div class="" id="pgcontact">
+    <div class="conteudocontato">
+      <h1 data-translate="nav-contact">Contato</h1>
+      <p data-translate="contact-text">Ficou com alguma dúvida?<br>Entre em contato!</p>
+      <div class="content-contact">
+        <div class="contato">
+          <ul class="contatoinfos">
+            <li>
+              <svg class="iconecontato" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd11f972"> <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M511.5,446.753V65.247H0.5v381.506H511.5L511.5,446.753 L511.5,446.753z M438.245,368.552v74.224H79.53v-70.247h0.615l1.816-0.605l134.664-108.435l40.74,34.519l36.176-31.78 L438.245,368.552L438.245,368.552L438.245,368.552z M438.245,355.428l-137.114-95.917l137.114-118.819V355.428L438.245,355.428 L438.245,355.428z M415.453,69.215L396.898,86.93l-8.811,8.569l-8.205,8.532l-8.514,7.944l-7.898,7.945l-7.6,7.33l-7.004,7.33 l-7.294,6.725l-6.688,6.725l-12.462,12.519l-11.867,11.298l-5.457,5.197l-4.871,5.188l-5.16,4.285l-4.574,4.266l-8.195,7.954 l-3.959,3.354l-3.344,3.371l-3.344,2.72l-2.748,3.074l-5.16,4.284l-2.123,1.509l-1.527,1.845l-1.816,0.912l-1.221,1.229 l-1.518,1.211L101.102,68.609L415.453,69.215L415.453,69.215L415.453,69.215z M208.727,256.764L79.53,360.001l0.298-212.893 L208.727,256.764L208.727,256.764L208.727,256.764z"> </path> </g> </g></svg>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andressasrdg@gmail.com&su=&body=">
+                andressasrdg@gmail.com
+              </a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z" fill="#00000"></path> </g></svg>
+              <a href="https://t.me/A_R097">
+                https://telegram.org/A_R097
+              </a>
+            </li>
+            <li>
+              <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st1{fill:none;stroke: #000000;;stroke-width:2;} .st2{fill:none;stroke: #000000;stroke-width:2;stroke-miterlimit:10;} </style> <path class="st0" d="M17,1C9.3,1,3,7.3,3,15c0,3.4,1.3,6.6,3.3,9L4,31l7.3-3.2C13,28.6,15,29,17,29c7.7,0,14-6.3,14-14S24.7,1,17,1z "></path> <g id="Page-1"> <g id="Whatsapp" transform="translate(1.000000, 1.000000)"> <path id="Stroke-28" class="st1" d="M23.7,19.1c0.3-0.9,0.3-1.6,0.2-1.8c-0.1-0.2-0.3-0.2-0.7-0.4c-0.4-0.2-2.2-1.1-2.5-1.2 c-0.3-0.1-0.7-0.1-0.9,0.3c-0.4,0.5-0.7,1-1,1.3c-0.2,0.2-0.6,0.3-0.9,0.1c-0.4-0.2-1.6-0.6-3-1.8c-1.1-1-1.8-2.2-2.1-2.6 c-0.2-0.4,0-0.6,0.2-0.8c0.2-0.2,0.4-0.4,0.6-0.6c0.2-0.2,0.3-0.3,0.4-0.6c0.1-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.8-2-1.1-2.7 c-0.2-0.6-0.4-0.6-0.8-0.6c-0.1,0-0.3,0-0.4,0c-0.5,0-1,0.1-1.3,0.5C9.9,7.9,9,8.8,9,10.6c0,1.8,1.3,3.6,1.5,3.8 c0.2,0.2,2.6,4,6.3,5.6c2.9,1.2,3.8,1.1,4.4,1C22.2,20.7,23.4,20,23.7,19.1L23.7,19.1z"></path> </g> </g> </g></svg>
+              <a href="https://t.me/A_R097">
+                (51) 99502-5990
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="map-contact">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55453.852283660344!2d-51.516619865389124!3d-29.69467116473429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951bfb29cda85367%3A0xf043241a82efa89f!2sMontenegro%2C%20RS%2C%2095780-000!5e0!3m2!1sen!2sbr!4v1720992275243!5m2!1sen!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
-    
   </div>
+
   <footer>
       <div class="redessociais">
 
