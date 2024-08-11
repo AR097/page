@@ -183,7 +183,7 @@ header .menuheader.show {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 #linkfeature h1 {
   color: white;
@@ -315,7 +315,8 @@ footer svg {
     margin-bottom: 25px;
   }
   #linkfeature a {
-    padding: 0 15px;
+    padding: 10px 15px;
+
   }
   #linkfeature h1 {
     margin-top: 3px;
