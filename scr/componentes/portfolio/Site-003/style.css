@@ -1,210 +1,199 @@
-*{
+/* Global Styles */
+* {
   margin: 0;
   padding: 0;
   scrollbar-width: none;
-  color: #000;
 }
-body{
+body {
   background-color: #000000;
 }
+
+/* Header Styles */
 header {
   position: fixed;
   display: flex;
   width: 100%;
-  height: 75px;
+  height: fit-content;
   top: 0;
   z-index: 1000;
+  background-color: #000;
 }
-  header .menuheader {
-    display: none;
-    padding: 20px;
-  }
-    header .menuheader a {
-    text-decoration: none;
-    padding: 10px 40px;
-    color: #ffffff;
-    font-weight: 200;
-    top: 0;
-    }
-    header .menuheader a:hover {
-      background:none;
-      color: #75668d;
-      }
-  header .hamburger {
+header .menuheader {
+  display: none;
+  padding: 20px;
+}
+header .menuheader a {
+  text-decoration: none;
+  padding: 10px 40px;
+  color: #ffffff;
+  font-weight: 200;
+}
+header .menuheader a:hover {
+  color: #75668d;
+}
+header .hamburger {
   display: flex;
   font-size: 30px;
   cursor: pointer;
-  margin-left: 91%;
+  margin-left: 80%;
   color: #ffffff;
   z-index: 1001;
-  position: fixed;
-  }
-    header .menuheader.show {
-      display: flex;
-      background-color: #000;
-      flex-direction: row;
-      width: 90%;
-      gap: 10px;
-      text-align: center;
-      justify-content: center;
-      position: absolute;
-    }
-    .language-icons{
-      display: flex;
-      flex-direction:row;
-      gap: 10px;
-      z-index: 1;
-      justify-content: center;
-      padding: 9px;
-      svg{
-        width: 25px;
-      }
-    }
-.previewefeatures{
-margin-top: 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: auto;
-background-color: #000000;
 }
-/*PREVIEW*/   
+header .menuheader.show {
+  display: flex;
+  background-color: #000;
+  flex-direction: row;
+  width: 90%;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+}
+
+/* Language Icons */
+.language-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding: 9px;
+  margin-left: 5%;
+}
+.language-icons svg {
+  width: 25px;
+}
+
+/* Preview Features */
+.previewefeatures {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #000000;
+}
+
+/* Slideshow */
 .slideshow-container {
   margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width:75%;
+  width: 75%;
   height: fit-content;
-  }
-  .slides {
-      display: none;
-      width: 100%;
-      height: 100%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border-radius: 10px;
-      box-sizing: border-box;
-      text-align: center;
-  }
-  .slides img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      border-radius: 10px;
-  }
-  .active {
-      display: block;
-  }
-  .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      background-color: rgba(43, 39, 42, 0.616);
-  }
-  .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-  }
-  .prev {
-      left: 0;
-      border-radius: 3px 3px 0 0;
-  }
-/*FEATURES*/
-.lateralrigth{
+}
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.slides img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.active {
+  display: block;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(43, 39, 42, 0.616);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+/* Features */
+.lateralrigth {
   display: flex;
   flex-direction: row;
   width: 70%;
-  background-color: none;
   margin-bottom: 50px;
 }
-.box1, .box2{
+.box1, .box2 {
   display: flex;
   flex-direction: column;
 }
-  .box1{
-    align-items: end;
-    #h2title{
-      padding-right: 30px;
-    }
-    .features{
-      margin-right: 30px;
-    }
-  }
-  .box2{
-    width: 70%;
-    border-left: #ffffff 1px solid ;
-    padding-left: 20px;
-  }
-    #h2title{
-      font-size: 25px;
-      color: #ffffff;
-      margin-bottom: 15px;
-      margin-top: 10px;
-    }
-      #pintroduction{
-        color: #ffffff;
-      }
-
-.featuresbox, .featuresboxlinks{
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-padding: 10px 0;
-width: fit-content;
+.box1 {
+  align-items: end;
 }
-.featuresboxlinks{
+.box2 {
+  width: 70%;
+  border-left: #ffffff 1px solid;
+  padding-left: 20px;
+}
+#h2title {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+#pintroduction {
+  color: #ffffff;
+}
+.featuresbox, .featuresboxlinks {
   display: flex;
   flex-wrap: wrap;
-  gap:0;
-  width: fit-content;
+  gap: 10px;
+  padding: 10px 0;
 }
-
-.features{
-padding: 0 10px;
-background: rgb(119, 118, 119);  
-border: solid rgb(83, 83, 83) 1px;
-border-radius: 20px;
-width: fit-content;
-  h1{
-    color: #000000;
-    font-size: 16px;
-  }
-  a{
-    text-decoration: none;
-  }
+.featuresboxlinks {
+  gap: 0;
 }
-
-#linkfeature{
-  background-color:black;
+.features {
+  padding: 0 10px;
+  background: rgb(119, 118, 119);
+  border: solid rgb(83, 83, 83) 1px;
+  border-radius: 20px;
+}
+.features h1 {
+  color: #000000;
+  font-size: 16px;
+}
+#linkfeature {
+  background-color: black;
   border: solid rgb(48, 30, 59) 1px;
   padding: 5px 10px;
   margin-right: 30px;
-  a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  h1{
-    color: white;
-    font-size: 12px;
-  }
-  svg{
-    width: 70px;
-    margin: -20px 0;
-  }
 }
-footer{
+#linkfeature a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#linkfeature h1 {
+  color: white;
+  font-size: 12px;
+}
+#linkfeature svg {
+  width: 70px;
+  margin: -20px 0;
+}
+
+/* Footer */
+footer {
   bottom: 0;
   z-index: 1000;
   background: var(--background-header);
@@ -223,141 +212,113 @@ footer .redessociais {
   gap: 10px;
   margin-left: 20px;
 }
-
 footer span, a {
   text-decoration: none;
   color: #ffffff;
 }
-
 footer svg {
   width: 30px;
   height: auto;
 }
-@media screen and (max-width:599px) {
-  /*
-  h2: 
-  font-size: 20px;
-  */
-  p{
+
+/* Responsive Design */
+@media screen and (max-width: 599px) {
+  p {
     font-size: 13px;
   }
-  /*Header e menu*/
   header {
+    flex-direction: row;
+  }
+  header .menuheader {
+    display: none;
     flex-direction: column;
-  } 
-    header .menuheader {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-      width: 100%;
-      background-color: #000;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      z-index: 1001;
-    }
-    header .hamburger {
-      display: block;
-      color: #888;
-      margin-left: 80%;
-
-    }      
-    header .menuheader.show {
-      display: flex;
-      background-color: #000;
-      flex-direction:column;
-      width: 30%;
-      gap: 10px;
-      text-align: center;
-      justify-content: center;
-      position: absolute;
-      margin-left:62%;
-    }
-
-    .box_logo{
-      display: none;
-      }
-      .box_logo img{
-        display: none;
-      }
-.previewefeatures{
-  margin-top: 80px;
-  justify-content: center;
-  align-items: center;
-}
-/*PREVIEW*/   
-.slideshow-container {
-  width:90%;
-  margin-bottom: 25px;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 1001;
+  }
+  header .hamburger {
+    display: block;
+    color: #888;
+    margin-left: 60%;
+  }
+  header .menuheader.show {
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 62%;
+  }
+  .box_logo {
+    display: none;
+  }
+  .box_logo img {
+    display: none;
+  }
+  .previewefeatures {
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .slideshow-container {
+    width: 90%;
+    margin-bottom: 25px;
   }
   .prev, .next {
-      padding: 10px;
+    padding: 10px;
   }
-
-/*FEATURES*/
-.lateralrigth{/*trocado para a aixa de baixo*/
-  display: flex;
-  flex-direction: column;
-  max-width: fit-content;
-  width: 90%;
-  margin: 0 0 30px 0;
-    h2{
-      margin-bottom: 10px;
-    }
+  .lateralrigth {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    width: 90%;
+    margin: 0 0 30px 0;
   }
-
-  .box1{
+  .box1 {
     align-items: baseline;
-    #h2title{
-      padding-right: 30px;
-    }
-    .features{/*links*/
-      margin-right: 30px;
-    }
   }
-  .box2{
+  .box2 {
     width: fit-content;
-    border-top: #ffffff33 1px solid ;
-    border-left: none ;
+    border-top: #ffffff33 1px solid;
+    border-left: none;
     padding-left: 0;
   }
-    #h2title{
-      font-size: 20px;
-      margin-bottom: 15px;
-      margin-top: 10px;
-    }
-      #pintroduction{
-        color: #ffffff;
-      }
-  .features{
-    h1{
-      font-size: 13px;
-    }
+  #h2title {
+    font-size: 20px;
   }
-  .featuresboxlinks{
+  .features h1 {
+    font-size: 13px;
+  }
+  .featuresboxlinks {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  #linkfeature{
+  #linkfeature {
     margin-right: 30px;
     margin-bottom: 25px;
-    a{
-      padding: 0 15px;
-    }
-    h1{
-      margin-top: 3px;
-      font-size: 11px;
-    }
-    svg{
-      width: 40px;
-      margin: -15px 0;
-    }
-    img{
-      width: 40px;
-    }
   }
-
+  #linkfeature a {
+    padding: 0 15px;
+  }
+  #linkfeature h1 {
+    margin-top: 3px;
+    font-size: 11px;
+  }
+  #linkfeature svg {
+    width: 40px;
+    margin: -15px 0;
+  }
+  #linkfeature img {
+    width: 40px;
+  }
 }
