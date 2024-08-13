@@ -134,16 +134,16 @@ header .hamburger {
     content: "HELLO WORLD!";
   }
   21%, 40% {
-    content: "I'm Andressa!";
+    content: "I'm Andressa.";
   }
   41%, 60% {
-    content: "I love Code!";
+    content: "I love Code.";
   }
   61%, 80% {
-    content: "I love Coffee!";
+    content: "I love Coffee.";
   }
   81%, 100% {
-    content: "I love Tech world!";
+    content: "I love Tech world.";
   }
 }
 @keyframes cursor {
