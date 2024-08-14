@@ -30,7 +30,7 @@ const translations = {
         'contact-text':'Have any questions? Get in touch!',
         'navegue-pelos-meus-projetos':'Browse through my projects',
         'explore-meus-projetos':'Explore my recent projects, take a look at my GitHub profile to see source code and contributions, and discover some study materials I’m using to enhance my skills.',
-        'descricao-projeto-github':'Explora mi perfil en GitHub para acceder a una variedad de proyectos y repositorios que he desarrollado a lo largo de los años. Aquí encontrarás código fuente, contribuciones a proyectos de código abierto y ejemplos prácticos de mi trabajo en desarrollo web y otras áreas.',
+        'descricao-projeto-github':'Explore my GitHub profile to access a variety of projects and repositories that I have developed over the years. Here you will find source code, contributions to open-source projects, and practical examples of my work in web development and other areas.',
         'descricao-projeto-codepen':'Access my projects and interactive experiments on CodePen. See how I turn ideas into reality with HTML, CSS, and JavaScript, and explore practical demonstrations of animations, layouts, and other front-end techniques.',
         'descricao-projeto-portfolio':'Browse through my project gallery to see a selection of my most recent and notable work. Each project includes a brief description, images, and links for direct access to the full projects, showcasing my creative approach and technical skills.',
     },
